@@ -7,20 +7,74 @@
 */
 @font-face {
   font-family: GroteskRegular;
-  src: url("../assets/HKGrotesk-Black.otf");
+  src: url("../assets/fonts/HKGrotesk-Black.otf");
+}
+@font-face {
+  font-family: GroteskLight;
+  src: url("../assets/fonts/HKGrotesk-Light.otf");
 }
 
 :root {
   --primaryOrange: rgb(222, 97, 54);
-  --primaryPink: rgb(243, 199, 195);
+  --primaryPink: rgb(243, 159, 195);
   --primaryBlue: rgb(97, 215, 221);
   --primaryPurple: rgb(73, 91, 178);
   --white: rgb(236, 236, 236);
   --black: rgb(14, 14, 14);
   --fontMain: "GroteskRegular", "serif";
+  --fontLight: "GroteskLight", "serif";
 }
 
 /* SHARED STYLES */
+.wrapper {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.displayFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.artGridDots {
+  /* set height width specific to where it is displayed on the screen*/
+  background-image: radial-gradient(var(--white) 25%, transparent 10%);
+  background-size: 35px 35px;
+  background-color: var(--black);
+}
+.artGridLine {
+  /* set height width specific to where it is displayed on the screen*/
+  background-color: var(--white);
+  box-sizing: border-box;
+  background-size: 100px 100px;
+  background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 48px,
+      var(--black) 48px,
+      var(--black) 50px
+    ),
+    repeating-linear-gradient(
+      -90deg,
+      transparent,
+      transparent 48px,
+      var(--black) 48px,
+      var(--black) 50px
+    );
+  border-bottom: 3px solid var(--black);
+  border-right: 3px solid var(--black);
+}
+.artHalfCircle {
+  width: 150px;
+  height: 150px;
+  border-top: 3px solid var(--black);
+  border-left: 3px solid var(--black);
+  background: var(--primaryBlue);
+  border-radius: 190px 0 0 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 /* scroll snapping start */
 .scrollContainer {
   height: 100vh;
@@ -28,21 +82,77 @@
   scroll-snap-type: y mandatory;
 }
 section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+section:nth-child(2n) {
+  background-color: turquoise;
+}
+section:nth-child(3n) {
+  background-color: tomato;
+}
+/* scroll snapping end */
+
+/* Landing Page Styles */
+.landingPageSection {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: crimson;
+}
+.landingStylingContainer {
   height: 100vh;
-  scroll-snap-align: center;
+  width: 100%;
+  position: relative;
+  background-color: var(--black);
 }
-/* scroll snapping end */
-
-/* Other styles */
-
-section:nth-child(2n) {
-  background-color: turquoise;
+.landingDots {
+  height: 340px;
+  width: 340px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
-
-section:nth-child(3n) {
-  background-color: tomato;
+.landingGrid {
+  height: 460px;
+  width: 740px;
+  position: absolute;
+}
+.landingGridOne {
+  top: 60px;
+  left: 60px;
+  z-index: 1;
+}
+.landingGridTwo {
+  top: 80px;
+  left: 80px;
+  z-index: 2;
+}
+.landingGridThree {
+  flex-direction: column;
+  top: 100px;
+  left: 100px;
+  z-index: 3;
+  background-color: var(--white);
+  border: 3px solid var(--black);
+}
+.landingGridThree h2 {
+  font-size: 1.3rem;
+}
+.landingPink {
+  height: 350px;
+  width: 550px;
+  position: absolute;
+  bottom: 70px;
+  left: 40px;
+  background-color: var(--primaryPink);
+}
+.landingOrange {
+  position: absolute;
+  height: 300px;
+  width: 550px;
+  background-color: var(--primaryOrange);
+  bottom: 30px;
+  right: 20px;
 }

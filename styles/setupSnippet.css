@@ -1,3 +1,22 @@
+@font-face {
+  font-family: GroteskRegular;
+  src: url("../assets/fonts/HKGrotesk-Black.otf");
+}
+@font-face {
+  font-family: GroteskLight;
+  src: url("../assets/fonts/HKGrotesk-Light.otf");
+}
+
+:root {
+  --primaryOrange: rgb(222, 97, 54);
+  --primaryPink: rgb(243, 159, 195);
+  --primaryBlue: rgb(97, 215, 221);
+  --primaryPurple: rgb(73, 91, 178);
+  --white: rgb(236, 236, 236);
+  --black: rgb(14, 14, 14);
+  --fontMain: "GroteskRegular", "serif";
+  --fontLight: "GroteskLight", "serif";
+}
 html {
   font-size: 18px;
   line-height: 1.15;
@@ -27,6 +46,20 @@ h5,
 p {
   margin: 0;
   padding: 0;
+  text-transform: capitalize;
+}
+h1 {
+  font-family: var(--fontLight);
+  letter-spacing: 3px;
+  font-size: 5rem;
+  padding-bottom: 60px;
+}
+h2,
+h3,
+h4 {
+  font-family: var(--fontMain);
+  letter-spacing: 10px;
+  text-transform: uppercase;
 }
 figcaption,
 figure,
@@ -212,7 +245,6 @@ template {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 .sr-only {
   position: absolute;
   width: 1px;
