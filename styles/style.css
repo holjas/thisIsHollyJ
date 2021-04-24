@@ -1,11 +1,48 @@
+/* 
+- imported items
+- variables
+- shared styles
+- section specific styling...
+
+*/
+@font-face {
+  font-family: GroteskRegular;
+  src: url("../assets/HKGrotesk-Black.otf");
+}
+
 :root {
-  --primaryOrange: rgb(222, 97, 54, 1);
+  --primaryOrange: rgb(222, 97, 54);
   --primaryPink: rgb(243, 199, 195);
   --primaryBlue: rgb(97, 215, 221);
   --primaryPurple: rgb(73, 91, 178);
   --white: rgb(236, 236, 236);
   --black: rgb(14, 14, 14);
+  --fontMain: "GroteskRegular", "serif";
 }
-body {
-  color: rgba(222, 97, 54, 1);
+
+/* SHARED STYLES */
+/* scroll snapping start */
+.scrollContainer {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+/* scroll snapping end */
+
+/* Other styles */
+
+section:nth-child(2n) {
+  background-color: turquoise;
+}
+
+section:nth-child(3n) {
+  background-color: tomato;
 }

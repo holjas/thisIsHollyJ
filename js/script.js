@@ -1,1 +1,1 @@
-console.log("linked working");
+console.log("javascript is linked");
