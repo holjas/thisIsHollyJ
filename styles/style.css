@@ -15,9 +15,9 @@
 }
 
 :root {
-  --primaryOrange: rgb(222, 97, 54);
-  --primaryPink: rgb(243, 159, 195);
-  --primaryBlue: rgb(97, 215, 221);
+  --primaryOrange: rgb(222, 97, 54); /* #ff9469  */
+  --primaryPink: rgb(243, 159, 195); /* ffd2f6 */
+  --primaryBlue: rgb(97, 215, 221); /* 94ffff */
   --primaryPurple: rgb(73, 91, 178);
   --white: rgb(236, 236, 236);
   --black: rgb(14, 14, 14);
@@ -85,74 +85,65 @@ section {
   height: 100vh;
   scroll-snap-align: center;
 }
-section:nth-child(2n) {
-  background-color: turquoise;
-}
-section:nth-child(3n) {
-  background-color: tomato;
-}
 /* scroll snapping end */
-
-/* Landing Page Styles */
-.landingPageSection {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: crimson;
-}
-.landingStylingContainer {
-  height: 100vh;
-  width: 100%;
-  position: relative;
+/* about me section start */
+.aboutMeSection {
   background-color: var(--black);
+  padding: 80px 40px;
 }
-.landingDots {
-  height: 340px;
-  width: 340px;
-  position: absolute;
-  top: 40px;
-  right: 40px;
+.aboutGridContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 0.1fr 3.5fr 1fr;
+  grid-template-rows: 1fr 0.2fr 0.2fr 1.6fr;
+  gap: 40px 75px;
 }
-.landingGrid {
-  height: 460px;
-  width: 740px;
-  position: absolute;
-}
-.landingGridOne {
-  top: 60px;
-  left: 60px;
-  z-index: 1;
-}
-.landingGridTwo {
-  top: 80px;
-  left: 80px;
-  z-index: 2;
-}
-.landingGridThree {
+.aboutMeText {
+  grid-area: 3 / 2 / 5 / 5;
   flex-direction: column;
-  top: 100px;
-  left: 100px;
-  z-index: 3;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--white);
+  padding: 0 40px;
+}
+.aboutMeHeadline {
+  grid-area: 2 / 3 / 4 / 4;
+  justify-content: flex-start;
+  padding-left: 40px;
   background-color: var(--white);
   border: 3px solid var(--black);
+  box-shadow: 10px 10px var(--primaryPurple);
 }
-.landingGridThree h2 {
-  font-size: 1.3rem;
+.aboutImage {
+  grid-area: 1 / 1 / 5 / 2;
 }
-.landingPink {
-  height: 350px;
-  width: 550px;
-  position: absolute;
-  bottom: 70px;
-  left: 40px;
-  background-color: var(--primaryPink);
+.aboutDotsDecoration {
+  grid-area: 1 / 2 / 2 / 5;
 }
-.landingOrange {
-  position: absolute;
-  height: 300px;
-  width: 550px;
-  background-color: var(--primaryOrange);
-  bottom: 30px;
-  right: 20px;
+.aboutImage {
+  width: 400px;
+}
+/* about me section end */
+.skillsSection {
+  background-color: var(--black);
+}
+.skillsGridOne {
+  background-color: var(--primaryBlue);
+  height: 550px;
+}
+.skillsContainer {
+  background-color: lightsteelblue;
+}
+.skillsHeadline {
+  margin-top: -325px;
+  height: 200px;
+  background-color: var(--white);
+}
+/*  */
+/*  */
+/*  */
+/* third section  */
+.nameMe {
+  background-color: darkolivegreen;
 }

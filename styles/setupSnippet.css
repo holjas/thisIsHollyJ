@@ -8,10 +8,10 @@
 }
 
 :root {
-  --primaryOrange: rgb(222, 97, 54);
-  --primaryPink: rgb(243, 159, 195);
-  --primaryBlue: rgb(97, 215, 221);
-  --primaryPurple: rgb(73, 91, 178);
+  --primaryOrange: rgb(222, 97, 54); /*  de6036 */
+  --primaryPink: rgb(243, 159, 195); /* f39fc3*/
+  --primaryBlue: rgb(97, 215, 221); /*61d7dd */
+  --primaryPurple: rgb(73, 91, 178); /* 495bb2*/
   --white: rgb(236, 236, 236);
   --black: rgb(14, 14, 14);
   --fontMain: "GroteskRegular", "serif";
@@ -60,6 +60,14 @@ h4 {
   font-family: var(--fontMain);
   letter-spacing: 10px;
   text-transform: uppercase;
+}
+h2 {
+  font-size: 2.2rem;
+}
+p {
+  font-size: 1.1rem;
+  font-family: var(--fontLight);
+  line-height: 1.5rem;
 }
 figcaption,
 figure,
@@ -133,6 +141,7 @@ audio:not([controls]) {
   height: 0;
 }
 img {
+  width: 100%;
   border-style: none;
 }
 svg:not(:root) {
@@ -275,3 +284,70 @@ template {
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap; /* added line */
 }
+/*  */
+/*  */
+/* Landing Page Styles Start */
+.landingPageSection {
+  flex-direction: column;
+  background-color: var(--black);
+}
+.landingStylingContainer {
+  height: 800px;
+  width: 100%;
+  position: relative;
+  background-color: var(--black);
+}
+.landingDots {
+  height: 340px;
+  width: 340px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+.landingGrid {
+  height: 460px;
+  width: 740px;
+  position: absolute;
+}
+.landingGridOne {
+  top: 60px;
+  left: 60px;
+  z-index: 1;
+}
+.landingGridTwo {
+  top: 80px;
+  left: 80px;
+  z-index: 2;
+}
+.landingGridThree {
+  flex-direction: column;
+  top: 100px;
+  left: 100px;
+  z-index: 3;
+  background-color: var(--white);
+  border: 3px solid var(--black);
+}
+.landingGridThree h2 {
+  font-size: 1.3rem;
+}
+.landingPink {
+  height: 350px;
+  width: 550px;
+  position: absolute;
+  bottom: 70px;
+  left: 40px;
+  background-color: var(--primaryPink);
+}
+.landingOrange {
+  position: absolute;
+  height: 300px;
+  width: 550px;
+  background-color: var(--primaryOrange);
+  bottom: 30px;
+  right: 20px;
+}
+.landingPageSection i {
+  color: var(--white);
+  font-size: 3rem;
+}
+/* Landing Page Styles End */
