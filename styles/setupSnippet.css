@@ -12,8 +12,9 @@
   --primaryPink: rgb(243, 159, 195); /* f39fc3*/
   --primaryBlue: rgb(97, 215, 221); /*61d7dd */
   --primaryPurple: rgb(73, 91, 178); /* 495bb2*/
-  --white: rgb(236, 236, 236);
+  --white: rgb(248, 248, 248);
   --black: rgb(14, 14, 14);
+  --darkGrey: rgb(119, 119, 119);
   --fontMain: "GroteskRegular", "serif";
   --fontLight: "GroteskLight", "serif";
 }
@@ -67,7 +68,7 @@ h2 {
 p {
   font-size: 1.1rem;
   font-family: var(--fontLight);
-  line-height: 1.5rem;
+  line-height: 1.7rem;
 }
 figcaption,
 figure,
@@ -288,6 +289,7 @@ template {
 /*  */
 /* Landing Page Styles Start */
 .landingPageSection {
+  height: 100vh;
   flex-direction: column;
   background-color: var(--black);
 }
@@ -351,3 +353,70 @@ template {
   font-size: 3rem;
 }
 /* Landing Page Styles End */
+/* about me section start */
+.aboutMeSection {
+  height: 100vh;
+  background-color: var(--black);
+  padding: 80px 10px;
+}
+.aboutGridContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 0.1fr 3.5fr 1fr;
+  grid-template-rows: 0.45fr 0.2fr 0.2fr 1.6fr;
+  gap: 40px 60px;
+}
+.aboutMeText {
+  grid-area: 3 / 2 / 5 / 5;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--white);
+  padding: 0 40px;
+}
+.aboutMeText p {
+  padding-bottom: 10px;
+  text-transform: none;
+}
+.aboutMeHeadline {
+  grid-area: 2 / 3 / 4 / 4;
+  justify-content: flex-start;
+  padding-left: 40px;
+  background-color: var(--white);
+  border: 3px solid var(--black);
+  box-shadow: 10px 10px var(--primaryPurple);
+}
+.aboutImage {
+  grid-area: 1 / 1 / 5 / 2;
+}
+.aboutDotsDecoration {
+  grid-area: 1 / 2 / 2 / 5;
+}
+.aboutImage {
+  width: 400px;
+}
+.aboutSocials {
+  width: 100%;
+  padding-top: 20px;
+}
+.aboutSocials i {
+  font-size: 2.4rem;
+  padding-right: 60px;
+  transition: 0.3s;
+}
+.aboutSocials a {
+  color: var(--black);
+}
+.aboutSocials i:hover,
+.aboutSocials i:focus {
+  transform: scale(1.1);
+  color: var(--primaryPurple);
+}
+.socialBtn {
+  font-size: 2rem;
+  padding-right: 60px;
+  transition: 0.3s;
+}
+
+/* about me section end */

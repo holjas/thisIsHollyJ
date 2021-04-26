@@ -16,18 +16,17 @@
 
 :root {
   --primaryOrange: rgb(222, 97, 54); /* #ff9469  */
-  --primaryPink: rgb(243, 159, 195); /* ffd2f6 */
+  --primaryPink: rgb(243, 159, 195); /* ffd2f6 , dk f39fc3*/
   --primaryBlue: rgb(97, 215, 221); /* 94ffff */
-  --primaryPurple: rgb(73, 91, 178);
-  --white: rgb(236, 236, 236);
+  --primaryPurple: rgb(73, 91, 178); /*495bb2*/
+  --white: rgb(248, 248, 248);
   --black: rgb(14, 14, 14);
   --fontMain: "GroteskRegular", "serif";
   --fontLight: "GroteskLight", "serif";
 }
-
 /* SHARED STYLES */
 .wrapper {
-  max-width: 1220px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 .displayFlex {
@@ -82,68 +81,23 @@
   scroll-snap-type: y mandatory;
 }
 section {
-  height: 100vh;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 /* scroll snapping end */
-/* about me section start */
-.aboutMeSection {
-  background-color: var(--black);
-  padding: 80px 40px;
-}
-.aboutGridContainer {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 2fr 0.1fr 3.5fr 1fr;
-  grid-template-rows: 1fr 0.2fr 0.2fr 1.6fr;
-  gap: 40px 75px;
-}
-.aboutMeText {
-  grid-area: 3 / 2 / 5 / 5;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  background-color: var(--white);
-  padding: 0 40px;
-}
-.aboutMeHeadline {
-  grid-area: 2 / 3 / 4 / 4;
-  justify-content: flex-start;
-  padding-left: 40px;
-  background-color: var(--white);
-  border: 3px solid var(--black);
-  box-shadow: 10px 10px var(--primaryPurple);
-}
-.aboutImage {
-  grid-area: 1 / 1 / 5 / 2;
-}
-.aboutDotsDecoration {
-  grid-area: 1 / 2 / 2 / 5;
-}
-.aboutImage {
-  width: 400px;
-}
-/* about me section end */
+/*  */
+/*  */
+/* skills */
 .skillsSection {
-  background-color: var(--black);
-}
-.skillsGridOne {
-  background-color: var(--primaryBlue);
-  height: 550px;
-}
-.skillsContainer {
-  background-color: lightsteelblue;
-}
-.skillsHeadline {
-  margin-top: -325px;
-  height: 200px;
-  background-color: var(--white);
+  height: 60vh;
+  background-color: var(--primaryPurple);
 }
 /*  */
-/*  */
-/*  */
-/* third section  */
-.nameMe {
-  background-color: darkolivegreen;
+/* projects */
+.projectSection {
+  padding: 60px 0;
+  /* height: fit-content; */
+  height: 100vh;
+  background-color: var(--primaryPink);
 }
+
+/*  */
