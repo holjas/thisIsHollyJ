@@ -26,6 +26,7 @@ html {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -364,7 +365,7 @@ template {
   height: 100%;
   display: grid;
   grid-template-columns: 2fr 0.1fr 3.5fr 1fr;
-  grid-template-rows: 0.45fr 0.2fr 0.2fr 1.6fr;
+  grid-template-rows: 0.45fr 0.2fr 0.1fr 1.1fr;
   gap: 40px 60px;
 }
 .aboutMeText {
@@ -378,6 +379,9 @@ template {
 .aboutMeText p {
   padding-bottom: 10px;
   text-transform: none;
+}
+.aboutMeText p:first-child {
+  padding-top: 10px;
 }
 .aboutMeHeadline {
   grid-area: 2 / 3 / 4 / 4;
@@ -420,3 +424,84 @@ template {
 }
 
 /* about me section end */
+
+/* skills section start */
+.skillsSection {
+  height: 70vh;
+  flex-direction: column;
+  background-color: var(--black);
+  text-align: center;
+}
+.skillGridContainer {
+  padding: 20px 20px;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.9fr 0.1fr;
+  grid-template-rows: 75px 0.6fr 75px 40px 0.6fr 0.6fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop"
+    "skillsHeader skillsHeader skillsHeader skillsHeader skillsHeader skillsHeader skillsHeader"
+    "skillsDotsLower skillsDotsLower skillsDotsLower skillsDotsLower skillsDotsLower skillsDotsLower skillsDotsLower"
+    ". . . . . . ."
+    ". skillOne skillTwo skillThree skillFour skillFive skillFive"
+    ". skillSix skillSeven skillEight skillNine skillTen skillTen";
+}
+.skillsHeader h2 {
+  color: var(--white);
+}
+.skillBox {
+  padding-top: 20px;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+}
+.skillContainer {
+  box-shadow: -15px -15px var(--primaryPink), -17px -13px var(--black),
+    -17px -17px var(--black), -12px -17px var(--black);
+  grid-area: 5 / 2 / 7 / 8;
+}
+.skillBox i {
+  font-size: 3rem;
+}
+.skillBox p {
+  padding: 5px 0 20px 0;
+}
+.skillsDotsTop {
+  grid-area: skillsDotsTop;
+}
+.skillsDotsLower {
+  grid-area: skillsDotsLower;
+}
+.skillsHeader {
+  grid-area: skillsHeader;
+}
+.skillFive {
+  grid-area: skillFive;
+}
+.skillFour {
+  grid-area: skillFour;
+}
+.skillThree {
+  grid-area: skillThree;
+}
+.skillTwo {
+  grid-area: skillTwo;
+}
+.skillOne {
+  grid-area: skillOne;
+}
+.skillSix {
+  grid-area: skillSix;
+}
+.skillSeven {
+  grid-area: skillSeven;
+}
+.skillEight {
+  grid-area: skillEight;
+}
+.skillNine {
+  grid-area: skillNine;
+}
+.skillTen {
+  grid-area: skillTen;
+}
+/* skills section end */

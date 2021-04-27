@@ -27,6 +27,7 @@
 /* SHARED STYLES */
 .wrapper {
   max-width: 1300px;
+  width: 100%;
   margin: 0 auto;
 }
 .displayFlex {
@@ -35,11 +36,15 @@
   justify-content: center;
   align-items: center;
 }
-.artGridDots {
-  /* set height width specific to where it is displayed on the screen*/
+.artGridDotsDark {
   background-image: radial-gradient(var(--white) 25%, transparent 10%);
   background-size: 35px 35px;
-  background-color: var(--black);
+  background-color: transparent;
+}
+.artGridDotsLight {
+  background-image: radial-gradient(var(--black) 25%, transparent 10%);
+  background-size: 35px 35px;
+  background-color: transparent;
 }
 .artGridLine {
   /* set height width specific to where it is displayed on the screen*/
@@ -60,8 +65,8 @@
       var(--black) 48px,
       var(--black) 50px
     );
-  border-bottom: 3px solid var(--black);
-  border-right: 3px solid var(--black);
+  border-bottom: 2px solid var(--black);
+  border-right: 2px solid var(--black);
 }
 .artHalfCircle {
   width: 150px;
@@ -86,18 +91,149 @@ section {
 /* scroll snapping end */
 /*  */
 /*  */
-/* skills */
-.skillsSection {
-  height: 60vh;
-  background-color: var(--primaryPurple);
-}
-/*  */
-/* projects */
 .projectSection {
-  padding: 60px 0;
-  /* height: fit-content; */
-  height: 100vh;
-  background-color: var(--primaryPink);
+  height: fit-content;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--black);
+}
+.projectGridBlue {
+  height: 60vh;
+  width: 100%;
+  background-color: var(--primaryBlue);
+}
+.projectSection h2 {
+  text-align: center;
+  background-color: var(--white);
+  padding: 40px 70px;
+  border: 2px solid var(--black);
+}
+.projectGridContainer {
+  margin-top: -440px;
+  margin-bottom: 300px;
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr 80px;
+  grid-template-rows: 1fr repeat(auto-fill, 250px);
+  gap: 20px 0px;
+  grid-template-areas:
+    "projectsHeader projectsHeader projectsHeader projectsHeader"
+    ". projectOneImage projectOneText ."
+    ". projectTwoText projectTwoImage ."
+    ". projectThreeImage projectThreeText ."
+    ". projectFourText projectFourImage ."
+    ". projectFiveImage projectFiveText .";
+}
+.projectImageContainer {
+  width: 350px;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+}
+.projectImageContainer img {
+  width: 100%;
+}
+.projectTextContainer {
+  padding: 40px 40px 0 20px;
+}
+.projectTextContainerRight {
+  padding: 40px 20px 0 40px;
+}
+.projectTextContainer h3 {
+  font-size: 1.4rem;
+  padding-bottom: 5px;
+}
+.projectLanguages {
+  padding-bottom: 10px;
+  font-family: var(--fontMain);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1rem;
+}
+.projectSocials {
+  padding-top: 15px;
+  justify-content: space-around;
+}
+.rightAlign {
+  text-align: right;
+}
+.projectArea {
+  grid-area: 2 / 2 / 7 / 4;
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  box-shadow: 15px 15px var(--primaryPink), 17px 13px var(--black),
+    17px 17px var(--black), 12px 17px var(--black);
+}
+.projectsHeader {
+  grid-area: projectsHeader;
+}
+.projectOneImage {
+  grid-area: projectOneImage;
+}
+.projectOneText {
+  grid-area: projectOneText;
+}
+.projectTwoImage {
+  grid-area: projectTwoImage;
+}
+.projectTwoText {
+  grid-area: projectTwoText;
+}
+.projectThreeImage {
+  grid-area: projectThreeImage;
+}
+.projectFourText {
+  grid-area: projectFourText;
+}
+.projectThreeText {
+  grid-area: projectThreeText;
+}
+.projectFourImage {
+  grid-area: projectFourImage;
+}
+.projectFiveText {
+  grid-area: projectFiveText;
+}
+.projectFiveImage {
+  grid-area: projectFiveImage;
 }
 
 /*  */
+/*  */
+/*  */
+.contactSection {
+  height: 100vh;
+  background-color: var(--black);
+}
+.contactGridContainer {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 2fr 0.6fr 1fr 0.8fr 0.2fr;
+  grid-template-rows: 0.4fr 0.4fr 0.6fr 1fr;
+  gap: 20px 20px;
+}
+
+.contactForm {
+  background-color: var(--primaryPink);
+  margin-top: 40px;
+  grid-area: 1 / 1 / 4 / 2;
+}
+
+.contactInfo {
+  z-index: 2;
+  background-color: teal;
+  grid-area: 2 / 3 / 4 / 5;
+}
+
+.contactGridOrange {
+  background-color: var(--primaryOrange);
+  grid-area: 3 / 2 / 5 / 7;
+}
+.contactDotsLight {
+  grid-area: 1 / 4 / 3 / 6;
+}
+/*  */
+.nameMae {
+  height: 100vh;
+}
+.filler {
+  height: 100vh;
+}
