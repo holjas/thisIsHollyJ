@@ -61,11 +61,14 @@ h2,
 h3,
 h4 {
   font-family: var(--fontMain);
-  letter-spacing: 10px;
+  letter-spacing: 8px;
   text-transform: uppercase;
 }
 h2 {
   font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.7rem;
 }
 p {
   font-size: 1.1rem;
@@ -424,28 +427,6 @@ template {
 }
 .aboutImage {
   width: 400px;
-}
-.aboutSocials {
-  width: 100%;
-  padding-top: 20px;
-}
-.aboutSocials i {
-  font-size: 2.4rem;
-  padding-right: 60px;
-  transition: 0.3s;
-}
-.aboutSocials a {
-  color: var(--black);
-}
-.aboutSocials i:hover,
-.aboutSocials i:focus {
-  transform: scale(1.1);
-  color: var(--primaryPurple);
-}
-.socialBtn {
-  font-size: 2rem;
-  padding-right: 60px;
-  transition: 0.3s;
 }
 
 /* about me section end */

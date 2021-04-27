@@ -211,19 +211,74 @@ section {
 }
 
 .contactForm {
+  flex-direction: column;
   background-color: var(--primaryPink);
-  margin-top: 40px;
+  text-transform: capitalize;
   grid-area: 1 / 1 / 4 / 2;
 }
-
+.contactForm h3 {
+  padding-bottom: 20px;
+}
+.contactForm label {
+  font-family: var(--fontLight);
+  display: block;
+  padding: 10px 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="textarea"] {
+  border: 2px solid var(--black);
+  width: 400px;
+  height: 2.3rem;
+}
+input[type="textarea"] {
+  resize: none;
+  height: 100px;
+}
+input[type="submit"] {
+  display: block;
+  margin-top: 30px;
+  padding: 15px 50px;
+  border: 2px solid var(--black);
+  background-color: #c17e9b;
+  font-family: var(--fontMain);
+  transition: 0.3s;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background-color: #d14e87;
+  transform: scale(1.08);
+}
 .contactInfo {
   z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
   background-color: var(--white);
   border: 2px solid var(--black);
   box-shadow: -15px -15px var(--white), -17px -13px var(--black),
     -17px -17px var(--black), -12px -17px var(--black);
   grid-area: 2 / 3 / 5 / 5;
 }
+.contactSocials {
+  width: 100%;
+  justify-content: space-evenly;
+  padding-top: 60px;
+}
+.contactSocials i {
+  font-size: 2.1rem;
+  transition: 0.3s;
+}
+.contactSocials a {
+  color: var(--black);
+}
+.contactSocials i:hover,
+.contactSocials i:focus {
+  transform: scale(1.1);
+  color: var(--primaryPurple);
+}
+
 .contactDotsLight {
   grid-area: 1 / 4 / 3 / 6;
 }
@@ -232,11 +287,4 @@ section {
   margin-left: 50vw;
   height: 300px;
   background-color: var(--primaryOrange);
-}
-.blackLine {
-  z-index: 100;
-  width: 300px;
-  height: 5px;
-  background-color: yellowgreen;
-  border: 4px solid palevioletred;
 }

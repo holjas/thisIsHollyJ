@@ -273,13 +273,43 @@
       <section class="contactSection">
         <div class="wrapper">
           <div class="contactGridContainer">
-            <div class="contactForm">
-              <p>form</p>
+            <!-- contact form square-->
+            <div class="contactForm displayFlex">
+              <h3>Wanna get in touch?</h3>
+              <form
+                action="mailto:holly.jasiura@gmail.com"
+                method="POST"
+                enctype="text/plain"
+                name="contactForm"
+              >
+                <label for="contactName">your name</label>
+                <input type="text" name="contactName" id="contactName" />
+                <label for="contactEmail">email</label>
+                <input type="email" name="contactEmail" id="contactEmail" />
+                <label for="contactComments">tell me about your day</label>
+                <input
+                  type="textarea"
+                  name="contactComments"
+                  id="contactComments"
+                />
+                <input type="submit" value="SEND MESSAGE" />
+              </form>
             </div>
-            <div class="contactInfo">
-              <p>contact name</p>
+            <!-- contact info square-->
+            <div class="contactInfo displayFlex">
+              <h3>thanks for visiting!</h3>
+              <div class="contactSocials displayFlex">
+                <a href="https://www.github.com/holjas" target="_blank">
+                  <i class="fab fa-github"></i
+                ></a>
+                <a href="https://www.linkedin.com/hollyjasiura" target="_blank">
+                  <i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://codepen.io/holjas" target="_target">
+                  <i class="fab fa-codepen"></i
+                ></a>
+              </div>
             </div>
-
             <div class="contactDotsLight artGridDotsDark"></div>
           </div>
         </div>
@@ -288,17 +318,6 @@
       <!-- footer start -->
       <footer>
         <h4>footer maybe?</h4>
-        <div class="aboutSocials flexDisplay">
-          <a href="https://www.github.com/holjas" target="_blank">
-            <i class="fab fa-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/hollyjasiura" target="_blank">
-            <i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://codepen.io/holjas" target="_target">
-            <i class="fab fa-codepen"></i
-          ></a>
-        </div>
       </footer>
     </main>
 
