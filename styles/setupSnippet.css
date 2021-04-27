@@ -31,6 +31,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--black);
 }
 article,
 aside,
@@ -52,8 +53,8 @@ p {
 }
 h1 {
   font-family: var(--fontLight);
-  letter-spacing: 3px;
-  font-size: 5rem;
+  letter-spacing: 4.5px;
+  font-size: 6rem;
   padding-bottom: 60px;
 }
 h2,
@@ -292,62 +293,62 @@ template {
 .landingPageSection {
   height: 100vh;
   flex-direction: column;
-  background-color: var(--black);
 }
 .landingStylingContainer {
-  height: 800px;
+  height: 85vh;
   width: 100%;
   position: relative;
-  background-color: var(--black);
-}
-.landingDots {
-  height: 340px;
-  width: 340px;
-  position: absolute;
-  top: 40px;
-  right: 40px;
 }
 .landingGrid {
-  height: 460px;
-  width: 740px;
-  position: absolute;
+  height: 640px;
+  width: 980px;
 }
 .landingGridOne {
-  top: 60px;
-  left: 60px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
   z-index: 1;
 }
 .landingGridTwo {
+  position: absolute;
   top: 80px;
-  left: 80px;
+  left: 130px;
   z-index: 2;
 }
 .landingGridThree {
   flex-direction: column;
-  top: 100px;
-  left: 100px;
+  position: relative;
+  /* top: 100px; */
+  /* left: 100px; */
   z-index: 3;
   background-color: var(--white);
   border: 3px solid var(--black);
 }
 .landingGridThree h2 {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
+}
+.landingDots {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: -100px;
+  right: 0px;
 }
 .landingPink {
-  height: 350px;
-  width: 550px;
   position: absolute;
-  bottom: 70px;
-  left: 40px;
+  height: 600px;
+  width: 1000px;
+  bottom: 130px;
+  left: -200px;
   background-color: var(--primaryPink);
 }
 .landingOrange {
+  height: 350px;
+  width: 750px;
   position: absolute;
-  height: 300px;
-  width: 550px;
+  bottom: 80px;
+  right: 0;
   background-color: var(--primaryOrange);
-  bottom: 30px;
-  right: 20px;
 }
 .landingPageSection i {
   color: var(--white);
@@ -368,11 +369,9 @@ template {
     opacity: 0;
     transform: translateY(-20px);
   }
-
   50% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
     transform: translateY(20px);
