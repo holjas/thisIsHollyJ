@@ -288,3 +288,15 @@ input[type="submit"]:focus {
   height: 300px;
   background-color: var(--primaryOrange);
 }
+footer {
+  justify-content: flex-start;
+  height: 60px;
+  color: var(--white);
+}
+footer a,
+footer p {
+  width: 100%;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: var(--white);
+}
