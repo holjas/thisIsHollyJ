@@ -5,16 +5,311 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <!-- SETUP SNIPPET. NEED TO COMBINE INTO MAIN CSS AND DELETE -->
+    <!-- SETUP SNIPPET. NEED TO COMBINE INTO MAIN CSS AND DELETE -->
+    <link rel="stylesheet" href="styles/setupSnippet.css" />
+    <!-- SETUP SNIPPET. NEED TO COMBINE INTO MAIN CSS AND DELETE -->
+    <!-- fontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/ca2de226c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- devicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css"
+    />
     <title>this is Holly J</title>
   </head>
+
   <body>
-    <header>
-      <h1>future home of super awesome amazing portfolio</h1>
-    </header>
-    <body>
-      <h2>body</h2>
-    </body>
+    <main class="scrollContainer">
+      <!-- landing page start -->
+      <section class="landingPageSection displayFlex">
+        <div class="landingStylingContainer wrapper">
+          <div class="artGridDotsDark landingDots"></div>
+          <div class="artGridLine landingGrid landingGridOne"></div>
+          <div class="artGridLine landingGrid landingGridTwo"></div>
+          <div class="landingGrid landingGridThree displayFlex">
+            <div class="artHalfCircle"></div>
+            <div>
+              <h1>holly jasiura</h1>
+            </div>
+            <div>
+              <h2>front-end web developer</h2>
+            </div>
+          </div>
+          <div class="landingPink"></div>
+          <div class="artGridLine landingOrange"></div>
+        </div>
+        <div class="delaySecond">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </section>
+      <!-- landing page end -->
+
+      <!-- about me start -->
+      <section class="aboutMeSection">
+        <div class="aboutGridContainer wrapper">
+          <div class="aboutMeText displayFlex">
+            <p>
+              My name is Holly. I am a collaborative front-end web developer
+              with an eye for detail and a way with words. My years of
+              experience in the hospitality industry have molded me into an
+              awesome team player with a real knack for communicating with
+              folks, and I always bring a positive attitude during times of
+              uncertainty and stress.
+            </p>
+
+            <p>
+              When I'm not expanding my coding knowledge, you can usually find
+              me wondering the streets of Toronto for the latest snacks or
+              knitting a sweater while drinking some tea.
+            </p>
+            <p>
+              I'm excited to bring my learning mindset and love pf finding
+              solutions to build some creative and intuitive applications that
+              can be enjoyed by everyone!
+            </p>
+          </div>
+          <div class="aboutMeHeadline displayFlex">
+            <h2>hello👋</h2>
+          </div>
+          <div class="aboutDotsDecoration artGridDotsDark"></div>
+          <div class="aboutImage displayFlex">
+            <img
+              src="assets/aboutMeProfilePic.png"
+              alt="profile picture of holly jasiura"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- about me end -->
+
+      <!-- skills section start -->
+      <section class="skillsSection displayFlex">
+        <div class="wrapper">
+          <!-- gridcontainer start -->
+          <div class="skillGridContainer">
+            <div class="skillsDotsTop artGridDotsDark"></div>
+            <div class="skillsHeader displayFlex">
+              <h2 class="displayFlex">skills</h2>
+            </div>
+            <div class="skillsDotsLower artGridDotsDark"></div>
+
+            <div class="skillFive skillBox">
+              <i class="devicon-firebase-plain"></i>
+              <p>firebase</p>
+            </div>
+            <div class="skillFour skillBox">
+              <i class="devicon-sass-original"></i>
+              <p>Sass</p>
+            </div>
+            <div class="skillThree skillBox">
+              <i class="devicon-javascript-plain"></i>
+              <p>Javascript</p>
+            </div>
+            <div class="skillTwo skillBox">
+              <i class="devicon-css3-plain"></i>
+              <p>CSS3</p>
+            </div>
+            <div class="skillOne skillBox">
+              <i class="devicon-html5-plain"></i>
+              <p>HTML5</p>
+            </div>
+
+            <div class="skillSix skillBox">
+              <i class="devicon-react-original"></i>
+              <p>react</p>
+            </div>
+            <div class="skillSeven skillBox">
+              <i class="devicon-jquery-plain"></i>
+              <p>jQuery</p>
+            </div>
+            <div class="skillEight skillBox">
+              <i class="fas fa-universal-access"></i>
+              <p>Accessibility</p>
+            </div>
+            <div class="skillNine skillBox">
+              <i class="fas fa-user-friends"></i>
+              <p>Pair Programming</p>
+            </div>
+            <div class="skillTen skillBox">
+              <i class="devicon-bootstrap-plain"></i>
+              <p>Bootstrap</p>
+            </div>
+            <div class="skillContainer"></div>
+          </div>
+          <!-- grid container end -->
+        </div>
+      </section>
+      <!-- skills section end -->
+
+      <!-- projects start -->
+      <section class="projectSection displayFlex">
+        <div class="projectGridBlue artGridLine"></div>
+        <div class="wrapper">
+          <!--  -->
+          <div class="projectGridContainer">
+            <div class="projectsHeader">
+              <h2>projects</h2>
+            </div>
+            <div class="projectArea"></div>
+
+            <!-- project one -->
+            <div class="projectOneText projectTextContainer">
+              <h3>Battle rockets</h3>
+              <p class="projectLanguages">react | firebase | CSS</p>
+              <p>
+                Dessert jujubes sugar plum jujubes oat cake jujubes. Dragée
+                icing pie dragée. Cake soufflé liquorice fruitcake lollipop
+                chocolate bar. Fruitcake gingerbread topping marshmallow.
+              </p>
+              <span class="projectSocials displayFlex">
+                <p>github</p>
+                <p>live demo</p>
+              </span>
+            </div>
+
+            <div class="projectOneImage projectImageContainer">
+              <img
+                src="./assets/computerBattleRockets.png"
+                alt="project battle rockets screenshot of landing page"
+              />
+            </div>
+
+            <!-- project two -->
+            <div class="projectTwoText projectTextContainerRight">
+              <h3 class="rightAlign">humbling ponderings</h3>
+              <p class="projectLanguages rightAlign">react | firebase | CSS</p>
+              <p>
+                Dessert jujubes sugar plum jujubes oat cake jujubes. Dragée
+                icing pie dragée. Cake soufflé liquorice fruitcake lollipop
+                chocolate bar. Fruitcake gingerbread topping marshmallow.
+              </p>
+              <span class="projectSocials displayFlex">
+                <p>github</p>
+                <p>live demo</p>
+              </span>
+            </div>
+            <div class="projectTwoImage projectImageContainer">
+              <img
+                src="./assets/computerHumblePonderings.png"
+                alt="project humble ponderings screenshot of landing page"
+              />
+            </div>
+
+            <!-- project three -->
+            <div class="projectThreeText projectTextContainer">
+              <h3>project bort</h3>
+              <p class="projectLanguages">vanilla javascript | axios | sass</p>
+              <p>
+                Dessert jujubes sugar plum jujubes oat cake jujubes. Dragée
+                icing pie dragée. Cake soufflé liquorice fruitcake lollipop
+                chocolate bar. Fruitcake gingerbread topping marshmallow.
+              </p>
+              <span class="projectSocials displayFlex">
+                <p>github</p>
+                <p>live demo</p>
+              </span>
+            </div>
+            <div class="projectThreeImage projectImageContainer">
+              <img
+                src="./assets/computerProjectBort.png"
+                alt="project bort game search screenshot of landing page"
+              />
+            </div>
+
+            <!-- project four -->
+            <div class="projectFourText projectTextContainerRight">
+              <h3 class="rightAlign">Javascript Calculator</h3>
+              <p class="projectLanguages rightAlign">React | bootstrap</p>
+              <p>
+                Dessert jujubes sugar plum jujubes oat cake jujubes. Dragée
+                icing pie dragée. Cake soufflé liquorice fruitcake lollipop
+                chocolate bar. Fruitcake gingerbread topping marshmallow.
+              </p>
+              <span class="projectSocials displayFlex">
+                <p>github</p>
+                <p>live demo</p>
+              </span>
+            </div>
+
+            <div class="projectFourImage projectImageContainer">
+              <img
+                src="./assets/computerCalculator.png"
+                alt="javascript calculator screenshot of landing page"
+              />
+            </div>
+
+            <!-- project five -->
+            <div class="projectFiveText projectTextContainer">
+              <h3>project bort</h3>
+              <p class="projectLanguages">vanilla javascript | axios | sass</p>
+              <p>
+                Dessert jujubes sugar plum jujubes oat cake jujubes. Dragée
+                icing pie dragée. Cake soufflé liquorice fruitcake lollipop
+                chocolate bar. Fruitcake gingerbread topping marshmallow.
+              </p>
+              <span class="projectSocials displayFlex">
+                <p>github</p>
+                <p>live demo</p>
+              </span>
+            </div>
+            <div class="projectFiveImage projectImageContainer">
+              <img
+                src="./assets/computerHarperBlog.png"
+                alt="harper blog screenshot of landing page"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- projects end -->
+
+      <section class="contactSection">
+        <div class="wrapper">
+          <div class="contactGridContainer">
+            <div class="contactForm">
+              <p>form</p>
+            </div>
+            <div class="contactInfo">
+              <p>contact name</p>
+            </div>
+
+            <div class="contactDotsLight artGridDotsDark"></div>
+          </div>
+        </div>
+        <div class="contactGridOrange artGridLine"></div>
+      </section>
+      <!-- footer start -->
+      <footer>
+        <h4>footer maybe?</h4>
+        <div class="aboutSocials flexDisplay">
+          <a href="https://www.github.com/holjas" target="_blank">
+            <i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/hollyjasiura" target="_blank">
+            <i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://codepen.io/holjas" target="_target">
+            <i class="fab fa-codepen"></i
+          ></a>
+        </div>
+      </footer>
+    </main>
 
     <script src="./js/script.js"></script>
   </body>
 </html>
+<!-- 
+    landing page
+    about me
+    skills + resume, links
+    projects
+    get in touch
+    https://tinypng.com/
+ -->

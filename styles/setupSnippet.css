@@ -1,0 +1,533 @@
+@font-face {
+  font-family: GroteskRegular;
+  src: url("../assets/fonts/HKGrotesk-Black.otf");
+}
+@font-face {
+  font-family: GroteskLight;
+  src: url("../assets/fonts/HKGrotesk-Light.otf");
+}
+
+:root {
+  --primaryOrange: rgb(222, 97, 54); /*  de6036 */
+  --primaryPink: rgb(243, 159, 195); /* f39fc3*/
+  --primaryBlue: rgb(97, 215, 221); /*61d7dd */
+  --primaryPurple: rgb(73, 91, 178); /* 495bb2*/
+  --white: rgb(248, 248, 248);
+  --black: rgb(14, 14, 14);
+  --darkGrey: rgb(119, 119, 119);
+  --fontMain: "GroteskRegular", "serif";
+  --fontLight: "GroteskLight", "serif";
+}
+html {
+  font-size: 18px;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+h1 {
+  font-family: var(--fontLight);
+  letter-spacing: 3px;
+  font-size: 5rem;
+  padding-bottom: 60px;
+}
+h2,
+h3,
+h4 {
+  font-family: var(--fontMain);
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 2.2rem;
+}
+p {
+  font-size: 1.1rem;
+  font-family: var(--fontLight);
+  line-height: 1.7rem;
+}
+figcaption,
+figure,
+main {
+  display: block;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: inherit;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+audio,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+img {
+  width: 100%;
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+details,
+menu {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+canvas {
+  display: inline-block;
+}
+template {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+/*  */
+/*  */
+/* Landing Page Styles Start */
+.landingPageSection {
+  height: 100vh;
+  flex-direction: column;
+  background-color: var(--black);
+}
+.landingStylingContainer {
+  height: 800px;
+  width: 100%;
+  position: relative;
+  background-color: var(--black);
+}
+.landingDots {
+  height: 340px;
+  width: 340px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+.landingGrid {
+  height: 460px;
+  width: 740px;
+  position: absolute;
+}
+.landingGridOne {
+  top: 60px;
+  left: 60px;
+  z-index: 1;
+}
+.landingGridTwo {
+  top: 80px;
+  left: 80px;
+  z-index: 2;
+}
+.landingGridThree {
+  flex-direction: column;
+  top: 100px;
+  left: 100px;
+  z-index: 3;
+  background-color: var(--white);
+  border: 3px solid var(--black);
+}
+.landingGridThree h2 {
+  font-size: 1.3rem;
+}
+.landingPink {
+  height: 350px;
+  width: 550px;
+  position: absolute;
+  bottom: 70px;
+  left: 40px;
+  background-color: var(--primaryPink);
+}
+.landingOrange {
+  position: absolute;
+  height: 300px;
+  width: 550px;
+  background-color: var(--primaryOrange);
+  bottom: 30px;
+  right: 20px;
+}
+.landingPageSection i {
+  color: var(--white);
+  font-size: 3rem;
+}
+.landingPageSection i {
+  position: absolute;
+  color: var(--white);
+  font-size: 4rem;
+  animation: slideDown 5s linear infinite;
+}
+.delaySecond i {
+  position: absolute;
+  animation-delay: 2.5s;
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* Landing Page Styles End */
+/* about me section start */
+.aboutMeSection {
+  height: 100vh;
+  background-color: var(--black);
+  padding: 80px 10px;
+}
+.aboutGridContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 0.1fr 3.5fr 1fr;
+  grid-template-rows: 0.45fr 0.2fr 0.1fr 1.1fr;
+  gap: 40px 60px;
+}
+.aboutMeText {
+  grid-area: 3 / 2 / 5 / 5;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--white);
+  padding: 0 40px;
+}
+.aboutMeText p {
+  padding-bottom: 10px;
+  text-transform: none;
+}
+.aboutMeText p:first-child {
+  padding-top: 10px;
+}
+.aboutMeHeadline {
+  grid-area: 2 / 3 / 4 / 4;
+  justify-content: flex-start;
+  padding-left: 40px;
+  background-color: var(--white);
+  border: 3px solid var(--black);
+  box-shadow: 10px 10px var(--primaryPurple);
+}
+.aboutImage {
+  grid-area: 1 / 1 / 5 / 2;
+}
+.aboutDotsDecoration {
+  grid-area: 1 / 2 / 2 / 5;
+}
+.aboutImage {
+  width: 400px;
+}
+.aboutSocials {
+  width: 100%;
+  padding-top: 20px;
+}
+.aboutSocials i {
+  font-size: 2.4rem;
+  padding-right: 60px;
+  transition: 0.3s;
+}
+.aboutSocials a {
+  color: var(--black);
+}
+.aboutSocials i:hover,
+.aboutSocials i:focus {
+  transform: scale(1.1);
+  color: var(--primaryPurple);
+}
+.socialBtn {
+  font-size: 2rem;
+  padding-right: 60px;
+  transition: 0.3s;
+}
+
+/* about me section end */
+
+/* skills section start */
+.skillsSection {
+  height: 90vh;
+  flex-direction: column;
+  background-color: var(--black);
+  text-align: center;
+}
+.skillGridContainer {
+  padding: 20px 20px;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.9fr 0.1fr;
+  grid-template-rows: 75px 0.6fr 75px 40px 0.6fr 0.6fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop"
+    "skillsHeader skillsHeader skillsHeader skillsHeader skillsHeader skillsHeader skillsHeader"
+    "skillsDotsLower skillsDotsLower skillsDotsLower skillsDotsLower skillsDotsLower skillsDotsLower skillsDotsLower"
+    ". . . . . . ."
+    ". skillOne skillTwo skillThree skillFour skillFive skillFive"
+    ". skillSix skillSeven skillEight skillNine skillTen skillTen";
+}
+.skillsHeader h2 {
+  color: var(--white);
+}
+.skillBox {
+  padding-top: 20px;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+}
+.skillContainer {
+  box-shadow: -15px -15px var(--primaryPink), -17px -13px var(--black),
+    -17px -17px var(--black), -12px -17px var(--black);
+  grid-area: 5 / 2 / 7 / 8;
+}
+.skillBox i {
+  font-size: 3rem;
+}
+.skillBox p {
+  padding: 5px 0 20px 0;
+}
+.skillsDotsTop {
+  grid-area: skillsDotsTop;
+}
+.skillsDotsLower {
+  grid-area: skillsDotsLower;
+}
+.skillsHeader {
+  grid-area: skillsHeader;
+}
+.skillFive {
+  grid-area: skillFive;
+}
+.skillFour {
+  grid-area: skillFour;
+}
+.skillThree {
+  grid-area: skillThree;
+}
+.skillTwo {
+  grid-area: skillTwo;
+}
+.skillOne {
+  grid-area: skillOne;
+}
+.skillSix {
+  grid-area: skillSix;
+}
+.skillSeven {
+  grid-area: skillSeven;
+}
+.skillEight {
+  grid-area: skillEight;
+}
+.skillNine {
+  grid-area: skillNine;
+}
+.skillTen {
+  grid-area: skillTen;
+}
+/* skills section end */
