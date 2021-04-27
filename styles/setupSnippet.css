@@ -353,6 +353,32 @@ template {
   color: var(--white);
   font-size: 3rem;
 }
+.landingPageSection i {
+  position: absolute;
+  color: var(--white);
+  font-size: 4rem;
+  animation: slideDown 5s linear infinite;
+}
+.delaySecond i {
+  position: absolute;
+  animation-delay: 2.5s;
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
 /* Landing Page Styles End */
 /* about me section start */
 .aboutMeSection {
@@ -427,7 +453,7 @@ template {
 
 /* skills section start */
 .skillsSection {
-  height: 70vh;
+  height: 90vh;
   flex-direction: column;
   background-color: var(--black);
   text-align: center;
