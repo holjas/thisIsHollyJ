@@ -50,8 +50,12 @@
   }
 }
 /*media query 1220px end */
+
 /*media query 1140px start */
 @media (max-width: 1140px) {
+  .wrapper {
+    max-width: 1140px;
+  }
   .sectionPadding {
     padding: 110px 30px;
   }
@@ -60,12 +64,14 @@
     grid-template-rows: 0.3fr 0.1fr 0.1fr 1.1fr;
     gap: 24px 40px;
   }
-  .skillGridContainer {
-    /* grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.9fr 0.1fr;
-    grid-template-rows: 75px 0.6fr 75px 40px 0.6fr 0.6fr; */
+  .aboutMeText p:first-child {
+    margin-top: 40px;
   }
   .projectGridContainer {
     margin-top: -300px;
+  }
+  .projectImageContainer img {
+    width: 300px;
   }
   .contactGridContainer {
     grid-template-columns: 2fr 0.2fr 0.2fr 1.4fr 0.2fr;
@@ -76,3 +82,56 @@
   }
 }
 /*media query 1140px end */
+
+/*media query 960px start */
+@media (max-width: 960px) {
+  .artHalfCircle {
+    width: 140px;
+    height: 140px;
+  }
+  .landingGrid {
+    height: 450px;
+    width: 790px;
+  }
+  .landingGridOne {
+    top: 70px;
+    left: 40px;
+  }
+  .landingGridTwo {
+    top: 90px;
+    left: 60px;
+  }
+  h1 {
+    font-size: 5.7rem;
+  }
+  .landingPink {
+    left: -380px;
+  }
+  .landingOrange {
+    height: 300px;
+    width: 450px;
+  }
+  .aboutGridContainer {
+    grid-template-columns: 1.5fr 0.1fr 3.5fr 1fr;
+    grid-template-rows: 0.15fr 0.1fr 0.1fr 1.1fr;
+    gap: 24px 40px;
+  }
+  .aboutDotsDecoration {
+    grid-area: 1/1/1/5;
+  }
+  .aboutImage {
+    width: 310px;
+    grid-area: 2 / 1 / 5 / 2;
+  }
+  .aboutMeText {
+    padding: 20px;
+  }
+  .aboutMeText p:first-child {
+    margin-top: 60px;
+  }
+  .projectGridContainer {
+    margin-top: -350px;
+    grid-template-columns: 40px 1fr 1fr 40px;
+  }
+}
+/*media query 960px end */

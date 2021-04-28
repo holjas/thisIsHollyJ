@@ -645,20 +645,28 @@ template {
     ". projectFiveImage projectFiveText .";
 }
 .projectImageContainer {
-  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px 0 20px 0;
+  border-bottom: 2px solid var(--black);
 }
 .projectImageContainer img {
-  width: 100%;
+  width: 350px;
+  padding-bottom: 20px;
 }
 .projectTextContainer {
-  padding: 40px 40px 0 20px;
+  padding-right: 20px;
+  border-bottom: 2px solid var(--black);
 }
 .projectTextContainerRight {
-  padding: 40px 20px 0 40px;
+  padding-left: 20px;
+  border-bottom: 2px solid var(--black);
 }
-.projectTextContainer h3 {
+.projectTextContainer h3,
+.projectTextContainerRight h3 {
   font-size: 1.4rem;
   padding-bottom: 5px;
 }
@@ -688,9 +696,11 @@ template {
 }
 .projectOneImage {
   grid-area: projectOneImage;
+  padding-top: 20px;
 }
 .projectOneText {
   grid-area: projectOneText;
+  padding-top: 20px;
 }
 .projectTwoImage {
   grid-area: projectTwoImage;
@@ -712,9 +722,11 @@ template {
 }
 .projectFiveText {
   grid-area: projectFiveText;
+  padding-bottom: 20px;
 }
 .projectFiveImage {
   grid-area: projectFiveImage;
+  padding-bottom: 20px;
 }
 
 /*  */
