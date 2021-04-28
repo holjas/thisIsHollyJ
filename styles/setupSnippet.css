@@ -267,3 +267,31 @@
   }
 }
 /*media query 760px end */
+
+/* media query  660px */
+@media (max-width: 660px) {
+  body {
+    background-color: lightcoral;
+  }
+}
+
+/* media query  560px */
+@media (max-width: 560px) {
+  body {
+    background-color: yellowgreen;
+  }
+}
+
+/* media query  460px */
+@media (max-width: 460px) {
+  body {
+    background-color: teal;
+  }
+}
+
+/* media query  360px */
+@media (max-width: 360px) {
+  body {
+    background-color: lime;
+  }
+}
