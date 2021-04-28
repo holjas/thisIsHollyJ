@@ -26,8 +26,10 @@
     <main class="scrollContainer">
       <!-- landing page start -->
       <section class="landingPageSection displayFlex">
-        <div class="landingStylingContainer wrapper">
-          <div class="artGridDotsDark landingDots"></div>
+        <div class="artGridDotsDark landingDots"></div>
+        <div class="landingPink"></div>
+        <div class="artGridLine landingOrange"></div>
+        <div class="landingStylingContainer wrapper displayFlex">
           <div class="artGridLine landingGrid landingGridOne"></div>
           <div class="artGridLine landingGrid landingGridTwo"></div>
           <div class="landingGrid landingGridThree displayFlex">
@@ -39,8 +41,6 @@
               <h2>front-end web developer</h2>
             </div>
           </div>
-          <div class="landingPink"></div>
-          <div class="artGridLine landingOrange"></div>
         </div>
         <div class="delaySecond">
           <i class="fas fa-chevron-down"></i>
@@ -52,7 +52,7 @@
       <!-- landing page end -->
 
       <!-- about me start -->
-      <section class="aboutMeSection">
+      <section class="sectionPadding">
         <div class="aboutGridContainer wrapper">
           <div class="aboutMeText displayFlex">
             <p>
@@ -76,7 +76,7 @@
             </p>
           </div>
           <div class="aboutMeHeadline displayFlex">
-            <h2>hello👋</h2>
+            <h2>hello<span class="helloWave">👋</span></h2>
           </div>
           <div class="aboutDotsDecoration artGridDotsDark"></div>
           <div class="aboutImage displayFlex">
@@ -141,6 +141,7 @@
               <i class="devicon-bootstrap-plain"></i>
               <p>Bootstrap</p>
             </div>
+
             <div class="skillContainer"></div>
           </div>
           <!-- grid container end -->
@@ -149,7 +150,7 @@
       <!-- skills section end -->
 
       <!-- projects start -->
-      <section class="projectSection displayFlex">
+      <section class="projectSection displayFlex sectionPadding">
         <div class="projectGridBlue artGridLine"></div>
         <div class="wrapper">
           <!--  -->
@@ -169,7 +170,13 @@
                 chocolate bar. Fruitcake gingerbread topping marshmallow.
               </p>
               <span class="projectSocials displayFlex">
-                <p>github</p>
+                <p>
+                  <a
+                    href="https://github.com/holjas/Battle-Rockets"
+                    target="_blank"
+                    >github</a
+                  >
+                </p>
                 <p>live demo</p>
               </span>
             </div>
@@ -191,7 +198,14 @@
                 chocolate bar. Fruitcake gingerbread topping marshmallow.
               </p>
               <span class="projectSocials displayFlex">
-                <p>github</p>
+                <p>
+                  <a
+                    href="https://github.com/holjas/Humble-Ponderings"
+                    target="_blank"
+                  >
+                    github</a
+                  >
+                </p>
                 <p>live demo</p>
               </span>
             </div>
@@ -205,15 +219,29 @@
             <!-- project three -->
             <div class="projectThreeText projectTextContainer">
               <h3>project bort</h3>
-              <p class="projectLanguages">vanilla javascript | axios | sass</p>
+              <p class="projectLanguages">
+                vanilla javascript | Rest API | sass
+              </p>
               <p>
                 Dessert jujubes sugar plum jujubes oat cake jujubes. Dragée
                 icing pie dragée. Cake soufflé liquorice fruitcake lollipop
                 chocolate bar. Fruitcake gingerbread topping marshmallow.
               </p>
               <span class="projectSocials displayFlex">
-                <p>github</p>
-                <p>live demo</p>
+                <p>
+                  <a
+                    href="https://github.com/holjas/ProjectBort"
+                    target="_blank"
+                    >github</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="https://goofy-spence-507a45.netlify.app"
+                    target="_blank"
+                    >live demo</a
+                  >
+                </p>
               </span>
             </div>
             <div class="projectThreeImage projectImageContainer">
@@ -233,8 +261,20 @@
                 chocolate bar. Fruitcake gingerbread topping marshmallow.
               </p>
               <span class="projectSocials displayFlex">
-                <p>github</p>
-                <p>live demo</p>
+                <p>
+                  <a
+                    href="https://github.com/holjas/Javascript-Calculator"
+                    target="_target"
+                    >github</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="https://codepen.io/holjas/pen/rNLLPEy"
+                    target="_blank"
+                    >live demo
+                  </a>
+                </p>
               </span>
             </div>
 
@@ -247,16 +287,26 @@
 
             <!-- project five -->
             <div class="projectFiveText projectTextContainer">
-              <h3>project bort</h3>
-              <p class="projectLanguages">vanilla javascript | axios | sass</p>
+              <h3>harper's blog</h3>
+              <p class="projectLanguages">html | sass | Vanilla Javascript</p>
               <p>
                 Dessert jujubes sugar plum jujubes oat cake jujubes. Dragée
                 icing pie dragée. Cake soufflé liquorice fruitcake lollipop
                 chocolate bar. Fruitcake gingerbread topping marshmallow.
               </p>
               <span class="projectSocials displayFlex">
-                <p>github</p>
-                <p>live demo</p>
+                <p>
+                  <a href="https://github.com/holjas/HarperBlog" target="_blank"
+                    >github</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="https://priceless-lalande-77e829.netlify.app"
+                    target="_blank"
+                    >live demo</a
+                  >
+                </p>
               </span>
             </div>
             <div class="projectFiveImage projectImageContainer">
@@ -270,35 +320,60 @@
       </section>
       <!-- projects end -->
 
-      <section class="contactSection">
+      <!-- contact section start -->
+      <section class="contactSection sectionPadding">
         <div class="wrapper">
           <div class="contactGridContainer">
-            <div class="contactForm">
-              <p>form</p>
-            </div>
-            <div class="contactInfo">
-              <p>contact name</p>
-            </div>
+            <!-- contact form square-->
+            <div class="contactForm displayFlex">
+              <h3>Wanna get in touch?</h3>
 
+              <form name="contactForm" action="POST" data-netlify="true">
+                <label for="contactName">your name</label>
+                <input type="text" name="contactName" id="contactName" />
+                <label for="contactEmail">email</label>
+                <input type="email" name="contactEmail" id="contactEmail" />
+                <label for="contactComments">tell me about your day</label>
+                <input
+                  type="textarea"
+                  name="contactComments"
+                  id="contactComments"
+                />
+                <label for="notARobot">Not a Robot</label>
+                <div data-netlify-recaptha="true"></div>
+                <input type="submit" value="SEND MESSAGE" />
+              </form>
+            </div>
+            <!-- contact info square-->
+            <div class="contactInfo displayFlex">
+              <h3>thanks for visiting!</h3>
+              <div class="contactSocials displayFlex">
+                <a href="https://www.github.com/holjas" target="_blank">
+                  <i class="fab fa-github"></i
+                ></a>
+                <a href="https://www.linkedin.com/hollyjasiura" target="_blank">
+                  <i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://codepen.io/holjas" target="_target">
+                  <i class="fab fa-codepen"></i
+                ></a>
+              </div>
+            </div>
             <div class="contactDotsLight artGridDotsDark"></div>
           </div>
         </div>
         <div class="contactGridOrange artGridLine"></div>
       </section>
+      <!-- contact section end -->
+
       <!-- footer start -->
-      <footer>
-        <h4>footer maybe?</h4>
-        <div class="aboutSocials flexDisplay">
-          <a href="https://www.github.com/holjas" target="_blank">
-            <i class="fab fa-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/hollyjasiura" target="_blank">
-            <i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://codepen.io/holjas" target="_target">
-            <i class="fab fa-codepen"></i
-          ></a>
-        </div>
+      <footer class="displayFlex wrapper">
+        <p>
+          theme design by
+          <a href="https://www.instagram.com/invasistudio/" target="_blank"
+            >Invasi Studio</a
+          >
+        </p>
       </footer>
     </main>
 

@@ -31,6 +31,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--black);
 }
 article,
 aside,
@@ -52,19 +53,22 @@ p {
 }
 h1 {
   font-family: var(--fontLight);
-  letter-spacing: 3px;
-  font-size: 5rem;
+  letter-spacing: 4.5px;
+  font-size: 6rem;
   padding-bottom: 60px;
 }
 h2,
 h3,
 h4 {
   font-family: var(--fontMain);
-  letter-spacing: 10px;
+  letter-spacing: 8px;
   text-transform: uppercase;
 }
 h2 {
   font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.7rem;
 }
 p {
   font-size: 1.1rem;
@@ -292,62 +296,62 @@ template {
 .landingPageSection {
   height: 100vh;
   flex-direction: column;
-  background-color: var(--black);
 }
 .landingStylingContainer {
-  height: 800px;
+  height: 85vh;
   width: 100%;
   position: relative;
-  background-color: var(--black);
-}
-.landingDots {
-  height: 340px;
-  width: 340px;
-  position: absolute;
-  top: 40px;
-  right: 40px;
 }
 .landingGrid {
-  height: 460px;
-  width: 740px;
-  position: absolute;
+  height: 640px;
+  width: 980px;
 }
 .landingGridOne {
-  top: 60px;
-  left: 60px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
   z-index: 1;
 }
 .landingGridTwo {
+  position: absolute;
   top: 80px;
-  left: 80px;
+  left: 130px;
   z-index: 2;
 }
 .landingGridThree {
   flex-direction: column;
-  top: 100px;
-  left: 100px;
+  position: relative;
+  /* top: 100px; */
+  /* left: 100px; */
   z-index: 3;
   background-color: var(--white);
   border: 3px solid var(--black);
 }
 .landingGridThree h2 {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
+}
+.landingDots {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: -100px;
+  right: 0px;
 }
 .landingPink {
-  height: 350px;
-  width: 550px;
   position: absolute;
-  bottom: 70px;
-  left: 40px;
+  height: 600px;
+  width: 1000px;
+  bottom: 130px;
+  left: -200px;
   background-color: var(--primaryPink);
 }
 .landingOrange {
+  height: 350px;
+  width: 750px;
   position: absolute;
-  height: 300px;
-  width: 550px;
+  bottom: 80px;
+  right: 0;
   background-color: var(--primaryOrange);
-  bottom: 30px;
-  right: 20px;
 }
 .landingPageSection i {
   color: var(--white);
@@ -368,24 +372,17 @@ template {
     opacity: 0;
     transform: translateY(-20px);
   }
-
   50% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(40px);
   }
 }
 
 /* Landing Page Styles End */
 /* about me section start */
-.aboutMeSection {
-  height: 100vh;
-  background-color: var(--black);
-  padding: 80px 10px;
-}
 .aboutGridContainer {
   width: 100%;
   height: 100%;
@@ -417,6 +414,37 @@ template {
   border: 3px solid var(--black);
   box-shadow: 10px 10px var(--primaryPurple);
 }
+.helloWave {
+  animation: helloWaveAni 5s linear infinite;
+  display: inline-block;
+}
+@keyframes helloWaveAni {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .aboutImage {
   grid-area: 1 / 1 / 5 / 2;
 }
@@ -426,43 +454,18 @@ template {
 .aboutImage {
   width: 400px;
 }
-.aboutSocials {
-  width: 100%;
-  padding-top: 20px;
-}
-.aboutSocials i {
-  font-size: 2.4rem;
-  padding-right: 60px;
-  transition: 0.3s;
-}
-.aboutSocials a {
-  color: var(--black);
-}
-.aboutSocials i:hover,
-.aboutSocials i:focus {
-  transform: scale(1.1);
-  color: var(--primaryPurple);
-}
-.socialBtn {
-  font-size: 2rem;
-  padding-right: 60px;
-  transition: 0.3s;
-}
 
 /* about me section end */
 
 /* skills section start */
 .skillsSection {
-  height: 90vh;
-  flex-direction: column;
-  background-color: var(--black);
   text-align: center;
 }
 .skillGridContainer {
   padding: 20px 20px;
   display: grid;
   grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.9fr 0.1fr;
-  grid-template-rows: 75px 0.6fr 75px 40px 0.6fr 0.6fr;
+  grid-template-rows: 75px 0.6fr 75px 40px 0.6fr 0.6fr 0.6fr;
   gap: 0px 0px;
   grid-template-areas:
     "skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop"
@@ -530,4 +533,5 @@ template {
 .skillTen {
   grid-area: skillTen;
 }
+
 /* skills section end */
