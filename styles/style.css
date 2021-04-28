@@ -1,8 +1,14 @@
 /* 
+- setup snippet
 - imported items
 - variables
 - shared styles
-- section specific styling...
+- landing page section
+- about me section
+- skills section
+- projects section
+- contact me
+- footer
 
 */
 @font-face {
@@ -13,25 +19,301 @@
   font-family: GroteskLight;
   src: url("../assets/fonts/HKGrotesk-Light.otf");
 }
-
 :root {
-  --primaryOrange: rgb(222, 97, 54); /* #ff9469  */
-  --primaryPink: rgb(243, 159, 195); /* ffd2f6 , dk f39fc3*/
-  --primaryBlue: rgb(97, 215, 221); /* 94ffff */
-  --primaryPurple: rgb(73, 91, 178); /*495bb2*/
+  --primaryOrange: rgb(222, 97, 54);
+  --primaryPink: rgb(243, 159, 195);
+  --primaryBlue: rgb(97, 215, 221);
+  --primaryPurple: rgb(73, 91, 178);
   --white: rgb(248, 248, 248);
   --black: rgb(14, 14, 14);
   --fontMain: "GroteskRegular", "serif";
   --fontLight: "GroteskLight", "serif";
 }
-/* SHARED STYLES */
+/* setup snippet start */
+
+html {
+  font-size: 18px;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--black);
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+h1 {
+  font-family: var(--fontLight);
+  letter-spacing: 4.5px;
+  font-size: 6rem;
+  padding-bottom: 60px;
+}
+h2,
+h3,
+h4 {
+  font-family: var(--fontMain);
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.7rem;
+}
+p {
+  font-size: 1.1rem;
+  font-family: var(--fontLight);
+  line-height: 1.7rem;
+}
+figcaption,
+figure,
+main {
+  display: block;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: inherit;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+audio,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+img {
+  width: 100%;
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+details,
+menu {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+canvas {
+  display: inline-block;
+}
+template {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+
+/* setup snippet end */
+/* shared styles start */
 .wrapper {
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
 }
 .sectionPadding {
-  padding: 140px 20px;
+  padding: 140px 30px;
 }
 .displayFlex {
   display: flex;
@@ -39,12 +321,17 @@
   justify-content: center;
   align-items: center;
 }
+.fadeInScroll {
+  opacity: 0;
+}
 .artGridDotsDark {
+  /* set height width specific to where it is displayed on the screen*/
   background-image: radial-gradient(var(--white) 25%, transparent 10%);
   background-size: 35px 35px;
   background-color: transparent;
 }
 .artGridDotsLight {
+  /* set height width specific to where it is displayed on the screen*/
   background-image: radial-gradient(var(--black) 25%, transparent 10%);
   background-size: 35px 35px;
   background-color: transparent;
@@ -82,6 +369,249 @@
   bottom: 0;
   right: 0;
 }
+/* shared styles end */
+/* Landing Page Styles Start */
+.landingPageSection {
+  height: 100vh;
+  flex-direction: column;
+}
+.landingStylingContainer {
+  height: 85vh;
+  width: 100%;
+  position: relative;
+}
+.landingGrid {
+  height: 640px;
+  width: 980px;
+}
+.landingGridOne {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  z-index: 1;
+}
+.landingGridTwo {
+  position: absolute;
+  top: 80px;
+  left: 130px;
+  z-index: 2;
+}
+.landingGridThree {
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
+  background-color: var(--white);
+  border: 3px solid var(--black);
+}
+.landingGridThree h2 {
+  font-size: 1.7rem;
+}
+.landingDots {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: -100px;
+  right: 0px;
+}
+.landingPink {
+  position: absolute;
+  height: 600px;
+  width: 1000px;
+  bottom: 130px;
+  left: -200px;
+  background-color: var(--primaryPink);
+}
+.landingOrange {
+  height: 350px;
+  width: 750px;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  background-color: var(--primaryOrange);
+}
+.landingPageSection i {
+  color: var(--white);
+  font-size: 3rem;
+}
+.landingPageSection i {
+  position: absolute;
+  color: var(--white);
+  font-size: 4rem;
+  animation: slideDown 5s linear infinite;
+}
+.delaySecond i {
+  position: absolute;
+  animation-delay: 2.5s;
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+}
+
+/* Landing Page Styles End */
+
+/* about me section start */
+.aboutGridContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 0.1fr 3.5fr 1fr;
+  grid-template-rows: 0.45fr 0.2fr 0.1fr 1.1fr;
+  gap: 40px 60px;
+}
+.aboutMeText {
+  grid-area: 3 / 2 / 5 / 5;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--white);
+  padding: 0 40px;
+}
+.aboutMeText p {
+  padding-bottom: 10px;
+  text-transform: none;
+}
+.aboutMeText p:first-child {
+  padding-top: 10px;
+}
+.aboutMeHeadline {
+  grid-area: 2 / 3 / 4 / 4;
+  justify-content: flex-start;
+  padding-left: 40px;
+  background-color: var(--white);
+  border: 3px solid var(--black);
+  box-shadow: 10px 10px var(--primaryPurple);
+}
+.helloWave {
+  animation: helloWaveAni 5s linear infinite;
+  display: inline-block;
+}
+@keyframes helloWaveAni {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.aboutImage {
+  grid-area: 1 / 1 / 5 / 2;
+}
+.aboutDotsDecoration {
+  grid-area: 1 / 2 / 2 / 5;
+}
+.aboutImage {
+  width: 400px;
+}
+
+/* about me section end */
+
+/* skills section start */
+.skillsSection {
+  text-align: center;
+}
+.skillGridContainer {
+  padding: 20px 20px;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.9fr 0.1fr;
+  grid-template-rows: 75px 0.6fr 75px 40px 0.6fr 0.6fr 0.6fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop"
+    "skillsHeader skillsHeader skillsHeader skillsHeader skillsHeader skillsHeader skillsHeader"
+    "skillsDotsLower skillsDotsLower skillsDotsLower skillsDotsLower skillsDotsLower skillsDotsLower skillsDotsLower"
+    ". . . . . . ."
+    ". skillOne skillTwo skillThree skillFour skillFive skillFive"
+    ". skillSix skillSeven skillEight skillNine skillTen skillTen";
+}
+.skillsHeader h2 {
+  color: var(--white);
+}
+.skillBox {
+  padding-top: 20px;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+}
+.skillContainer {
+  box-shadow: -15px -15px var(--primaryPink), -17px -13px var(--black),
+    -17px -17px var(--black), -12px -17px var(--black);
+  grid-area: 5 / 2 / 7 / 8;
+}
+.skillBox i {
+  font-size: 3rem;
+}
+.skillBox p {
+  padding: 5px 0 20px 0;
+}
+.skillsDotsTop {
+  grid-area: skillsDotsTop;
+}
+.skillsDotsLower {
+  grid-area: skillsDotsLower;
+}
+.skillsHeader {
+  grid-area: skillsHeader;
+}
+.skillFive {
+  grid-area: skillFive;
+}
+.skillFour {
+  grid-area: skillFour;
+}
+.skillThree {
+  grid-area: skillThree;
+}
+.skillTwo {
+  grid-area: skillTwo;
+}
+.skillOne {
+  grid-area: skillOne;
+}
+.skillSix {
+  grid-area: skillSix;
+}
+.skillSeven {
+  grid-area: skillSeven;
+}
+.skillEight {
+  grid-area: skillEight;
+}
+.skillNine {
+  grid-area: skillNine;
+}
+.skillTen {
+  grid-area: skillTen;
+}
+
+/* skills section end */
 
 /* project section start  */
 .projectSection {
@@ -199,31 +729,41 @@
 
 .contactForm {
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primaryPink);
   text-transform: capitalize;
   grid-area: 1 / 1 / 4 / 2;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%;
+}
 .contactForm h3 {
   padding-bottom: 20px;
 }
-.contactForm label {
-  font-family: var(--fontLight);
-  display: block;
-  padding: 10px 0;
+input[type="text"],
+input[type="email"] {
+  border: 2px solid var(--black);
+  width: 100%;
+  height: 2.3rem;
+}
+textarea {
+  border: 2px solid var(--black);
+  width: 100%;
+  height: 150px;
 }
 input[type="text"],
 input[type="email"],
-input[type="textarea"] {
-  border: 2px solid var(--black);
-  width: 400px;
-  height: 2.3rem;
-}
-input[type="textarea"] {
-  resize: none;
-  height: 100px;
+textarea {
+  margin-top: 15px;
 }
 input[type="submit"] {
   display: block;
+  cursor: pointer;
   margin-top: 30px;
   padding: 15px 50px;
   border: 2px solid var(--black);
@@ -235,6 +775,9 @@ input[type="submit"]:hover,
 input[type="submit"]:focus {
   background-color: #d14e87;
   transform: scale(1.08);
+}
+.captcha {
+  margin-top: 20px;
 }
 .contactInfo {
   z-index: 1;
@@ -279,6 +822,7 @@ footer {
   justify-content: flex-start;
   height: 60px;
   color: var(--white);
+  padding: 10px 30px;
 }
 footer a,
 footer p {
