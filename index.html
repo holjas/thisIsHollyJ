@@ -328,7 +328,7 @@
             <div class="contactForm displayFlex">
               <h3>Wanna get in touch?</h3>
 
-              <form name="contactForm" action="POST" data-netlify="true">
+              <form name="contactForm" method="POST" data-netlify="true">
                 <label for="contactName">your name</label>
                 <input type="text" name="contactName" id="contactName" />
                 <label for="contactEmail">email</label>
@@ -339,8 +339,8 @@
                   name="contactComments"
                   id="contactComments"
                 />
-                <label for="notARobot">Not a Robot</label>
-                <div data-netlify-recaptha="true"></div>
+
+                <div data-netlify-recaptcha="true"></div>
                 <input type="submit" value="SEND MESSAGE" />
               </form>
             </div>
