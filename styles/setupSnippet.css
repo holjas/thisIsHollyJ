@@ -1,6 +1,25 @@
 /*  */
+@media (max-width: 1325px) {
+  body {
+    background-color: yellowgreen;
+  }
+  .landingGrid {
+    width: 960px;
+  }
+  .landingGridOne {
+    top: 30px;
+    left: 80px;
+  }
+  .landingGridTwo {
+    top: 60px;
+    left: 110px;
+  }
+}
 /*media query 1220px start */
 @media (max-width: 1220px) {
+  body {
+    background-color: crimson;
+  }
   .wrapper {
     max-width: 1200px;
   }
@@ -10,16 +29,15 @@
     border-radius: 200px 0 0 0;
   }
   .landingGrid {
-    height: 500px;
-    width: 840px;
+    width: 920px;
   }
   .landingGridOne {
     top: 30px;
-    left: 90px;
+    left: 70px;
   }
   .landingGridTwo {
     top: 60px;
-    left: 130px;
+    left: 100px;
   }
   .landingGridThree h2 {
     font-size: 1.7rem;
@@ -53,11 +71,26 @@
 
 /*media query 1140px start */
 @media (max-width: 1140px) {
+  body {
+    background-color: purple;
+  }
   .wrapper {
     max-width: 1140px;
   }
   .sectionPadding {
     padding: 110px 30px;
+  }
+  .landingGrid {
+    height: 610px;
+    width: 830px;
+  }
+  .landingGridOne {
+    top: 70px;
+    left: 60px;
+  }
+  .landingGridTwo {
+    top: 90px;
+    left: 90px;
   }
   .aboutGridContainer {
     grid-template-columns: 1.5fr 0.1fr 3.5fr 1fr;
@@ -82,24 +115,39 @@
   }
 }
 /*media query 1140px end */
-
+@media (max-width: 1050px) {
+  body {
+    background-color: skyblue;
+  }
+  .landingGridOne {
+    top: 80px;
+    left: 40px;
+  }
+  .landingGridTwo {
+    display: none;
+  }
+  .landingPink {
+    width: 650px;
+  }
+  .landingOrange {
+    width: 400px;
+  }
+}
 /*media query 960px start */
 @media (max-width: 960px) {
+  body {
+    background-color: seagreen;
+  }
   .artHalfCircle {
     width: 140px;
     height: 140px;
   }
   .landingGrid {
-    height: 450px;
-    width: 790px;
+    height: 560px;
+    width: 760px;
   }
   .landingGridOne {
-    top: 70px;
-    left: 40px;
-  }
-  .landingGridTwo {
-    top: 90px;
-    left: 60px;
+    top: 100px;
   }
   h1 {
     font-size: 5.7rem;
@@ -135,3 +183,87 @@
   }
 }
 /*media query 960px end */
+
+@media (max-width: 860px) {
+  body {
+    background-color: goldenrod;
+  }
+  .landingGrid {
+    height: 520px;
+    width: 90%;
+    text-align: center;
+  }
+  .landingGridOne {
+    display: none;
+  }
+  h1 {
+    padding-bottom: 40px;
+    line-height: 1;
+  }
+  .landingGridThree h2 {
+    font-size: 1.3rem;
+  }
+  .aboutGridContainer {
+    grid-template-columns: 1.1fr 0.1fr 3.5fr 1fr;
+    grid-template-rows: 0.15fr 0.1fr 0.1fr 1.1fr;
+    gap: 5px 30px;
+  }
+  .projectGridContainer {
+    margin-top: -390px;
+  }
+}
+
+/*media query 760px start */
+@media (max-width: 760px) {
+  body {
+    background-color: slateblue;
+  }
+  .artHalfCircle {
+    width: 120px;
+    height: 120px;
+  }
+  .landingGrid {
+    height: 60%;
+  }
+  .landingOrange {
+    width: 300px;
+  }
+  .aboutImage {
+    width: 220px;
+  }
+  .projectGridContainer {
+    margin-top: -440px;
+
+    grid-template-columns: 80px 1fr 1fr 80px;
+
+    grid-template-areas:
+      "projectsHeader projectsHeader projectsHeader projectsHeader"
+      ". projectOneText projectOneText ."
+      ". projectTwoText projectTwoText ."
+      ". projectThreeText projectThreeText ."
+      ". projectFourText projectFourText ."
+      ". projectFiveText projectFiveText .";
+  }
+  .projectImageContainer img {
+    display: none;
+  }
+  .projectTextContainer,
+  .projectTextContainerRight {
+    padding: 25px;
+  }
+  .contactGridContainer {
+    height: fit-content;
+    grid-template-rows: 0.1fr 0.4fr 0.9fr 0.1fr;
+  }
+  .contactForm {
+    z-index: 2;
+    grid-area: 2 / 1 /4 / 5;
+  }
+  .contactInfo {
+    z-index: 1;
+    box-shadow: none;
+    padding: 20px;
+    grid-area: 4 / 1 / 4 / 5;
+  }
+}
+/*media query 760px end */
