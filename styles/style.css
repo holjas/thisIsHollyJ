@@ -539,10 +539,11 @@ template {
   text-align: center;
 }
 .skillGridContainer {
-  padding: 20px 20px;
+  margin: 20px;
+  padding: 20px;
   display: grid;
   grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.9fr 0.1fr;
-  grid-template-rows: 75px 0.6fr 75px 40px 0.6fr 0.6fr 0.6fr;
+  grid-template-rows: 75px 0.6fr 75px 40px 0.6fr 0.6fr;
   gap: 0px 0px;
   grid-template-areas:
     "skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop"
@@ -669,7 +670,7 @@ template {
   font-size: 1rem;
 }
 .projectSocials {
-  padding-top: 15px;
+  padding: 15px 0;
   justify-content: space-around;
 }
 .rightAlign {
@@ -728,6 +729,7 @@ template {
 }
 
 .contactForm {
+  height: fit-content;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -744,6 +746,7 @@ form {
 }
 .contactForm h3 {
   padding-bottom: 20px;
+  padding-left: 20px;
 }
 input[type="text"],
 input[type="email"] {
@@ -765,6 +768,7 @@ input[type="submit"] {
   display: block;
   cursor: pointer;
   margin-top: 30px;
+  margin-bottom: 30px;
   padding: 15px 50px;
   border: 2px solid var(--black);
   background-color: #c17e9b;
