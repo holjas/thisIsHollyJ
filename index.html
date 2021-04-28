@@ -56,7 +56,7 @@
         <div class="aboutGridContainer wrapper">
           <div class="aboutMeText displayFlex">
             <p>
-              My name is Holly. I am a collaborative front-end web developer
+              My name is Hollyland I am a collaborative front-end web developer
               with an eye for detail and a way with words. My years of
               experience in the hospitality industry have molded me into an
               awesome team player with a real knack for communicating with
@@ -253,7 +253,7 @@
 
             <!-- project four -->
             <div class="projectFourText projectTextContainerRight">
-              <h3 class="rightAlign">Javascript Calculator</h3>
+              <h3 class="rightAlign">JS Calculator</h3>
               <p class="projectLanguages rightAlign">React | bootstrap</p>
               <p>
                 Dessert jujubes sugar plum jujubes oat cake jujubes. Dragée
@@ -329,19 +329,40 @@
               <h3>Wanna get in touch?</h3>
 
               <form name="contactForm" method="POST" data-netlify="true">
-                <label for="contactName">your name</label>
-                <input type="text" name="contactName" id="contactName" />
-                <label for="contactEmail">email</label>
-                <input type="email" name="contactEmail" id="contactEmail" />
-                <label for="contactComments">tell me about your day</label>
+                <label for="contactName" class="visually-hidden"
+                  >your name</label
+                >
                 <input
-                  type="textarea"
+                  type="text"
+                  name="contactName"
+                  id="contactName"
+                  placeholder="Name"
+                />
+                <label for="contactEmail" class="visually-hidden"
+                  >your email</label
+                >
+                <input
+                  type="email"
+                  name="contactEmail"
+                  id="contactEmail"
+                  placeholder="Email"
+                />
+                <label for="contactComments" class="visually-hidden"
+                  >tell me about your day</label
+                >
+                <textarea
+                  type="text"
                   name="contactComments"
                   id="contactComments"
-                />
+                  placeholder="Tell me about your day"
+                ></textarea>
+                <div data-netlify-recaptcha="true" class="captcha"></div>
 
-                <div data-netlify-recaptcha="true"></div>
-                <input type="submit" value="SEND MESSAGE" />
+                <input
+                  type="submit"
+                  value="SEND MESSAGE"
+                  aria-label="submit button"
+                />
               </form>
             </div>
             <!-- contact info square-->
@@ -349,13 +370,20 @@
               <h3>thanks for visiting!</h3>
               <div class="contactSocials displayFlex">
                 <a href="https://www.github.com/holjas" target="_blank">
-                  <i class="fab fa-github"></i
+                  <span class="sr-only">go to github for holly</span>
+                  <i class="fab fa-github" aria-hidden="true"></i
                 ></a>
                 <a href="https://www.linkedin.com/hollyjasiura" target="_blank">
-                  <i class="fab fa-linkedin"></i
+                  <span class="sr-only">go to linkedin for holly</span>
+                  <i class="fab fa-linkedin" aria-hidden="true"></i
                 ></a>
                 <a href="https://codepen.io/holjas" target="_target">
-                  <i class="fab fa-codepen"></i
+                  <span class="sr-only">go to codepen for holly</span>
+                  <i class="fab fa-codepen" aria-hidden="true"></i
+                ></a>
+                <a href="twitter.com/ThisIsHollyJ" target="_target">
+                  <span class="sr-only">go to twitter for holly</span>
+                  <i class="fab fa-twitter" aria-hidden="true"></i
                 ></a>
               </div>
             </div>
