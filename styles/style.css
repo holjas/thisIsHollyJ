@@ -30,6 +30,9 @@
   width: 100%;
   margin: 0 auto;
 }
+.sectionPadding {
+  padding: 140px 20px;
+}
 .displayFlex {
   display: flex;
   flex-direction: row;
@@ -79,23 +82,11 @@
   bottom: 0;
   right: 0;
 }
-/* scroll snapping start */
-/* .scrollContainer {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-section {
-  scroll-snap-align: start;
-} */
-/* scroll snapping end */
-/*  */
-/*  */
+
+/* project section start  */
 .projectSection {
   flex-direction: column;
   justify-content: flex-start;
-  padding-bottom: 80px;
-  background-color: var(--black);
 }
 .projectGridBlue {
   height: 60vh;
@@ -198,10 +189,6 @@ section {
 /*  */
 /*  */
 /*  */
-.contactSection {
-  padding: 100px 0;
-  background-color: var(--black);
-}
 .contactGridContainer {
   height: 60vh;
   display: grid;

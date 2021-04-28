@@ -377,17 +377,12 @@ template {
   }
   100% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(40px);
   }
 }
 
 /* Landing Page Styles End */
 /* about me section start */
-.aboutMeSection {
-  height: 100vh;
-  background-color: var(--black);
-  padding: 80px 10px;
-}
 .aboutGridContainer {
   width: 100%;
   height: 100%;
@@ -464,16 +459,13 @@ template {
 
 /* skills section start */
 .skillsSection {
-  height: 90vh;
-  flex-direction: column;
-  background-color: var(--black);
   text-align: center;
 }
 .skillGridContainer {
   padding: 20px 20px;
   display: grid;
   grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.9fr 0.1fr;
-  grid-template-rows: 75px 0.6fr 75px 40px 0.6fr 0.6fr;
+  grid-template-rows: 75px 0.6fr 75px 40px 0.6fr 0.6fr 0.6fr;
   gap: 0px 0px;
   grid-template-areas:
     "skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop skillsDotsTop"
@@ -541,4 +533,5 @@ template {
 .skillTen {
   grid-area: skillTen;
 }
+
 /* skills section end */
