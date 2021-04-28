@@ -381,20 +381,13 @@ template {
   position: relative;
 }
 .landingGrid {
-  height: 640px;
-  width: 980px;
-}
-.landingGridOne {
-  position: absolute;
-  top: 50px;
-  left: 100px;
-  z-index: 1;
-}
-.landingGridTwo {
-  position: absolute;
-  top: 80px;
-  left: 130px;
-  z-index: 2;
+  height: 70vh;
+  width: 80vw;
+  box-shadow: var(--black) 0px 0px 0px 2px inset,
+    var(--white) -10px -10px 0px -3px, var(--black) -10px -10px,
+    var(--white) -20px -20px 0px -3px, var(--black) -20px -20px,
+    var(--white) -30px -30px 0px -3px, var(--black) -30px -30px,
+    var(--white) -40px -40px 0px -3px, var(--black) -40px -40px;
 }
 .landingGridThree {
   flex-direction: column;
@@ -481,7 +474,10 @@ template {
   text-transform: none;
 }
 .aboutMeText p:first-child {
-  padding-top: 10px;
+  padding-top: 30px;
+}
+.aboutMeText p:last-child {
+  padding-bottom: 40px;
 }
 .aboutMeHeadline {
   grid-area: 2 / 3 / 4 / 4;

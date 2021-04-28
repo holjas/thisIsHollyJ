@@ -3,17 +3,7 @@
   body {
     background-color: yellowgreen;
   }
-  .landingGrid {
-    width: 960px;
-  }
-  .landingGridOne {
-    top: 30px;
-    left: 80px;
-  }
-  .landingGridTwo {
-    top: 60px;
-    left: 110px;
-  }
+ 
 }
 /*media query 1220px start */
 @media (max-width: 1220px) {
@@ -27,17 +17,6 @@
     width: 180px;
     height: 180px;
     border-radius: 200px 0 0 0;
-  }
-  .landingGrid {
-    width: 920px;
-  }
-  .landingGridOne {
-    top: 30px;
-    left: 70px;
-  }
-  .landingGridTwo {
-    top: 60px;
-    left: 100px;
   }
   .landingGridThree h2 {
     font-size: 1.7rem;
@@ -80,18 +59,7 @@
   .sectionPadding {
     padding: 110px 30px;
   }
-  .landingGrid {
-    height: 610px;
-    width: 830px;
-  }
-  .landingGridOne {
-    top: 70px;
-    left: 60px;
-  }
-  .landingGridTwo {
-    top: 90px;
-    left: 90px;
-  }
+
   .aboutGridContainer {
     grid-template-columns: 1.5fr 0.1fr 3.5fr 1fr;
     grid-template-rows: 0.3fr 0.1fr 0.1fr 1.1fr;
@@ -119,19 +87,18 @@
   body {
     background-color: skyblue;
   }
-  .landingGridOne {
-    top: 80px;
-    left: 40px;
-  }
-  .landingGridTwo {
-    display: none;
-  }
+ 
   .landingPink {
     width: 650px;
   }
   .landingOrange {
     width: 400px;
   }
+  .aboutImage {
+    width: 310px;
+  }
+  .skillGridContainer {
+    grid-template-rows: 75px 0.6fr 75px 60px 0.6fr 0.6fr;
 }
 /*media query 960px start */
 @media (max-width: 960px) {
@@ -142,15 +109,19 @@
     width: 140px;
     height: 140px;
   }
-  .landingGrid {
-    height: 560px;
-    width: 760px;
-  }
-  .landingGridOne {
-    top: 100px;
+ .landingGrid {
+  height: 55vh;
+  width: 70vw;
+  text-align: center;
+ }
+  .landingPageSection {
+    height: 90vh;
   }
   h1 {
     font-size: 5.7rem;
+  }
+  .landingGridThree h2 {
+    font-size: 1.1rem;
   }
   .landingPink {
     left: -380px;
@@ -168,7 +139,6 @@
     grid-area: 1/1/1/5;
   }
   .aboutImage {
-    width: 310px;
     grid-area: 2 / 1 / 5 / 2;
   }
   .aboutMeText {
@@ -188,68 +158,29 @@
   body {
     background-color: goldenrod;
   }
-  .landingGrid {
-    height: 520px;
-    width: 90%;
-    text-align: center;
-  }
-  .landingGridOne {
-    display: none;
-  }
+
   h1 {
     padding-bottom: 40px;
     line-height: 1;
   }
-  .landingGridThree h2 {
-    font-size: 1.3rem;
-  }
-  .aboutGridContainer {
-    grid-template-columns: 1.1fr 0.1fr 3.5fr 1fr;
-    grid-template-rows: 0.15fr 0.1fr 0.1fr 1.1fr;
-    gap: 5px 30px;
-  }
-  .projectGridContainer {
-    margin-top: -390px;
-  }
-}
-
-/*media query 760px start */
-@media (max-width: 760px) {
-  body {
-    background-color: slateblue;
-  }
-  .artHalfCircle {
-    width: 120px;
-    height: 120px;
-  }
-  .landingGrid {
-    height: 60%;
+  
+  .landingPink {
+    bottom: 210px;
   }
   .landingOrange {
-    width: 300px;
+    bottom: 130px;
+  }
+  .aboutGridContainer {
+    grid-template-columns: 1.1fr 0.1fr 3.5fr 0.2fr;
+  }
+  .aboutMeHeadline {
+    grid-area: ;
   }
   .aboutImage {
     width: 220px;
   }
   .projectGridContainer {
-    margin-top: -440px;
-
-    grid-template-columns: 80px 1fr 1fr 80px;
-
-    grid-template-areas:
-      "projectsHeader projectsHeader projectsHeader projectsHeader"
-      ". projectOneText projectOneText ."
-      ". projectTwoText projectTwoText ."
-      ". projectThreeText projectThreeText ."
-      ". projectFourText projectFourText ."
-      ". projectFiveText projectFiveText .";
-  }
-  .projectImageContainer img {
-    display: none;
-  }
-  .projectTextContainer,
-  .projectTextContainerRight {
-    padding: 25px;
+    margin-top: -390px;
   }
   .contactGridContainer {
     height: fit-content;
@@ -264,6 +195,40 @@
     box-shadow: none;
     padding: 20px;
     grid-area: 4 / 1 / 4 / 5;
+  }
+}
+
+/*media query 760px start */
+@media (max-width: 760px) {
+  body {
+    background-color: slateblue;
+  }
+  .artHalfCircle {
+    width: 120px;
+    height: 120px;
+  }
+ 
+  .landingOrange {
+    width: 300px;
+  }
+
+  .projectGridContainer {
+    margin-top: -440px;
+    grid-template-columns: 80px 1fr 1fr 80px;
+    grid-template-areas:
+      "projectsHeader projectsHeader projectsHeader projectsHeader"
+      ". projectOneText projectOneText ."
+      ". projectTwoText projectTwoText ."
+      ". projectThreeText projectThreeText ."
+      ". projectFourText projectFourText ."
+      ". projectFiveText projectFiveText .";
+  }
+  .projectImageContainer img {
+    display: none;
+  }
+  .projectTextContainer,
+  .projectTextContainerRight {
+    padding: 25px;
   }
 }
 /*media query 760px end */
@@ -295,3 +260,6 @@
     background-color: lime;
   }
 }
+
+
+
