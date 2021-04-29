@@ -84,7 +84,7 @@ h3 {
   font-size: 1.7rem;
 }
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: var(--fontLight);
   line-height: 1.7rem;
 }
@@ -491,7 +491,7 @@ template {
   text-transform: none;
 }
 .aboutMeText p:first-child {
-  padding-top: 30px;
+  padding-top: 40px;
 }
 .aboutMeText p:last-child {
   padding-bottom: 40px;
@@ -646,7 +646,6 @@ template {
   display: grid;
   grid-template-columns: 80px 1fr 1fr 80px;
   grid-template-rows: 1fr repeat(auto-fill, 250px);
-  gap: 20px 0px;
   grid-template-areas:
     "projectsHeader projectsHeader projectsHeader projectsHeader"
     ". projectOneImage projectOneText ."
@@ -666,14 +665,14 @@ template {
 }
 .projectImageContainer img {
   width: 350px;
-  padding-bottom: 20px;
+  padding: 10px;
 }
 .projectTextContainer {
-  padding-right: 20px;
+  padding: 20px 30px 20px 20px;
   border-bottom: 2px solid var(--black);
 }
 .projectTextContainerRight {
-  padding-left: 20px;
+  padding: 20px 20px 20px 30px;
   border-bottom: 2px solid var(--black);
 }
 .projectTextContainer h3,
@@ -689,7 +688,7 @@ template {
   font-size: 1rem;
 }
 .projectSocials {
-  padding: 15px 0;
+  padding-top: 15px;
   justify-content: space-around;
 }
 .rightAlign {
@@ -704,14 +703,15 @@ template {
 }
 .projectsHeader {
   grid-area: projectsHeader;
+  margin-bottom: 40px;
 }
 .projectOneImage {
   grid-area: projectOneImage;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 .projectOneText {
   grid-area: projectOneText;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 .projectTwoImage {
   grid-area: projectTwoImage;
@@ -767,7 +767,8 @@ form {
   align-items: flex-start;
   width: 90%;
 }
-.contactForm h3 {
+.contactForm h3,
+.contactInfo h3 {
   padding: 20px;
 }
 input[type="text"],
@@ -820,7 +821,7 @@ input[type="submit"]:focus {
 .contactSocials {
   width: 100%;
   justify-content: space-evenly;
-  padding-top: 40px;
+  padding: 40px 5px;
 }
 .contactSocials i {
   font-size: 2.1rem;
@@ -924,11 +925,9 @@ footer p {
     grid-template-rows: 0.3fr 0.1fr 0.1fr 1.1fr;
     gap: 24px 40px;
   }
-  .aboutMeText p:first-child {
-    margin-top: 40px;
-  }
+
   .projectGridContainer {
-    margin-top: -300px;
+    margin-top: -420px;
   }
   .projectImageContainer img {
     width: 300px;
@@ -958,6 +957,10 @@ footer p {
 }
 /*media query 960px start */
 @media (max-width: 960px) {
+  a {
+    text-decoration: underline;
+    font-weight: bold;
+  }
   .artHalfCircle {
     width: 140px;
     height: 140px;
@@ -998,7 +1001,6 @@ footer p {
     padding: 20px;
   }
   .aboutMeText p:first-child {
-    margin-top: 60px;
   }
   .projectGridContainer {
     margin-top: -350px;
@@ -1036,16 +1038,20 @@ footer p {
   .contactGridContainer {
     height: fit-content;
     grid-template-rows: 0.1fr 0.4fr 0.9fr 10px;
+    gap: 50px 10px;
   }
   .contactForm {
     z-index: 2;
-    grid-area: 2 / 1 /4 / 5;
+    grid-area: 2 / 1 /4 / 6;
   }
   .contactInfo {
     z-index: 1;
     box-shadow: none;
     padding: 20px;
-    grid-area: 4 / 1 / 4 / 5;
+    grid-area: 4 / 1 / 4 / 6;
+  }
+  footer {
+    padding-top: 40px;
   }
 }
 /*media query 860px end */
@@ -1099,106 +1105,6 @@ footer p {
     margin-top: 40px;
   }
   .skillGridContainer {
-    grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
-    grid-template-rows: 75px 0.6fr 75px 20px repeat(auto-fill, 0.6fr);
-  }
-  .skillContainer {
-    grid-area: 5/2/9/5;
-  }
-  .skillFive {
-    grid-area: 6 /3/7/4;
-  }
-  .skillFour {
-    grid-area: 6/2/7/3;
-  }
-  .skillThree {
-    grid-area: 5/4/5/4;
-  }
-  .skillTwo {
-    grid-area: 5/3/6/4;
-  }
-  .skillOne {
-    grid-area: 5/2/6/3;
-  }
-  .skillSix {
-    grid-area: 6/4/7/4;
-  }
-  .skillSeven {
-    grid-area: 7/2/8/3;
-  }
-  .skillEight {
-    grid-area: 7/3/8/4;
-  }
-  .skillNine {
-    grid-area: 8/2/9/5;
-  }
-  .skillTen {
-    grid-area: 7/4/8/4;
-  }
-  .projectGridContainer {
-    margin-top: -440px;
-    grid-template-columns: 30px 1fr 1fr 30px;
-  }
-}
-/* media query  660px end */
-
-/* media query  560px start */
-@media (max-width: 560px) {
-  .sectionPadding {
-    padding: 90px 15px;
-  }
-  .landingGrid {
-    width: 85vw;
-    box-shadow: var(--black) 0px 0px 0px 2px inset,
-      var(--white) -10px -10px 0px -3px, var(--black) -10px -10px,
-      var(--white) -20px -20px 0px -3px, var(--black) -20px -20px;
-  }
-  .landingDots {
-    display: none;
-  }
-  .landingOrange {
-    width: 200px;
-  }
-  .landingPink {
-    width: 550px;
-  }
-  h1 {
-    font-size: 5.3rem;
-  }
-}
-/* media query  560px start */
-
-/* media query  360px start */
-@media (max-width: 360px) {
-  .landingStylingContainer {
-    height: 70vh;
-  }
-  .landingOrange {
-    display: hidden;
-  }
-  .landingGrid {
-    height: 45vh;
-    width: 85vw;
-    box-shadow: var(--black) 0px 0px 0px 2px inset,
-      var(--white) -10px -10px 0px -3px, var(--black) -10px -10px;
-  }
-  h1 {
-    font-size: 3rem;
-  }
-  .artHalfCircle {
-    width: 70px;
-    height: 70px;
-  }
-  .landingGridThree h2 {
-    font-size: 1rem;
-  }
-  .aboutGridContainer {
-    grid-template-rows: 60px 40px 40px 1.1fr;
-  }
-  .aboutMeHeadline {
-    padding: 10px;
-  }
-  .skillGridContainer {
     grid-template-columns: 5px 1fr 1fr 5px;
   }
   .skillContainer {
@@ -1235,17 +1141,75 @@ footer p {
     grid-area: 9/3/10/4;
   }
   .projectGridContainer {
+    margin-top: -440px;
+    grid-template-columns: 30px 1fr 1fr 30px;
+  }
+}
+/* media query  660px end */
+
+/* media query  560px start */
+@media (max-width: 560px) {
+  .sectionPadding {
+    padding: 90px 15px;
+  }
+  .landingGrid {
+    width: 85vw;
+    box-shadow: var(--black) 0px 0px 0px 2px inset,
+      var(--white) -10px -10px 0px -3px, var(--black) -10px -10px,
+      var(--white) -20px -20px 0px -3px, var(--black) -20px -20px;
+  }
+  .landingDots {
+    display: none;
+  }
+  .landingOrange {
+    width: 200px;
+  }
+  .landingPink {
+    width: 550px;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+}
+/* media query  560px start */
+
+/* media query  360px start */
+@media (max-width: 360px) {
+  .landingStylingContainer {
+    height: 70vh;
+  }
+  .landingOrange {
+    display: hidden;
+  }
+  .landingGrid {
+    height: 45vh;
+    width: 85vw;
+    box-shadow: var(--black) 0px 0px 0px 2px inset,
+      var(--white) -10px -10px 0px -3px, var(--black) -10px -10px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .artHalfCircle {
+    width: 70px;
+    height: 70px;
+  }
+  .landingGridThree h2 {
+    font-size: 1rem;
+  }
+  .aboutGridContainer {
+    grid-template-rows: 60px 40px 40px 1.1fr;
+  }
+  .aboutMeHeadline {
+    padding: 10px;
+  }
+
+  .projectGridContainer {
     margin-top: -340px;
     grid-template-columns: 10px 1fr 1fr 10px;
   }
   .projectSection h2 {
     padding: 40px 0;
-  }
-  .contactGridContainer {
-    gap: 5px 5px;
-  }
-  .contactForm {
-    grid-area: 2 / 1 /4 / 6;
   }
 }
 /* media query  360px end */
@@ -1257,7 +1221,7 @@ footer p {
   }
   .landingGrid {
     height: 60vh;
-    width: 90vw;
+    width: 70vw;
   }
   h1 {
     padding-bottom: 20px;
