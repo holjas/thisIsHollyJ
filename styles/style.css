@@ -88,6 +88,16 @@ p {
   font-family: var(--fontLight);
   line-height: 1.7rem;
 }
+a {
+  color: var(--black);
+  transition: 0.3s;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  font-weight: bold;
+  text-decoration: underline;
+}
 figcaption,
 figure,
 main {
@@ -321,8 +331,9 @@ template {
   justify-content: center;
   align-items: center;
 }
-.fadeInScroll {
-  opacity: 0;
+.fade,
+.fadeLarge {
+  opacity: 1;
 }
 .artGridDotsDark {
   /* set height width specific to where it is displayed on the screen*/
@@ -437,6 +448,9 @@ template {
 }
 .delaySecond i {
   position: absolute;
+}
+.delaySecondTwo i {
+  position: absolute;
   animation-delay: 2.5s;
 }
 @keyframes slideDown {
@@ -491,7 +505,7 @@ template {
   box-shadow: 10px 10px var(--primaryPurple);
 }
 .helloWave {
-  animation: helloWaveAni 5s linear infinite;
+  animation: helloWaveAni 4s linear infinite;
   display: inline-block;
 }
 @keyframes helloWaveAni {
@@ -520,7 +534,6 @@ template {
     transform: rotate(0deg);
   }
 }
-
 .aboutImage {
   grid-area: 1 / 1 / 5 / 2;
 }
@@ -530,7 +543,6 @@ template {
 .aboutImage {
   width: 400px;
 }
-
 /* about me section end */
 
 /* skills section start */
@@ -730,7 +742,7 @@ template {
 
 /*  */
 /*  */
-/*  */
+/*contact section start  */
 .contactGridContainer {
   height: 60vh;
   display: grid;
@@ -756,8 +768,7 @@ form {
   width: 90%;
 }
 .contactForm h3 {
-  padding-bottom: 20px;
-  padding-left: 20px;
+  padding: 20px;
 }
 input[type="text"],
 input[type="email"] {
@@ -833,6 +844,9 @@ input[type="submit"]:focus {
   height: 300px;
   background-color: var(--primaryOrange);
 }
+/* contact section end */
+
+/* footer start */
 footer {
   justify-content: flex-start;
   height: 60px;
@@ -845,4 +859,407 @@ footer p {
   font-size: 0.8rem;
   text-decoration: none;
   color: var(--white);
+}
+/* footer end */
+
+/* MEDIA QUERIES */
+/*  */
+@media (max-width: 1650px) {
+  .landingPink {
+    width: 800px;
+  }
+  .landingOrange {
+    width: 650px;
+  }
+}
+/*media query 1220px start */
+@media (max-width: 1220px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+  .artHalfCircle {
+    width: 180px;
+    height: 180px;
+    border-radius: 200px 0 0 0;
+  }
+  .landingGridThree h2 {
+    font-size: 1.7rem;
+  }
+  .landingDots {
+    height: 420px;
+  }
+  .landingPink {
+    height: 400px;
+    width: 800px;
+  }
+  .landingOrange {
+    height: 300px;
+    width: 450px;
+  }
+  .aboutGridContainer {
+    grid-template-rows: 0.3fr 0.2fr 0.1fr 1.1fr;
+    gap: 10px 40px;
+  }
+  .contactGridContainer {
+    grid-template-rows: 0.6fr 1.5fr 4.5fr 0.2fr;
+  }
+  .contactInfo {
+    height: fit-content;
+    grid-area: 3/3/5/5;
+  }
+  .contactForm h3 {
+    padding: 30px 0 10px 30px;
+  }
+}
+/*media query 1220px end */
+
+/*media query 1140px start */
+@media (max-width: 1140px) {
+  .sectionPadding {
+    padding: 110px 30px;
+  }
+
+  .aboutGridContainer {
+    grid-template-columns: 1.5fr 0.1fr 3.5fr 1fr;
+    grid-template-rows: 0.3fr 0.1fr 0.1fr 1.1fr;
+    gap: 24px 40px;
+  }
+  .aboutMeText p:first-child {
+    margin-top: 40px;
+  }
+  .projectGridContainer {
+    margin-top: -300px;
+  }
+  .projectImageContainer img {
+    width: 300px;
+  }
+  .contactGridContainer {
+    grid-template-columns: 2fr 0.2fr 0.2fr 1.4fr 0.2fr;
+    grid-template-rows: 0.4fr 0.4fr 0.9fr 0.1fr;
+  }
+  .contactGridOrange {
+    margin-left: 45vw;
+  }
+}
+/*media query 1140px end */
+@media (max-width: 1050px) {
+  .landingPink {
+    width: 650px;
+  }
+  .landingOrange {
+    width: 400px;
+  }
+  .aboutImage {
+    width: 310px;
+  }
+  .skillGridContainer {
+    grid-template-rows: 75px 0.6fr 75px 60px 0.6fr 0.6fr;
+  }
+}
+/*media query 960px start */
+@media (max-width: 960px) {
+  .artHalfCircle {
+    width: 140px;
+    height: 140px;
+  }
+  .landingGrid {
+    height: 55vh;
+    width: 70vw;
+  }
+  .landingPageSection {
+    height: 90vh;
+  }
+  h1 {
+    font-size: 5.7rem;
+  }
+  .landingGridThree h2 {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+  .landingPink {
+    left: -380px;
+  }
+  .landingOrange {
+    height: 300px;
+    width: 450px;
+  }
+  .aboutGridContainer {
+    grid-template-columns: 1.5fr 0.1fr 3.5fr 1fr;
+    grid-template-rows: 0.15fr 0.1fr 0.1fr 1.1fr;
+    gap: 24px 40px;
+  }
+  .aboutDotsDecoration {
+    display: none;
+  }
+  .aboutImage {
+    grid-area: 2 / 1 / 5 / 2;
+  }
+  .aboutMeText {
+    padding: 20px;
+  }
+  .aboutMeText p:first-child {
+    margin-top: 60px;
+  }
+  .projectGridContainer {
+    margin-top: -350px;
+    grid-template-columns: 40px 1fr 1fr 40px;
+  }
+}
+/*media query 960px end */
+
+/*media query 860px start */
+@media (max-width: 860px) {
+  .sectionPadding {
+    padding: 110px 15px;
+  }
+  h1 {
+    padding-bottom: 40px;
+    line-height: 1;
+  }
+
+  .landingPink {
+    bottom: 210px;
+  }
+  .landingOrange {
+    bottom: 130px;
+  }
+  .aboutGridContainer {
+    grid-template-columns: 1.1fr 0.1fr 3.5fr 0.2fr;
+    gap: 24px 15px;
+  }
+  .aboutImage {
+    width: 220px;
+  }
+  .projectGridContainer {
+    margin-top: -390px;
+  }
+  .contactGridContainer {
+    height: fit-content;
+    grid-template-rows: 0.1fr 0.4fr 0.9fr 10px;
+  }
+  .contactForm {
+    z-index: 2;
+    grid-area: 2 / 1 /4 / 5;
+  }
+  .contactInfo {
+    z-index: 1;
+    box-shadow: none;
+    padding: 20px;
+    grid-area: 4 / 1 / 4 / 5;
+  }
+}
+/*media query 860px end */
+
+/*media query 760px start */
+@media (max-width: 760px) {
+  .artHalfCircle {
+    width: 100px;
+    height: 100px;
+  }
+  .landingOrange {
+    width: 300px;
+  }
+  .projectGridContainer {
+    margin-top: -440px;
+    grid-template-columns: 80px 1fr 1fr 80px;
+    grid-template-areas:
+      "projectsHeader projectsHeader projectsHeader projectsHeader"
+      ". projectOneText projectOneText ."
+      ". projectTwoText projectTwoText ."
+      ". projectThreeText projectThreeText ."
+      ". projectFourText projectFourText ."
+      ". projectFiveText projectFiveText .";
+  }
+  .projectImageContainer img {
+    display: none;
+  }
+  .projectTextContainer,
+  .projectTextContainerRight {
+    padding: 25px;
+  }
+}
+/*media query 760px end */
+
+/* media query  660px  start*/
+@media (max-width: 660px) {
+  .artHalfCircle {
+    width: 90px;
+    height: 90px;
+  }
+  .aboutMeText {
+    grid-area: 3 / 1 / 5 / 5;
+  }
+  .aboutImage {
+    display: none;
+  }
+  .aboutMeHeadline {
+    grid-area: 2 / 1 / 4 / 4;
+  }
+  .aboutMeText p:first-child {
+    margin-top: 40px;
+  }
+  .skillGridContainer {
+    grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 75px 0.6fr 75px 20px repeat(auto-fill, 0.6fr);
+  }
+  .skillContainer {
+    grid-area: 5/2/9/5;
+  }
+  .skillFive {
+    grid-area: 6 /3/7/4;
+  }
+  .skillFour {
+    grid-area: 6/2/7/3;
+  }
+  .skillThree {
+    grid-area: 5/4/5/4;
+  }
+  .skillTwo {
+    grid-area: 5/3/6/4;
+  }
+  .skillOne {
+    grid-area: 5/2/6/3;
+  }
+  .skillSix {
+    grid-area: 6/4/7/4;
+  }
+  .skillSeven {
+    grid-area: 7/2/8/3;
+  }
+  .skillEight {
+    grid-area: 7/3/8/4;
+  }
+  .skillNine {
+    grid-area: 8/2/9/5;
+  }
+  .skillTen {
+    grid-area: 7/4/8/4;
+  }
+  .projectGridContainer {
+    margin-top: -440px;
+    grid-template-columns: 30px 1fr 1fr 30px;
+  }
+}
+/* media query  660px end */
+
+/* media query  560px start */
+@media (max-width: 560px) {
+  .sectionPadding {
+    padding: 90px 15px;
+  }
+  .landingGrid {
+    width: 85vw;
+    box-shadow: var(--black) 0px 0px 0px 2px inset,
+      var(--white) -10px -10px 0px -3px, var(--black) -10px -10px,
+      var(--white) -20px -20px 0px -3px, var(--black) -20px -20px;
+  }
+  .landingDots {
+    display: none;
+  }
+  .landingOrange {
+    width: 200px;
+  }
+  .landingPink {
+    width: 550px;
+  }
+  h1 {
+    font-size: 5.3rem;
+  }
+}
+/* media query  560px start */
+
+/* media query  360px start */
+@media (max-width: 360px) {
+  .landingStylingContainer {
+    height: 70vh;
+  }
+  .landingOrange {
+    display: hidden;
+  }
+  .landingGrid {
+    height: 45vh;
+    width: 85vw;
+    box-shadow: var(--black) 0px 0px 0px 2px inset,
+      var(--white) -10px -10px 0px -3px, var(--black) -10px -10px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .artHalfCircle {
+    width: 70px;
+    height: 70px;
+  }
+  .landingGridThree h2 {
+    font-size: 1rem;
+  }
+  .aboutGridContainer {
+    grid-template-rows: 60px 40px 40px 1.1fr;
+  }
+  .aboutMeHeadline {
+    padding: 10px;
+  }
+  .skillGridContainer {
+    grid-template-columns: 5px 1fr 1fr 5px;
+  }
+  .skillContainer {
+    grid-area: 5/2/10/5;
+  }
+  .skillOne {
+    grid-area: 5/2/6/3;
+  }
+  .skillTwo {
+    grid-area: 5/3/6/4;
+  }
+  .skillThree {
+    grid-area: 6/2/7/3;
+  }
+  .skillFour {
+    grid-area: 6/3/7/4;
+  }
+  .skillFive {
+    grid-area: 7/2/8/3;
+  }
+  .skillSix {
+    grid-area: 7/3/8/4;
+  }
+  .skillSeven {
+    grid-area: 8/2/9/3;
+  }
+  .skillEight {
+    grid-area: 8/3/9/4;
+  }
+  .skillNine {
+    grid-area: 9/2/10/3;
+  }
+  .skillTen {
+    grid-area: 9/3/10/4;
+  }
+  .projectGridContainer {
+    margin-top: -340px;
+    grid-template-columns: 10px 1fr 1fr 10px;
+  }
+  .projectSection h2 {
+    padding: 40px 0;
+  }
+  .contactGridContainer {
+    gap: 5px 5px;
+  }
+  .contactForm {
+    grid-area: 2 / 1 /4 / 6;
+  }
+}
+/* media query  360px end */
+/*  */
+/* media query for height */
+@media (max-height: 700px) {
+  .landingStylingContainer {
+    min-height: 600px;
+  }
+  .landingGrid {
+    height: 60vh;
+    width: 90vw;
+  }
+  h1 {
+    padding-bottom: 20px;
+  }
 }
