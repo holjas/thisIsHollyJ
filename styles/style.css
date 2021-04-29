@@ -86,7 +86,7 @@ h3 {
 p {
   font-size: 1rem;
   font-family: var(--fontLight);
-  line-height: 1.7rem;
+  line-height: 1.4rem;
 }
 a {
   color: var(--black);
@@ -678,6 +678,7 @@ template {
   padding: 20px 20px 20px 30px;
   border-bottom: 2px solid var(--black);
 }
+
 .projectTextContainer h3,
 .projectTextContainerRight h3 {
   font-size: 1.4rem;
@@ -690,6 +691,10 @@ template {
   letter-spacing: 5px;
   font-size: 1rem;
 }
+.projectDescription {
+  text-transform: none;
+}
+
 .projectSocials {
   padding-top: 15px;
   justify-content: space-around;
@@ -1056,7 +1061,7 @@ footer p {
     grid-area: 3/2/4/4;
   }
   .contactDotsLight {
-    grid-area: 1/1/2/5;
+    grid-area: 1/2/2/5;
   }
   footer {
     padding-top: 40px;
