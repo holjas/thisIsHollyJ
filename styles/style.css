@@ -979,7 +979,7 @@ footer p {
     gap: 24px 40px;
   }
   .aboutDotsDecoration {
-    grid-area: 1/1/1/5;
+    display: none;
   }
   .aboutImage {
     grid-area: 2 / 1 / 5 / 2;
@@ -1172,6 +1172,10 @@ footer p {
   h1 {
     font-size: 3rem;
   }
+  .artHalfCircle {
+    width: 70px;
+    height: 70px;
+  }
   .landingGridThree h2 {
     font-size: 1rem;
   }
@@ -1235,9 +1239,12 @@ footer p {
 /*  */
 /* media query for height */
 @media (max-height: 700px) {
+  .landingStylingContainer {
+    min-height: 600px;
+  }
   .landingGrid {
     height: 60vh;
-    width: 70vw;
+    width: 90vw;
   }
   h1 {
     padding-bottom: 20px;
