@@ -1046,14 +1046,14 @@ footer p {
   }
   .contactForm {
     z-index: 2;
-    grid-area: 2/2/3/4;
+    grid-area: 2/2/3/5;
   }
   .contactInfo {
     z-index: 1;
     box-shadow: none;
     padding: 20px;
     margin-top: 20px;
-    grid-area: 3/2/4/4;
+    grid-area: 3/2/4/5;
   }
   .contactDotsLight {
     grid-area: 1/2/2/5;
@@ -1234,5 +1234,8 @@ footer p {
   }
   h1 {
     padding-bottom: 20px;
+  }
+  .artHalfCircle {
+    display: none;
   }
 }
