@@ -1,9 +1,14 @@
 /*  */
-@media (max-width: 1325px) {
+@media (max-width: 1650px) {
   body {
     background-color: yellowgreen;
   }
- 
+  .landingPink {
+    width: 800px;
+  }
+  .landingOrange {
+    width: 650px;
+  }
 }
 /*media query 1220px start */
 @media (max-width: 1220px) {
@@ -40,6 +45,7 @@
     grid-template-rows: 0.6fr 1.5fr 4.5fr 0.2fr;
   }
   .contactInfo {
+    height: fit-content;
     grid-area: 3/3/5/5;
   }
   .contactForm h3 {
@@ -87,7 +93,7 @@
   body {
     background-color: skyblue;
   }
- 
+
   .landingPink {
     width: 650px;
   }
@@ -99,6 +105,7 @@
   }
   .skillGridContainer {
     grid-template-rows: 75px 0.6fr 75px 60px 0.6fr 0.6fr;
+  }
 }
 /*media query 960px start */
 @media (max-width: 960px) {
@@ -109,11 +116,11 @@
     width: 140px;
     height: 140px;
   }
- .landingGrid {
-  height: 55vh;
-  width: 70vw;
-  text-align: center;
- }
+  .landingGrid {
+    height: 55vh;
+    width: 70vw;
+    text-align: center;
+  }
   .landingPageSection {
     height: 90vh;
   }
@@ -122,6 +129,7 @@
   }
   .landingGridThree h2 {
     font-size: 1.1rem;
+    padding: 0 10px;
   }
   .landingPink {
     left: -380px;
@@ -158,12 +166,14 @@
   body {
     background-color: goldenrod;
   }
-
+  .sectionPadding {
+    padding: 110px 15px;
+  }
   h1 {
     padding-bottom: 40px;
     line-height: 1;
   }
-  
+
   .landingPink {
     bottom: 210px;
   }
@@ -172,9 +182,7 @@
   }
   .aboutGridContainer {
     grid-template-columns: 1.1fr 0.1fr 3.5fr 0.2fr;
-  }
-  .aboutMeHeadline {
-    grid-area: ;
+    gap: 24px 15px;
   }
   .aboutImage {
     width: 220px;
@@ -184,7 +192,7 @@
   }
   .contactGridContainer {
     height: fit-content;
-    grid-template-rows: 0.1fr 0.4fr 0.9fr 0.1fr;
+    grid-template-rows: 0.1fr 0.4fr 0.9fr 10px;
   }
   .contactForm {
     z-index: 2;
@@ -207,11 +215,10 @@
     width: 120px;
     height: 120px;
   }
- 
+
   .landingOrange {
     width: 300px;
   }
-
   .projectGridContainer {
     margin-top: -440px;
     grid-template-columns: 80px 1fr 1fr 80px;
@@ -234,16 +241,91 @@
 /*media query 760px end */
 
 /* media query  660px */
-@media (max-width: 660px) {
+@media only screen and (max-width: 660px) {
   body {
     background-color: lightcoral;
+  }
+  .artHalfCircle {
+    width: 90px;
+    height: 90px;
+  }
+  .aboutMeText {
+    grid-area: 3 / 1 / 5 / 5;
+  }
+  .aboutImage {
+    display: none;
+  }
+  .aboutMeHeadline {
+    grid-area: 2 / 1 / 4 / 4;
+  }
+  .aboutMeText p:first-child {
+    margin-top: 40px;
+  }
+  .skillGridContainer {
+    grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 75px 0.6fr 75px 20px repeat(auto-fill, 0.6fr);
+  }
+  .skillContainer {
+    grid-area: 5/2/9/5;
+  }
+  .skillFive {
+    grid-area: 6 /3/7/4;
+  }
+  .skillFour {
+    grid-area: 6/2/7/3;
+  }
+  .skillThree {
+    grid-area: 5/4/5/4;
+  }
+  .skillTwo {
+    grid-area: 5/3/6/4;
+  }
+  .skillOne {
+    grid-area: 5/2/6/3;
+  }
+  .skillSix {
+    grid-area: 6/4/7/4;
+  }
+  .skillSeven {
+    grid-area: 7/2/8/3;
+  }
+  .skillEight {
+    grid-area: 7/3/8/4;
+  }
+  .skillNine {
+    grid-area: 8/2/9/5;
+  }
+  .skillTen {
+    grid-area: 7/4/8/4;
+  }
+  .projectGridContainer {
+    margin-top: -440px;
+    grid-template-columns: 30px 1fr 1fr 30px;
   }
 }
 
 /* media query  560px */
 @media (max-width: 560px) {
   body {
-    background-color: yellowgreen;
+    background-color: peru;
+  }
+  .sectionPadding {
+    padding: 90px 15px;
+  }
+  .landingGrid {
+    width: 85vw;
+    box-shadow: var(--black) 0px 0px 0px 2px inset,
+      var(--white) -10px -10px 0px -3px, var(--black) -10px -10px,
+      var(--white) -20px -20px 0px -3px, var(--black) -20px -20px;
+  }
+  .landingOrange {
+    width: 200px;
+  }
+  .landingPink {
+    width: 550px;
+  }
+  h1 {
+    font-size: 5.3rem;
   }
 }
 
@@ -259,7 +341,88 @@
   body {
     background-color: lime;
   }
+  .landingStylingContainer {
+    height: 70vh;
+  }
+  .landingOrange {
+    display: hidden;
+  }
+  .landingGrid {
+    height: 45vh;
+    width: 85vw;
+    box-shadow: var(--black) 0px 0px 0px 2px inset,
+      var(--white) -10px -10px 0px -3px, var(--black) -10px -10px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .landingGridThree h2 {
+    font-size: 1rem;
+  }
+  .aboutGridContainer {
+    grid-template-rows: 60px 40px 40px 1.1fr;
+  }
+  .aboutMeHeadline {
+    padding: 10px;
+  }
+  .skillGridContainer {
+    grid-template-columns: 5px 1fr 1fr 5px;
+  }
+  .skillContainer {
+    grid-area: 5/2/10/5;
+  }
+  .skillOne {
+    grid-area: 5/2/6/3;
+  }
+  .skillTwo {
+    grid-area: 5/3/6/4;
+  }
+  .skillThree {
+    grid-area: 6/2/7/3;
+  }
+  .skillFour {
+    grid-area: 6/3/7/4;
+  }
+  .skillFive {
+    grid-area: 7/2/8/3;
+  }
+  .skillSix {
+    grid-area: 7/3/8/4;
+  }
+  .skillSeven {
+    grid-area: 8/2/9/3;
+  }
+  .skillEight {
+    grid-area: 8/3/9/4;
+  }
+  .skillNine {
+    grid-area: 9/2/10/3;
+  }
+  .skillTen {
+    grid-area: 9/3/10/4;
+  }
+  .projectGridContainer {
+    margin-top: -340px;
+    grid-template-columns: 10px 1fr 1fr 10px;
+  }
+  .projectSection h2 {
+    padding: 40px 0;
+  }
+  .contactGridContainer {
+    gap: 5px 5px;
+  }
+  .contactForm {
+    grid-area: 2 / 1 /4 / 6;
+  }
 }
-
-
-
+/*  */
+/* media query for height */
+@media (max-height: 700px) {
+  .landingGrid {
+    height: 60vh;
+    width: 70vw;
+  }
+  h1 {
+    padding-bottom: 20px;
+  }
+}
