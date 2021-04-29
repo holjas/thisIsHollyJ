@@ -176,6 +176,9 @@ img {
 svg:not(:root) {
   overflow: hidden;
 }
+form {
+  height: fit-content;
+}
 button,
 input,
 optgroup,
@@ -1037,18 +1040,23 @@ footer p {
   }
   .contactGridContainer {
     height: fit-content;
-    grid-template-rows: 0.1fr 0.4fr 0.9fr 10px;
-    gap: 50px 10px;
+    grid-template-columns: 10px 1fr 10px;
+    grid-template-rows: 40px auto;
+    gap: 0px 10px;
   }
   .contactForm {
     z-index: 2;
-    grid-area: 2 / 1 /4 / 6;
+    grid-area: 2/2/3/4;
   }
   .contactInfo {
     z-index: 1;
     box-shadow: none;
     padding: 20px;
-    grid-area: 4 / 1 / 4 / 6;
+    margin-top: 20px;
+    grid-area: 3/2/4/4;
+  }
+  .contactDotsLight {
+    grid-area: 1/1/2/5;
   }
   footer {
     padding-top: 40px;
@@ -1106,6 +1114,7 @@ footer p {
   }
   .skillGridContainer {
     grid-template-columns: 5px 1fr 1fr 5px;
+    grid-template-rows: 25px 0.6fr 25px 60px 0.6fr 0.6fr;
   }
   .skillContainer {
     grid-area: 5/2/10/5;
