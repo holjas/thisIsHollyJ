@@ -1,8 +1,5 @@
 /*  */
 @media (max-width: 1650px) {
-  body {
-    background-color: yellowgreen;
-  }
   .landingPink {
     width: 800px;
   }
@@ -12,9 +9,6 @@
 }
 /*media query 1220px start */
 @media (max-width: 1220px) {
-  body {
-    background-color: crimson;
-  }
   .wrapper {
     max-width: 1200px;
   }
@@ -56,9 +50,6 @@
 
 /*media query 1140px start */
 @media (max-width: 1140px) {
-  body {
-    background-color: purple;
-  }
   .wrapper {
     max-width: 1140px;
   }
@@ -90,10 +81,6 @@
 }
 /*media query 1140px end */
 @media (max-width: 1050px) {
-  body {
-    background-color: skyblue;
-  }
-
   .landingPink {
     width: 650px;
   }
@@ -109,9 +96,6 @@
 }
 /*media query 960px start */
 @media (max-width: 960px) {
-  body {
-    background-color: seagreen;
-  }
   .artHalfCircle {
     width: 140px;
     height: 140px;
@@ -119,7 +103,6 @@
   .landingGrid {
     height: 55vh;
     width: 70vw;
-    text-align: center;
   }
   .landingPageSection {
     height: 90vh;
@@ -162,10 +145,8 @@
 }
 /*media query 960px end */
 
+/*media query 860px start */
 @media (max-width: 860px) {
-  body {
-    background-color: goldenrod;
-  }
   .sectionPadding {
     padding: 110px 15px;
   }
@@ -205,17 +186,14 @@
     grid-area: 4 / 1 / 4 / 5;
   }
 }
+/*media query 860px end */
 
 /*media query 760px start */
 @media (max-width: 760px) {
-  body {
-    background-color: slateblue;
-  }
   .artHalfCircle {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
-
   .landingOrange {
     width: 300px;
   }
@@ -240,11 +218,8 @@
 }
 /*media query 760px end */
 
-/* media query  660px */
-@media only screen and (max-width: 660px) {
-  body {
-    background-color: lightcoral;
-  }
+/* media query  660px  start*/
+@media (max-width: 660px) {
   .artHalfCircle {
     width: 90px;
     height: 90px;
@@ -303,12 +278,10 @@
     grid-template-columns: 30px 1fr 1fr 30px;
   }
 }
+/* media query  660px end */
 
-/* media query  560px */
+/* media query  560px start */
 @media (max-width: 560px) {
-  body {
-    background-color: peru;
-  }
   .sectionPadding {
     padding: 90px 15px;
   }
@@ -328,19 +301,10 @@
     font-size: 5.3rem;
   }
 }
+/* media query  560px start */
 
-/* media query  460px */
-@media (max-width: 460px) {
-  body {
-    background-color: teal;
-  }
-}
-
-/* media query  360px */
+/* media query  360px start */
 @media (max-width: 360px) {
-  body {
-    background-color: lime;
-  }
   .landingStylingContainer {
     height: 70vh;
   }
@@ -415,6 +379,7 @@
     grid-area: 2 / 1 /4 / 6;
   }
 }
+/* media query  360px end */
 /*  */
 /* media query for height */
 @media (max-height: 700px) {

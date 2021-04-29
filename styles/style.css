@@ -381,6 +381,7 @@ template {
   position: relative;
 }
 .landingGrid {
+  text-align: center;
   height: 70vh;
   width: 80vw;
   box-shadow: var(--black) 0px 0px 0px 2px inset,
