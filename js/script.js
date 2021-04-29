@@ -6,8 +6,8 @@ portfolio.scollingFade = () => {
     if ($(window).height() > 900) {
       $(".fadeOne").scrollFadeOut();
       $(".fadeTwo").scrollFadeIn(1000);
-      $(".fadeThree").scrollFadeIn(1800);
-      $(".fadeFour").scrollFadeIn(2700);
+      $(".fadeThree").scrollFadeIn(1500);
+      $(".fadeFour").scrollFadeIn(2500);
       $(".fadeFive").scrollFadeIn(5000);
     } else if ($(window).height() > 700) {
       $(".fadeOne").scrollFadeOut();
