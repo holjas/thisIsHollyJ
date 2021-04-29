@@ -1231,14 +1231,11 @@ footer p {
   }
   .landingGrid {
     height: 60vh;
-    width: 70vw;
+    width: 85vw;
   }
   h1 {
     padding-bottom: 20px;
     font-size: 2.5rem;
-  }
-  .artHalfCircle {
-    display: none;
   }
   .projectGridContainer {
     margin-top: -150px;
