@@ -334,10 +334,6 @@ template {
   justify-content: center;
   align-items: center;
 }
-.fade,
-.fadeLarge {
-  opacity: 1;
-}
 .artGridDotsDark {
   /* set height width specific to where it is displayed on the screen*/
   background-image: radial-gradient(var(--white) 25%, transparent 10%);
@@ -668,14 +664,14 @@ template {
 }
 .projectImageContainer img {
   width: 350px;
-  padding: 10px;
+  padding: 30px;
 }
 .projectTextContainer {
-  padding: 20px 30px 20px 20px;
+  padding: 30px 30px 30px 20px;
   border-bottom: 2px solid var(--black);
 }
 .projectTextContainerRight {
-  padding: 20px 20px 20px 30px;
+  padding: 30px 20px 30px 30px;
   border-bottom: 2px solid var(--black);
 }
 
@@ -719,7 +715,6 @@ template {
 }
 .projectOneText {
   grid-area: projectOneText;
-  /* padding-top: 20px; */
 }
 .projectTwoImage {
   grid-area: projectTwoImage;
