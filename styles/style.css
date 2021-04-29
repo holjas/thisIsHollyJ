@@ -808,6 +808,7 @@ input[type="submit"]:focus {
 }
 .captcha {
   margin-top: 20px;
+  width: 80%;
 }
 .contactInfo {
   z-index: 1;
@@ -1234,8 +1235,12 @@ footer p {
   }
   h1 {
     padding-bottom: 20px;
+    font-size: 2.5rem;
   }
   .artHalfCircle {
     display: none;
+  }
+  .projectGridContainer {
+    margin-top: -150px;
   }
 }
