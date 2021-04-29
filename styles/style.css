@@ -88,6 +88,16 @@ p {
   font-family: var(--fontLight);
   line-height: 1.7rem;
 }
+a {
+  color: var(--black);
+  transition: 0.3s;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  font-weight: bold;
+  text-decoration: underline;
+}
 figcaption,
 figure,
 main {
@@ -437,6 +447,9 @@ template {
   animation: slideDown 5s linear infinite;
 }
 .delaySecond i {
+  position: absolute;
+}
+.delaySecondTwo i {
   position: absolute;
   animation-delay: 2.5s;
 }
@@ -902,9 +915,6 @@ footer p {
 
 /*media query 1140px start */
 @media (max-width: 1140px) {
-  .wrapper {
-    max-width: 1140px;
-  }
   .sectionPadding {
     padding: 110px 30px;
   }
@@ -1142,6 +1152,9 @@ footer p {
     box-shadow: var(--black) 0px 0px 0px 2px inset,
       var(--white) -10px -10px 0px -3px, var(--black) -10px -10px,
       var(--white) -20px -20px 0px -3px, var(--black) -20px -20px;
+  }
+  .landingDots {
+    display: none;
   }
   .landingOrange {
     width: 200px;
