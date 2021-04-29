@@ -2,17 +2,21 @@ const portfolio = {};
 
 portfolio.scollingFade = () => {
   $(document).ready(function () {
+    const windowHeight = $(window).height();
+    const large = 900;
+    const medium = 600;
+    console.log(windowHeight, large, medium);
     //fade on scroll only when scroll is wider than 1000px
-    if ($(window).height() > 900) {
+    if (windowHeight > large) {
       $(".fadeOne").scrollFadeOut();
       $(".fadeTwo").scrollFadeIn(1000);
-      $(".fadeThree").scrollFadeIn(1500);
+      $(".fadeThree").scrollFadeIn(1800);
       $(".fadeFour").scrollFadeIn(2500);
-      $(".fadeFive").scrollFadeIn(5000);
-    } else if ($(window).height() > 700) {
+      $(".fadeFive").scrollFadeIn(4600);
+    } else if (windowHeight < large && windowHeight > medium) {
       $(".fadeOne").scrollFadeOut();
       $(".fadeTwo").scrollFadeIn(800);
-      $(".fadeThree").scrollFadeIn(1500);
+      $(".fadeThree").scrollFadeIn(1600);
       $(".fadeFour").scrollFadeIn(2400);
       $(".fadeFive").scrollFadeIn(4300);
     } else if ($(window).height() < 700) {
