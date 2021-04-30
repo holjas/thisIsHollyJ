@@ -7,7 +7,7 @@ portfolio.scollingFade = () => {
     const sectionFour = $(".fadeFour")[0].offsetTop;
     const sectionFive = $(".fadeFive")[0].offsetTop;
 
-    if ($(window).height() < 700) {
+    if ($(window).height() > 700) {
       $(".fadeOne").scrollFadeOut();
       $(".fadeTwo").scrollFadeIn(sectionTwo);
       $(".fadeThree").scrollFadeIn(sectionThree);
