@@ -496,6 +496,7 @@ template {
   padding-bottom: 40px;
 }
 .aboutMeHeadline {
+  z-index: 2;
   grid-area: 2 / 3 / 4 / 4;
   justify-content: flex-start;
   padding-left: 40px;
