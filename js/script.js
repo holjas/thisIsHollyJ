@@ -4,8 +4,7 @@ portfolio.scollingFade = () => {
   $(document).ready(function () {
     const windowHeight = $(window).height();
     const large = 900;
-    const medium = 600;
-    console.log(windowHeight, large, medium);
+    const medium = 700;
     //fade on scroll only when scroll is wider than 1000px
     if (windowHeight > large) {
       $(".fadeOne").scrollFadeOut();
@@ -19,7 +18,7 @@ portfolio.scollingFade = () => {
       $(".fadeThree").scrollFadeIn(1600);
       $(".fadeFour").scrollFadeIn(2400);
       $(".fadeFive").scrollFadeIn(4300);
-    } else if ($(window).height() < 700) {
+    } else {
       $(".fadeOne").scrollFadeOut();
     }
   });
