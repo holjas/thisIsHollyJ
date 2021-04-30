@@ -1004,8 +1004,6 @@ footer p {
   .aboutMeText {
     padding: 20px;
   }
-  .aboutMeText p:first-child {
-  }
   .projectGridContainer {
     margin-top: -350px;
     grid-template-columns: 40px 1fr 1fr 40px;

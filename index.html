@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="./js/scrollFade.min.js"></script>
+
     <!-- fontAwesome -->
     <script
       src="https://kit.fontawesome.com/ca2de226c8.js"
@@ -43,7 +44,7 @@
 
   <body>
     <!-- landing page start -->
-    <section class="landingPageSection displayFlex fadeOne">
+    <section class="landingPageSection displayFlex fadeHeader">
       <div class="artGridDotsDark landingDots"></div>
       <div class="landingPink"></div>
       <div class="artGridLine landingOrange"></div>
@@ -68,9 +69,9 @@
     <!-- landing page end -->
 
     <!-- about me start -->
-    <section class="sectionPadding fadeTwo">
+    <section class="sectionPadding">
       <div class="aboutGridContainer wrapper">
-        <div class="aboutMeText displayFlex">
+        <div class="aboutMeText displayFlex fade-scroll-bottom">
           <p>
             My name is Holly and I’m a front-end developer who is doing her part
             to make creative and intuitive applications for this world that can
@@ -90,11 +91,13 @@
             sweater while grooving to some 80's pop tunes.
           </p>
         </div>
-        <div class="aboutMeHeadline displayFlex">
+        <div class="aboutMeHeadline displayFlex fade-scroll-bottom">
           <h2>hello<span class="helloWave">👋</span></h2>
         </div>
-        <div class="aboutDotsDecoration artGridDotsDark"></div>
-        <div class="aboutImage displayFlex">
+        <div
+          class="aboutDotsDecoration artGridDotsDark fade-scroll-bottom"
+        ></div>
+        <div class="aboutImage displayFlex fade-scroll-bottom">
           <img
             src="assets/aboutMeProfilePic.png"
             alt="profile picture of holly jasiura"
@@ -105,8 +108,8 @@
     <!-- about me end -->
 
     <!-- skills section start -->
-    <section class="skillsSection displayFlex fadeThree">
-      <div class="wrapper">
+    <section class="skillsSection displayFlex">
+      <div class="wrapper fade-scroll-bottom">
         <!-- gridcontainer start -->
         <div class="skillGridContainer">
           <div class="skillsDotsTop artGridDotsDark"></div>
@@ -171,8 +174,8 @@
       <div class="projectGridBlue artGridLine"></div>
       <div class="wrapper">
         <!--  -->
-        <div class="projectGridContainer">
-          <div class="projectsHeader">
+        <div class="projectGridContainer fade-scroll-bottom">
+          <div class="projectsHeader fade-scroll-bottom">
             <h2>projects</h2>
           </div>
           <div class="projectArea"></div>
@@ -347,8 +350,8 @@
     <!-- projects end -->
 
     <!-- contact section start -->
-    <section class="contactSection sectionPadding fadeFive">
-      <div class="wrapper">
+    <section class="contactSection sectionPadding">
+      <div class="wrapper fade-scroll-bottom">
         <div class="contactGridContainer">
           <!-- contact form square-->
           <div class="contactForm displayFlex">

@@ -1,24 +1,28 @@
 const portfolio = {};
 
-portfolio.scollingFade = () => {
+portfolio.fadingScrollHeader = () => {
   $(document).ready(function () {
-    const sectionTwo = $(".fadeTwo")[0].offsetTop;
-    const sectionThree = $(".fadeThree")[0].offsetTop;
-    const sectionFour = $(".fadeFour")[0].offsetTop;
-    const sectionFive = $(".fadeFive")[0].offsetTop;
+    $(".fadeHeader").scrollFadeOut(800);
+  });
+};
 
-    if ($(window).height() > 700) {
-      $(".fadeOne").scrollFadeOut();
-      $(".fadeTwo").scrollFadeIn(sectionTwo);
-      $(".fadeThree").scrollFadeIn(sectionThree);
-      $(".fadeFour").scrollFadeIn(sectionFour);
-      $(".fadeFive").scrollFadeIn(sectionFive);
-    }
+portfolio.fadingScrollBody = () => {
+  const fadeElBottom = $(".fade-scroll-bottom");
+
+  $(document).on("scroll", function () {
+    let bottomScollPos = $(document).scrollTop() + $(window).height();
+
+    fadeElBottom.each(function () {
+      let elemOffsetTop = $(this).offset().top;
+      if (bottomScollPos > elemOffsetTop)
+        $(this).css("opacity", (bottomScollPos - elemOffsetTop - 150) / 550);
+    });
   });
 };
 
 portfolio.init = () => {
-  portfolio.scollingFade();
+  portfolio.fadingScrollHeader();
+  portfolio.fadingScrollBody();
 };
 
 portfolio.init();
