@@ -1,11 +1,5 @@
 const portfolio = {};
 
-portfolio.fadingScrollHeader = () => {
-  $(document).ready(function () {
-    $(".fadeHeader").scrollFadeOut(800);
-  });
-};
-
 portfolio.fadingScrollBody = () => {
   const fadeElBottom = $(".fade-scroll-bottom");
 
@@ -21,7 +15,6 @@ portfolio.fadingScrollBody = () => {
 };
 
 portfolio.init = () => {
-  portfolio.fadingScrollHeader();
   portfolio.fadingScrollBody();
 };
 
