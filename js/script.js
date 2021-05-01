@@ -8,8 +8,16 @@ portfolio.fadingScrollBody = () => {
 
     fadeElBottom.each(function () {
       let elemOffsetTop = $(this).offset().top;
-      if (bottomScollPos > elemOffsetTop)
-        $(this).css("opacity", (bottomScollPos - elemOffsetTop - 150) / 550);
+
+      if ($(window).height() > 800) {
+        if (bottomScollPos > elemOffsetTop)
+          $(this).css("opacity", (bottomScollPos - elemOffsetTop - 100) / 550);
+      }
+
+      if ($(window).height() < 800) {
+        if (bottomScollPos > elemOffsetTop)
+          $(this).css("opacity", (bottomScollPos - elemOffsetTop) / 550);
+      }
     });
   });
 };
