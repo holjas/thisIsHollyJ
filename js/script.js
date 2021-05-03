@@ -16,7 +16,7 @@ portfolio.fadingScrollBody = () => {
 
       if ($(window).height() < 800) {
         if (bottomScollPos > elemOffsetTop)
-          $(this).css("opacity", (bottomScollPos - elemOffsetTop) / 550);
+          $(this).css("opacity", (bottomScollPos - elemOffsetTop) / 450);
       }
     });
   });
