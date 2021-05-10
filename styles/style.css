@@ -755,7 +755,47 @@ template {
   padding-bottom: 20px;
 }
 
-/*  */
+/* bonus start */
+.bonusSection {
+  height: 230px;
+  background-color: var(--primaryPurple);
+  padding: 20px 30px;
+}
+.bonusTextBox {
+  height: 140px;
+  width: 80%;
+  padding: 20px;
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  box-shadow: -8px 8px var(--primaryOrange), -10px 10px var(--black),
+    -10px 6px var(--black), -6px 10px var(--black);
+}
+.marquee {
+  width: 900px;
+  height: 50px;
+  overflow: hidden;
+  border: transparent;
+  margin-left: 30px;
+}
+.marqueeText {
+  padding-top: 20px;
+}
+.marqueeText a:first-child {
+  padding-left: 30px;
+}
+.marqueeText p {
+  margin-right: 30px;
+  text-transform: uppercase;
+  font-weight: var(--fontMain);
+}
+
+.marqueeText a {
+  text-transform: none;
+}
+.bonusTextSpace {
+  width: 40px;
+}
+/* bonus end */
 /*  */
 /*contact section start  */
 .contactGridContainer {

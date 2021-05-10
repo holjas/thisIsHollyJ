@@ -22,8 +22,26 @@ portfolio.fadingScrollBody = () => {
   });
 };
 
+portfolio.marquee = () => {
+  $(function () {
+    $(".marquee").marquee({
+      // Set to false if you want to use jQuery animate method
+      allowCss3Support: true,
+      css3easing: "linear",
+      easing: "linear",
+      direction: "down",
+      duplicated: false,
+      duration: 3000,
+      pauseOnCycle: false,
+      pauseOnHover: true,
+      startVisible: false,
+    });
+  });
+};
+
 portfolio.init = () => {
   portfolio.fadingScrollBody();
+  portfolio.marquee();
 };
 
 portfolio.init();
