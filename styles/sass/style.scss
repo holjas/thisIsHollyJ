@@ -1,0 +1,25 @@
+@import "setup";
+@import "navbar";
+
+
+@font-face {
+    font-family: "Neuville-Bold";
+    src: url("../assets/fonts/Neuville-Bold.woff"), url("../assets/fonts/Neuville-Bold.woff2");
+  }
+  
+  @font-face {
+    font-family: "Neuville-Light";
+    src: url("../assets/fonts/Neuville-Light.woff"), url("../assets/fonts/Neuville-Light.woff2");
+  }
+
+  body {
+      background-color: $primary-color;
+      color:$secondary-color;
+      font-family: "Neuville-Light", sans-serif;
+  }
+  h1 {
+    font-family: "Neuville-Bold", sans-serif;
+}
+  .home-section-row {
+    height: calc(90vh / 2);
+}
