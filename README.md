@@ -1,5 +1,6 @@
 # PortfolioNew
 
-Built using 
+Built using
 Bootstrap
 SASS
+Mobile first design

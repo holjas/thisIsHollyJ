@@ -10,6 +10,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  letter-spacing: 16px;
 }
 
 article,
@@ -295,18 +296,28 @@ template {
   /* added line */
 }
 
-.nav-item,
-.nav-link,
-.fa-exchange-alt {
-  color: #ff0046;
+body {
+  background-color: yellow;
 }
 
-.nav-item:hover,
-.nav-link:hover,
-.fa-exchange-alt:hover {
-  cursor: pointer;
-  color: #b30031;
-  background-color: #7e8187;
+.display-1 {
+  font-family: "Neuville-Bold", sans-serif;
+}
+
+.home-section-row {
+  height: calc(90vh / 2);
+}
+
+@media (max-width: 575.98px) {
+  .display-1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .display-1 {
+    font-size: 4.5rem;
+  }
 }
 
 @font-face {
@@ -323,12 +334,35 @@ body {
   background-color: #28292b;
   color: #ff0046;
   font-family: "Neuville-Light", sans-serif;
+  font-size: 1rem;
 }
 
-h1 {
-  font-family: "Neuville-Bold", sans-serif;
+@media (max-width: 575.98px) {
+  body {
+    background-color: lightskyblue;
+  }
 }
 
-.home-section-row {
-  height: calc(90vh / 2);
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    background-color: orange;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    background-color: pink;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  body {
+    background-color: green;
+  }
 }

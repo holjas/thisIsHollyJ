@@ -10,6 +10,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  letter-spacing: 16px;
 }
 article,
 aside,
@@ -243,6 +244,5 @@ template {
   white-space: nowrap; /* added line */
 }
 
-// variables
-$primary-color: rgb(40,41,43);
-$secondary-color: rgb(255,0,70);
+$primary-color: rgb(40, 41, 43);
+$secondary-color: rgb(255, 0, 70);

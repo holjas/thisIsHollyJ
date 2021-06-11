@@ -1,0 +1,33 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
+
+.display-1 {
+  font-family: "Neuville-Bold", sans-serif;
+}
+.home-section-row {
+  height: calc(90vh / 2);
+}
+
+// media queries
+@include media-breakpoint-between(xs, sm) {
+  //    lightskyblue
+  .display-1 {
+    font-size: 2.5rem;
+  }
+}
+@include media-breakpoint-between(sm, md) {
+  //yellow
+}
+@include media-breakpoint-between(md, lg) {
+  //orange
+  .display-1 {
+    font-size: 4.5rem;
+  }
+}
+@include media-breakpoint-between(lg, xl) {
+  //pink
+}
+@include media-breakpoint-between(xl, xxl) {
+  //green
+}
