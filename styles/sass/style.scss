@@ -1,8 +1,9 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
 
-@import "setup";
+// @import "setup";
 @import "navbar";
 @import "home";
 
@@ -17,6 +18,9 @@
   src: url("../assets/fonts/Neuville-Light.woff"),
     url("../assets/fonts/Neuville-Light.woff2");
 }
+
+$primary-color: rgb(40, 41, 43);
+$secondary-color: rgb(255, 0, 70);
 
 body {
   background-color: $primary-color;
