@@ -10,7 +10,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  letter-spacing: 16px;
 }
 
 article,
@@ -296,27 +295,23 @@ template {
   /* added line */
 }
 
-body {
-  background-color: yellow;
-}
-
 .display-1 {
   font-family: "Neuville-Bold", sans-serif;
+  letter-spacing: -9px;
 }
 
 .home-section-row {
   height: calc(90vh / 2);
 }
 
-@media (max-width: 575.98px) {
-  .display-1 {
-    font-size: 2.5rem;
-  }
+.display-5 {
+  letter-spacing: 5px;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .display-1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
+    letter-spacing: -3px;
   }
 }
 
@@ -337,32 +332,32 @@ body {
   font-size: 1rem;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 1399.98px) {
   body {
-    background-color: lightskyblue;
+    background-color: green;
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  body {
-    background-color: yellow;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  body {
-    background-color: orange;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (max-width: 1199.98px) {
   body {
     background-color: pink;
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1399.98px) {
+@media (max-width: 991.98px) {
   body {
-    background-color: green;
+    background-color: orange;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body {
+    background-color: lightskyblue;
   }
 }

@@ -26,45 +26,45 @@ body {
 }
 
 // media queries
-@include media-breakpoint-between(xs, sm) {
-  body {
-    background-color: lightskyblue;
-  }
-}
-@include media-breakpoint-between(sm, md) {
-  body {
-    background-color: yellow;
-  }
-}
-@include media-breakpoint-between(md, lg) {
-  body {
-    background-color: orange;
-  }
-}
-@include media-breakpoint-between(lg, xl) {
-  body {
-    background-color: pink;
-  }
-}
-@include media-breakpoint-between(xl, xxl) {
+
+@include media-breakpoint-down(xxl) {
   body {
     background-color: green;
   }
 }
-
+@include media-breakpoint-down(xl) {
+  body {
+    background-color: pink;
+  }
+}
+@include media-breakpoint-down(lg) {
+  body {
+    background-color: orange;
+  }
+}
+@include media-breakpoint-down(md) {
+  body {
+    background-color: yellow;
+  }
+}
+@include media-breakpoint-down(sm) {
+  body {
+    background-color: lightskyblue;
+  }
+}
 // TEMPLATE
-// @include media-breakpoint-between(xs, sm) {
-//   //    lightskyblue
-//     }
-//     @include media-breakpoint-between(sm, md) {
-//       //yellow
-//     }
-//     @include media-breakpoint-between(md, lg) {
-//      //orange
-//     }
-//     @include media-breakpoint-between(lg, xl) {
-//      //pink
-//     }
-//     @include media-breakpoint-between(xl, xxl) {
-//      //green
-//     }
+// @include media-breakpoint-down(xxl) {
+//   //green
+// }
+// @include media-breakpoint-down(xl) {
+//  //pink
+// }
+// @include media-breakpoint-down(lg) {
+//  //orange
+// }
+// @include media-breakpoint-down(md) {
+//  //yellow
+// }
+// @include media-breakpoint-down(sm) {
+//  //lightblue
+// }
