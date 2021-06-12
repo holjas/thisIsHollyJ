@@ -1,9 +1,6 @@
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
+$primaryColor: rgb(255, 0, 70);
+$backgroundColor: rgb(40, 41, 43);
 
-// @import "setup";
 @import "navbar";
 @import "home";
 @import "projects";
@@ -20,43 +17,40 @@
     url("../assets/fonts/Neuville-Light.woff2");
 }
 
-$primary-color: rgb(40, 41, 43);
-$secondary-color: rgb(255, 0, 70);
-
 body {
-  background-color: $primary-color;
-  color: $secondary-color;
+  background-color: $backgroundColor;
+  color: $primaryColor;
   font-family: "Neuville-Light", sans-serif;
   font-size: $font-size-base;
 }
 
 // media queries
 
-@include media-breakpoint-down(xxl) {
-  body {
-    background-color: green;
-  }
-}
-@include media-breakpoint-down(xl) {
-  body {
-    background-color: pink;
-  }
-}
-@include media-breakpoint-down(lg) {
-  body {
-    background-color: orange;
-  }
-}
-@include media-breakpoint-down(md) {
-  body {
-    background-color: yellow;
-  }
-}
-@include media-breakpoint-down(sm) {
-  body {
-    background-color: lightskyblue;
-  }
-}
+// @include media-breakpoint-down(xxl) {
+//   body {
+//     background-color: green;
+//   }
+// }
+// @include media-breakpoint-down(xl) {
+//   body {
+//     background-color: pink;
+//   }
+// }
+// @include media-breakpoint-down(lg) {
+//   body {
+//     background-color: orange;
+//   }
+// }
+// @include media-breakpoint-down(md) {
+//   body {
+//     background-color: yellow;
+//   }
+// }
+// @include media-breakpoint-down(sm) {
+//   body {
+//     background-color: lightskyblue;
+//   }
+// }
 // TEMPLATE
 // @include media-breakpoint-down(xxl) {
 //   //green
