@@ -11465,22 +11465,73 @@ fieldset:disabled .btn {
   }
 }
 
-.display-1 {
+.navbar-toggler {
+  background-color: #000;
+}
+
+.fa-exchange-alt {
+  font-size: 2rem;
+}
+
+h1, .h1 {
   font-family: "Neuville-Bold", sans-serif;
+  font-size: 8rem;
+  letter-spacing: -5px;
 }
 
 .home-section-row {
   height: calc(90vh / 2);
 }
 
-.display-5 {
+h2, .h2 {
   letter-spacing: 5px;
 }
 
 @media (max-width: 991.98px) {
-  .display-5 {
+  h1, .h1 {
+    font-size: 6rem;
+  }
+  h2, .h2 {
     font-size: 2.5rem;
   }
+}
+
+@media (max-width: 767.98px) {
+  h2, .h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h1, .h1 {
+    font-size: 3.6rem;
+  }
+  h2, .h2 {
+    font-size: 1.5rem;
+  }
+  .home-section-row {
+    height: calc(80vh / 2);
+  }
+}
+
+.isolde-default {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  -webkit-transition: height 0.2s ease-out, opacity 0.2s ease-out 0.2s;
+  transition: height 0.2s ease-out, opacity 0.2s ease-out 0.2s;
+}
+
+[data-isolde-el] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
 }
 
 @font-face {

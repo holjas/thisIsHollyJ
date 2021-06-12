@@ -2,13 +2,15 @@
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
 
-.display-1 {
+h1 {
   font-family: "Neuville-Bold", sans-serif;
+  font-size: 8rem;
+  letter-spacing: -5px;
 }
 .home-section-row {
   height: calc(90vh / 2);
 }
-.display-5 {
+h2 {
   letter-spacing: 5px;
 }
 
@@ -21,13 +23,28 @@
 }
 @include media-breakpoint-down(lg) {
   //orange
-  .display-5 {
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
     font-size: 2.5rem;
   }
 }
 @include media-breakpoint-down(md) {
   //yellow
+  h2 {
+    font-size: 2rem;
+  }
 }
 @include media-breakpoint-down(sm) {
   //lightblue
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .home-section-row {
+    height: calc(80vh / 2);
+  }
 }

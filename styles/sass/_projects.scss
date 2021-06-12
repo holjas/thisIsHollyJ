@@ -1,0 +1,34 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
+
+// media queries
+// @include media-breakpoint-down(xxl) {
+//   //green
+// }
+// @include media-breakpoint-down(xl) {
+//  //pink
+// }
+// @include media-breakpoint-down(lg) {
+//  //orange
+// }
+// @include media-breakpoint-down(md) {
+//  //yellow
+// }
+// @include media-breakpoint-down(sm) {
+//  //lightblue
+// }
+.isolde-default {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  transition: height 0.2s ease-out, opacity 0.2s ease-out 0.2s;
+}
+[data-isolde-el] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.2s ease-out;
+}

@@ -1,33 +1,34 @@
-const colourThemes = [
-  { colorOne: "30, 59, 52", colorTwo: "252, 108, 17" },
-  { colorOne: "255, 209, 0", colorTwo: "222, 16, 222" },
-  { colorOne: "245, 204, 207", colorTwo: "1, 178, 139" },
-  { colorOne: "252, 59, 45", colorTwo: "14, 47, 86" },
-  { colorOne: "17,35,120", colorTwo: "246, 74, 0" },
-  { colorOne: "40,41,43", colorTwo: "255,0,70" },
-  { colorOne: "229, 232, 220", colorTwo: "246, 116, 141" },
-];
-console.log("connected");
-// Green 30, 59, 52
-// Orange 252, 108, 17
+// const colourThemes = [
+//   { colorOne: "30, 59, 52", colorTwo: "252, 108, 17" },
+//   { colorOne: "255, 209, 0", colorTwo: "222, 16, 222" },
+//   { colorOne: "245, 204, 207", colorTwo: "1, 178, 139" },
+//   { colorOne: "252, 59, 45", colorTwo: "14, 47, 86" },
+//   { colorOne: "17,35,120", colorTwo: "246, 74, 0" },
+//   { colorOne: "40,41,43", colorTwo: "255,0,70" },
+//   { colorOne: "229, 232, 220", colorTwo: "246, 116, 141" },
+// ];
+console.log("COLOURS IS CONNETED");
 
-// Yellow 255, 209, 0
-// Pink/purple 222, 16, 222
+const myWebsite = {};
 
-// Pink 245, 204, 207
-// Green 1, 178, 139
+myWebsite.homepageAnimation = () => {
+  // credit to https://www.jqueryscript.net/animation/Simple-jQuery-Text-Rotator-with-CSS3-Animations.html
+  $(".rotate-demo").textRotator({
+    // animation types
+    // http://daneden.github.io/animate.css/
+    animation: "fadeIn",
+    // animation: "fadeInUp",
 
-// Orange 252, 59, 45
-// Navy 14, 47, 86
+    // custom sprator
+    seprator: ",",
 
-// Blue 17,35,120
-// Orange 246, 74, 0
+    // animation speed in ms
+    speed: "3000",
+  });
+};
 
-// Orange 252, 108, 17
-// Dk green 30, 59, 52
+myWebsite.init = () => {
+  myWebsite.homepageAnimation();
+};
 
-// blk 40,41,43
-// Red 255,0,70
-
-// Grey 229, 232, 220
-// Pink 246, 116, 141
+myWebsite.init();
