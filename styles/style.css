@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "Neuville-Bold";
+  src: url("../assets/fonts/Neuville-Bold.woff"), url("../assets/fonts/Neuville-Bold.woff2");
+}
+
+@font-face {
+  font-family: "Neuville-Light";
+  src: url("../assets/fonts/Neuville-Light.woff"), url("../assets/fonts/Neuville-Light.woff2");
+}
+
+body {
+  background-color: #28292b;
+  color: #ff0046;
+  font-family: "Neuville-Light", sans-serif;
+  font-size: 18px;
+}
+
 .navbar-toggler {
   background-color: transparent;
 }
@@ -16,7 +33,8 @@
 }
 
 .navbar-dark .navbar-nav .show > .nav-link,
-.navbar-dark .navbar-nav .nav-link.active {
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link {
   color: #ff0046;
 }
 
@@ -83,41 +101,4 @@ h2 {
   .home-section-row {
     height: calc(80vh / 2);
   }
-}
-
-.isolde-default {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  opacity: 0;
-  -webkit-transition: height 0.2s ease-out, opacity 0.2s ease-out 0.2s;
-  transition: height 0.2s ease-out, opacity 0.2s ease-out 0.2s;
-}
-
-[data-isolde-el] {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transition: -webkit-transform 0.2s ease-out;
-  transition: -webkit-transform 0.2s ease-out;
-  transition: transform 0.2s ease-out;
-  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
-}
-
-@font-face {
-  font-family: "Neuville-Bold";
-  src: url("../assets/fonts/Neuville-Bold.woff"), url("../assets/fonts/Neuville-Bold.woff2");
-}
-
-@font-face {
-  font-family: "Neuville-Light";
-  src: url("../assets/fonts/Neuville-Light.woff"), url("../assets/fonts/Neuville-Light.woff2");
-}
-
-body {
-  background-color: #28292b;
-  color: #ff0046;
-  font-family: "Neuville-Light", sans-serif;
-  font-size: 1rem;
 }
