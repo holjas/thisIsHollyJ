@@ -2,17 +2,10 @@
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
 
-h1 {
-  font-family: "Neuville-Bold", sans-serif;
-  font-size: 8rem;
-  letter-spacing: -5px;
-}
 .home-section-row {
   height: calc(90vh / 2);
 }
-h2 {
-  letter-spacing: 5px;
-}
+
 // media queries
 @include media-breakpoint-down(xxl) {
   //green

@@ -15,6 +15,26 @@ body {
   font-size: 18px;
 }
 
+h1 {
+  font-family: "Neuville-Bold", sans-serif;
+  font-size: 8rem;
+  letter-spacing: -5px;
+}
+
+h2,
+h3,
+h4 {
+  letter-spacing: 5px;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  color: #f6f6f6;
+}
+
 .navbar-toggler {
   background-color: transparent;
 }
@@ -34,7 +54,10 @@ body {
 
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .show > .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active:hover,
+.navbar-dark .navbar-nav .nav-link:hover {
   color: #ff0046;
 }
 
@@ -62,18 +85,8 @@ a:hover:after {
   left: 0;
 }
 
-h1 {
-  font-family: "Neuville-Bold", sans-serif;
-  font-size: 8rem;
-  letter-spacing: -5px;
-}
-
 .home-section-row {
   height: calc(90vh / 2);
-}
-
-h2 {
-  letter-spacing: 5px;
 }
 
 @media (max-width: 991.98px) {
@@ -101,4 +114,39 @@ h2 {
   .home-section-row {
     height: calc(80vh / 2);
   }
+}
+
+section {
+  height: 90vh;
+}
+
+.containerHeadline {
+  color: #ff0046;
+  font-family: "Neuville-Bold", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+
+h3.containerHeadline:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background: #f6f6f6;
+}
+
+.imageContainer {
+  width: 300px;
+  -webkit-box-shadow: 0 8px 27px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 27px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 100px 40px;
+}
+
+.imageContainer img {
+  background: rgba(255, 255, 255, 0.25);
+  width: 100%;
+  border-radius: 100px 40px;
 }
