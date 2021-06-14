@@ -138,8 +138,8 @@ h3.containerHeadline:after {
 
 .imageContainer {
   width: 300px;
-  -webkit-box-shadow: 0 8px 27px 0 rgba(31, 38, 135, 0.37);
-          box-shadow: 0 8px 27px 0 rgba(31, 38, 135, 0.37);
+  -webkit-box-shadow: 0 8px 27px 0 rgba(18, 18, 18, 0.37);
+          box-shadow: 0 8px 27px 0 rgba(18, 18, 18, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 100px 40px;
@@ -149,4 +149,29 @@ h3.containerHeadline:after {
   background: rgba(255, 255, 255, 0.25);
   width: 100%;
   border-radius: 100px 40px;
+}
+
+[data-filter] {
+  display: inline-block;
+  background: hotpink;
+  color: green;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+[data-filter] + [data-filter] {
+  margin-left: 5px;
+}
+
+[data-tags] {
+  width: 250px;
+  text-align: center;
+  line-height: 100px;
+  display: inline-block;
+  background: olivedrab;
+  color: darkred;
+  margin: 1rem 1rem 1rem 0;
+  border-radius: 5px;
 }
