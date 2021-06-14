@@ -1,13 +1,13 @@
 .navbar-toggler {
   background-color: transparent;
 }
-.fa-exchange-alt {
+.colour-change {
   color: $primaryColor;
   font-size: 2rem;
   cursor: pointer;
   transition: all 0.3s;
 }
-.fa-exchange-alt:hover {
+.colour-change:hover {
   transform: scale(1.2);
 }
 .navbar-dark .navbar-nav .show > .nav-link,

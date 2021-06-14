@@ -1,3 +1,4 @@
+// thanks to https://randoma11y.com/ for some great colour generations w/ contrast ratings
 const colourThemes = [
   {
     colorOne: "30, 59, 52",
@@ -55,6 +56,23 @@ const colourThemes = [
   { colorOne: "255,43,147", colorTwo: "124,244,230", fontColour: "18, 18, 18" },
   { colorOne: "187,171,155", colorTwo: "55,23,34", fontColour: "18, 18, 18" },
   { colorOne: "198,215,199", colorTwo: "255,80,52", fontColour: "18, 18, 18" },
+  { colorOne: "237, 240, 108", colorTwo: "6, 72, 230", fontColour: "18,18,18" },
+  {
+    colorOne: "48, 12, 123",
+    colorTwo: "201, 182, 147",
+    fontColour: "246,246,246",
+  },
+  {
+    colorOne: "58, 20, 11",
+    colorTwo: "222, 173, 193",
+    fontColour: "246,246,246",
+  },
+  { colorOne: "208, 166, 188", colorTwo: "29, 22, 53", fontColour: "18,18,18" },
+  {
+    colorOne: "108, 159, 21",
+    colorTwo: "52, 10, 70",
+    fontColour: "246,246,246",
+  },
 ];
 
 export { colourThemes };

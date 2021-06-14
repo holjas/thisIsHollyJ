@@ -3,6 +3,7 @@ import { colourThemes } from "./colours.js";
 
 const myWebsite = {};
 
+// home page animation of 'titles'
 myWebsite.homepageAnimation = () => {
   // credit to https://www.jqueryscript.net/animation/Simple-jQuery-Text-Rotator-with-CSS3-Animations.html
   $(".rotate-demo").textRotator({
@@ -14,6 +15,7 @@ myWebsite.homepageAnimation = () => {
   });
 };
 
+// change background & text color
 myWebsite.colourChanges = () => {
   $("#colourChanger").click(function (e) {
     e.preventDefault();
@@ -26,12 +28,13 @@ myWebsite.colourChanges = () => {
     $("body").css("background-color", backgroundColour);
     $("body").css("color", fontColour);
     $("li a").css("color", fontColour);
-    $(".fa-exchange-alt").css("color", fontColour);
+    $(".colour-change").css("color", fontColour);
     $("p").css("color", mainTextColour);
     $(".containerHeadline").css("color", fontColour);
   });
 };
 
+// generate random number
 myWebsite.generateRandomNumber = () => {
   return Math.floor(Math.random() * colourThemes.length);
 };
