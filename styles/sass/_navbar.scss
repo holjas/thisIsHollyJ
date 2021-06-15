@@ -19,11 +19,11 @@
   color: $primaryColor;
 }
 
-a {
+nav a {
   position: relative;
   color: $primaryColor;
 }
-a:after {
+nav a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 20;
   content: "";
@@ -35,7 +35,7 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after {
+nav a:hover:after {
   width: 100%;
   left: 0;
 }

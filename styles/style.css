@@ -61,12 +61,12 @@ p {
   color: #ff0046;
 }
 
-a {
+nav a {
   position: relative;
   color: #ff0046;
 }
 
-a:after {
+nav a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 20;
   content: "";
@@ -80,7 +80,7 @@ a:after {
   width: 0;
 }
 
-a:hover:after {
+nav a:hover:after {
   width: 100%;
   left: 0;
 }
@@ -173,13 +173,10 @@ h3.containerHeadline:after {
   background: rgba(255, 255, 255, 0.5);
 }
 
-[data-tags] {
-  min-width: 250px;
-  text-align: center;
-  line-height: 100px;
-  display: inline-block;
-  background: olivedrab;
-  color: darkred;
-  margin: 1rem 1rem 1rem 0;
-  border-radius: 5px;
+.card-text {
+  color: #121212 !important;
+}
+
+.card-body {
+  background-color: #f6f6f6;
 }

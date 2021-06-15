@@ -17,14 +17,19 @@
 [data-filter]:hover {
   background: rgba(255, 255, 255, 0.5);
 }
-
-[data-tags] {
-  min-width: 250px;
-  text-align: center;
-  line-height: 100px;
-  display: inline-block;
-  background: olivedrab;
-  color: darkred;
-  margin: 1rem 1rem 1rem 0;
-  border-radius: 5px;
+.card-text {
+  color: $black !important;
 }
+.card-body {
+  background-color: $white;
+}
+// [data-tags] {
+//   min-width: 250px;
+//   text-align: center;
+//   line-height: 100px;
+//   display: inline-block;
+//   background: olivedrab;
+//   color: darkred;
+//   margin: 1rem 1rem 1rem 0;
+//   border-radius: 5px;
+// }
