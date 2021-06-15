@@ -30,6 +30,7 @@ myWebsite.colourChanges = () => {
     $(".colour-change").css("color", fontColour);
     $("p").css("color", mainTextColour);
     $(".containerHeadline").css("color", fontColour);
+    $("[data-filter]").css("color", fontColour);
   });
 };
 

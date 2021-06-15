@@ -42,11 +42,6 @@ const colourThemes = [
     fontColour: "246, 246, 246",
   },
   {
-    colorOne: "102,20,200",
-    colorTwo: "242,90,16",
-    fontColour: "246, 246, 246",
-  },
-  {
     colorOne: "1,143,211",
     colorTwo: "244,199,238",
     fontColour: "246, 246, 246",

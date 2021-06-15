@@ -210,29 +210,38 @@
           role="tabpanel"
           aria-labelledby="porfolio-tab"
         >
-          <div class="container h-100">
+          <div class="container">
+            <!-- section headline -->
             <div class="row pt-5">
               <div class="col my-auto">
                 <h3 class="containerHeadline">portfolio</h3>
               </div>
             </div>
-            <div class="portfolio-container">
-              <p>Filter By Tags</p>
-              <div>
+            <!-- portfolio container -->
+            <div class="row mt-5 portfolio-container">
+              <!-- filter buttons -->
+              <div class="col-2">
+                <p class="containerHeadline">Filter By Tags</p>
+              </div>
+              <div class="col-10">
                 <span data-filter>All</span>
-                <span data-filter="js">JavaScript</span>
-                <span data-filter="css">CSS</span>
-                <span data-filter="html">HTML</span>
+                <span data-filter="html">html5</span>
+                <span data-filter="scss">sass</span>
+                <span data-filter="js">javascript</span>
+                <span data-filter="react">react</span>
+                <span data-filter="firebase">firebase</span>
+                <span data-filter="restapi">rest api</span>
+                <span data-filter="bootstrap">bootstrap</span>
               </div>
-
-              <div>
-                <div data-tags="js,css">Bootstrap</div>
-                <div data-tags="js">Angular</div>
-                <div data-tags="html,css">TailwindCSS</div>
-                <div data-tags="js">jQuery</div>
-                <div data-tags="js,html">React.js</div>
-                <div data-tags="js">Vue.js</div>
-              </div>
+            </div>
+            <!-- project grid -->
+            <div class="d-flex justify-content-around flex-wrap mt-4">
+              <div data-tags="js,scss" class="col-3">Bootstrap</div>
+              <div data-tags="js" class="col-3">Angular</div>
+              <div data-tags="html,scss" class="col-3">TailwindCSS</div>
+              <div data-tags="js" class="col-3">jQuery</div>
+              <div data-tags="js,firebase" class="col-3">React.js</div>
+              <div data-tags="js" class="col-3">Vue.js</div>
             </div>
           </div>
         </section>

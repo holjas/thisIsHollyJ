@@ -151,22 +151,30 @@ h3.containerHeadline:after {
   border-radius: 100px 40px;
 }
 
-[data-filter] {
-  display: inline-block;
-  background: hotpink;
-  color: green;
-  border-radius: 5px;
-  padding: 8px 16px;
-  cursor: pointer;
-  margin-bottom: 1rem;
+.portfolio-container p {
+  display: inline;
 }
 
-[data-filter] + [data-filter] {
-  margin-left: 5px;
+[data-filter] {
+  display: inline-block;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #f6f6f6;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+[data-filter]:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 [data-tags] {
-  width: 250px;
+  min-width: 250px;
   text-align: center;
   line-height: 100px;
   display: inline-block;
