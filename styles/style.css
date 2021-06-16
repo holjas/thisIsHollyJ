@@ -265,44 +265,44 @@ form .btn:hover {
 }
 
 .down-enter-active {
-  -webkit-animation: 1s down-enter;
-          animation: 1s down-enter;
+  -webkit-animation: 1.75s down-enter;
+          animation: 1.75s down-enter;
 }
 
 .down-leave-active {
-  -webkit-animation: 1s down-leave;
-          animation: 1s down-leave;
+  -webkit-animation: 1.75s down-leave;
+          animation: 1.75s down-leave;
 }
 
 @keyframes down-enter {
   0% {
-    -webkit-clip-path: inset(0 0 100% 0);
-            clip-path: inset(0 0 100% 0);
+    -webkit-clip-path: circle(0%);
+            clip-path: circle(0%);
   }
   100% {
-    -webkit-clip-path: inset(0);
-            clip-path: inset(0);
+    -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
   }
 }
 
 @-webkit-keyframes down-leave {
   0% {
-    -webkit-clip-path: inset(0 0 100% 0);
-            clip-path: inset(0 0 100% 0);
+    -webkit-clip-path: circle(0%);
+            clip-path: circle(0%);
   }
   100% {
-    -webkit-clip-path: inset(0);
-            clip-path: inset(0);
+    -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
   }
 }
 
 @keyframes down-leave {
   0% {
-    -webkit-clip-path: inset(0 0 100% 0);
-            clip-path: inset(0 0 100% 0);
+    -webkit-clip-path: circle(0%);
+            clip-path: circle(0%);
   }
   100% {
-    -webkit-clip-path: inset(0);
-            clip-path: inset(0);
+    -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
   }
 }

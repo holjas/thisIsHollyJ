@@ -52,11 +52,7 @@ myWebsite.colourChanges = () => {
     }
   });
 };
-//
-//
 
-//
-//
 // portfolio, remove greyscale on hover
 myWebsite.portfolioHover = () => {
   $(".card").hover(

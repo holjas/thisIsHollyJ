@@ -48,33 +48,30 @@ p {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  // background-color: aqua;
 }
 
 .down-enter-active {
-  animation: 1s down-enter;
-  // background-color: hotpink;
+  animation: 1.75s down-enter;
 }
 .down-leave-active {
-  animation: 1s down-leave;
-  // background-color: lightseagreen;
+  animation: 1.75s down-leave;
 }
 
 @keyframes down-enter {
   0% {
-    clip-path: inset(0 0 100% 0);
+    clip-path: circle(0%);
   }
   100% {
-    clip-path: inset(0);
+    clip-path: circle(100%);
   }
 }
 
 @keyframes down-leave {
   0% {
-    clip-path: inset(0 0 100% 0);
+    clip-path: circle(0%);
   }
   100% {
-    clip-path: inset(0);
+    clip-path: circle(100%);
   }
 }
 
