@@ -16,6 +16,8 @@ myWebsite.homepageAnimation = () => {
 
 // change background & text color
 myWebsite.colourChanges = () => {
+  let direction = true;
+
   $("#colourChanger").click(function (e) {
     e.preventDefault();
 
@@ -33,7 +35,6 @@ myWebsite.colourChanges = () => {
     //
     //
     // background color change with wipe
-    let direction = true;
 
     if (direction) {
       $(".colourChangerBox").removeClass("down-leave-active");
@@ -70,32 +71,10 @@ myWebsite.generateRandomNumber = () => {
   return Math.floor(Math.random() * colourThemes.length);
 };
 
-//background colour change animation
-myWebsite.backgroundAnimation = (backgroundColour) => {
-  let direction = true;
-  $("#colourChanger").click(function () {
-    if (direction) {
-      $(".colourChangerBox").removeClass("down-leave-active");
-      $(".colourChangerBox")
-        .addClass("down-enter-active")
-        .css("background-color", backgroundColour);
-      direction = false;
-    } else {
-      $(".colourChangerBox").removeClass("down-enter-active");
-      $(".colourChangerBox")
-        .addClass("down-leave-active")
-        .css("background-color", backgroundColour);
-      direction = true;
-    }
-  });
-  // $( "div.first" ).slideUp( 300 ).delay( 800 ).fadeIn( 400 );
-};
-
 myWebsite.init = () => {
   myWebsite.homepageAnimation();
   myWebsite.colourChanges();
   myWebsite.portfolioHover();
-  myWebsite.backgroundAnimation();
 };
 
 myWebsite.init();
