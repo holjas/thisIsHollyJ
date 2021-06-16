@@ -81,9 +81,11 @@ myWebsite.generateRandomNumber = () => {
 };
 
 myWebsite.init = () => {
-  myWebsite.homepageAnimation();
-  myWebsite.colourChanges();
-  myWebsite.portfolioHover();
+  $(document).ready(function () {
+    myWebsite.homepageAnimation();
+    myWebsite.colourChanges();
+    myWebsite.portfolioHover();
+  });
 };
 
 myWebsite.init();

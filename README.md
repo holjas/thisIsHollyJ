@@ -25,11 +25,11 @@ Create a responsive portfolio website to showcase all the cool stuff I've built.
 ### Links
 
 - Github URL: [https://www.github.com/holjas/ChatApp](https://github.com/holjas/thisIsHollyJ)
-- Live Site URL: [https://github.holjas.io/ChatApp](hhttps://www.thisIsHollyJ.com)
+- Live Site URL: [https://github.holjas.io/ChatApp](https://www.thisIsHollyJ.com)
 
 ## Built with
 
-- Semantic HTML5 markup
+- Semantic HTML5
 - Sass (SCSS)
 - Bootstrap
 - jQuery
@@ -37,6 +37,6 @@ Create a responsive portfolio website to showcase all the cool stuff I've built.
 
 ## Acknowledgments
 
-Text animation credit to https://www.jqueryscript.net/animation/Simple-jQuery-Text-Rotator-with-CSS3-Animations.html
-Portfolio filter grid by AutoFilter (https://github.com/GianlucaChiarani/AutoFilter)
-Colour matching is thanks to https://randoma11y.com/ for some great colour generations w/ contrast ratings
+- Text animation credit to https://www.jqueryscript.net/animation/Simple-jQuery-Text-Rotator-with-CSS3-Animations.html
+- Portfolio filter grid by AutoFilter (https://github.com/GianlucaChiarani/AutoFilter)
+- Colour matching is thanks to https://randoma11y.com/ for some great colour generations w/ contrast ratings
