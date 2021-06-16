@@ -24,8 +24,6 @@ myWebsite.colourChanges = () => {
     const primaryColor = "rgb(" + colourThemes[randomNumber].colorTwo + ")";
     const mainTextColour = "rgb(" + colourThemes[randomNumber].fontColour + ")";
 
-    // background color change
-    $("body").css("background-color", backgroundColour);
     // primary color change
     $("body, li a, .fa-icon, .containerHeadline").css("color", primaryColor);
     $("form .btn").css("background-color", primaryColor);
@@ -34,9 +32,24 @@ myWebsite.colourChanges = () => {
     $("form .btn").css("color", "white");
     //
     //
+    // background color change with wipe
+    let direction = true;
 
-    //
-    //
+    if (direction) {
+      $(".colourChangerBox").removeClass("down-leave-active");
+      $(".colourChangerBox")
+        .addClass("down-enter-active")
+        .css("background-color", backgroundColour);
+      $("body").css("background-color", primaryColor);
+      direction = false;
+    } else {
+      $(".colourChangerBox").removeClass("down-enter-active");
+      $(".colourChangerBox")
+        .addClass("down-leave-active")
+        .css("background-color", backgroundColour);
+      $("body").css("background-color", primaryColor);
+      direction = true;
+    }
   });
 };
 //
@@ -61,10 +74,32 @@ myWebsite.generateRandomNumber = () => {
   return Math.floor(Math.random() * colourThemes.length);
 };
 
+//background colour change animation
+myWebsite.backgroundAnimation = (backgroundColour) => {
+  let direction = true;
+  $("#colourChanger").click(function () {
+    if (direction) {
+      $(".colourChangerBox").removeClass("down-leave-active");
+      $(".colourChangerBox")
+        .addClass("down-enter-active")
+        .css("background-color", backgroundColour);
+      direction = false;
+    } else {
+      $(".colourChangerBox").removeClass("down-enter-active");
+      $(".colourChangerBox")
+        .addClass("down-leave-active")
+        .css("background-color", backgroundColour);
+      direction = true;
+    }
+  });
+  // $( "div.first" ).slideUp( 300 ).delay( 800 ).fadeIn( 400 );
+};
+
 myWebsite.init = () => {
   myWebsite.homepageAnimation();
   myWebsite.colourChanges();
   myWebsite.portfolioHover();
+  myWebsite.backgroundAnimation();
 };
 
 myWebsite.init();

@@ -49,619 +49,649 @@
   </head>
 
   <body>
-    <div class="container">
-      <!-- navbar start -->
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <span class="navbar-brand mb-0">
-          <i class="fas fa-paint-brush fa-icon" id="colourChanger"></i>
-        </span>
+    <div class="colourChangerBox">
+      <div class="container">
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <span class="navbar-brand mb-0">
+            <i class="fas fa-paint-brush fa-icon" id="colourChanger"></i>
+          </span>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarSupportedContent"
-        >
-          <ul class="nav mb-3 navbar-nav" id="pills-tab" role="tablist">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                id="home-tab"
-                data-toggle="pill"
-                href="#home"
-                role="tab"
-                aria-controls="home"
-                aria-selected="true"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                id="profile-tab"
-                data-toggle="pill"
-                href="#profile"
-                role="tab"
-                aria-controls="profile"
-                aria-selected="false"
-                >Profile</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                id="porfolio-tab"
-                data-toggle="pill"
-                href="#portfolio"
-                role="tab"
-                aria-controls="portfolio"
-                aria-selected="false"
-                >Portfolio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                id="contact-tab"
-                data-toggle="pill"
-                href="#contact"
-                role="tab"
-                aria-controls="contact"
-                aria-selected="false"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- navbar end -->
-
-      <!-- content start -->
-      <div class="tab-content" id="pills-tabContent">
-        <!-- HOME SECTION START -->
-        <section
-          class="tab-pane fade show active"
-          id="home"
-          role="tabpanel"
-          aria-labelledby="home-tab"
-        >
-          <div class="container">
-            <div class="row home-section-row">
-              <div class="col align-self-end">
-                <h1 class="pb-lg-3">Holly Jasiura</h1>
-              </div>
-            </div>
-            <div class="row home-section-row">
-              <div class="col align-self-start">
-                <h2>
-                  <span class="rotate-demo"
-                    >Front-End Developer., Tea Fundamentalist., Human-Centered
-                    Interpreter.</span
-                  >
-                </h2>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- HOME SECTION END -->
-
-        <!-- ABOUT ME SECTION START -->
-        <section
-          class="tab-pane fade"
-          id="profile"
-          role="tabpanel"
-          aria-labelledby="profile-tab"
-        >
-          <div class="container h-100">
-            <div class="row pt-5">
-              <div class="col my-auto">
-                <h3 class="containerHeadline">profile</h3>
-              </div>
-            </div>
-
-            <div class="row mt-5">
-              <div class="col-lg-5 my-auto">
-                <div class="imageContainer mb-5">
-                  <img
-                    src="./assets/profileImage.png"
-                    alt="profile picture of holly jasiura"
-                  />
-                </div>
-
-                <p>
-                  <span class="containerHeadline">location:</span> Toronto,
-                  Canada
-                </p>
-                <p>
-                  <span class="containerHeadline">beverage of choice:</span>
-                  Black tea
-                </p>
-                <p>
-                  <span class="containerHeadline">role model:</span> Leslie
-                  Knope
-                </p>
-              </div>
-
-              <div class="col-lg-7 my-auto">
-                <h4 class="containerHeadline">HELLO</h4>
-                <p>
-                  My name is Holly and I’m a front-end developer who is doing
-                  her part to make creative and intuitive applications for this
-                  world that can be enjoyed by everyone!
-                </p>
-                <p>
-                  My time spent working in hospitality was crucial in molding me
-                  into an awesome team player with a real knack for
-                  communicating with folks. I always bring a positive attitude
-                  in times of uncertainty and stress - and on regular days too!
-                  You will forever find me with a cup of tea in hand to ponder
-                  over any dilemmas that come my way because I love to problem
-                  solve and to help people out.
-                </p>
-                <p>
-                  When I'm not getting my learn on, you can usually find me
-                  wondering the streets of Toronto for the latest snack trends
-                  or knitting a sweater while grooving to some 80's pop tunes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- ABOUT ME SECTION END -->
-
-        <!-- PROJECTS SECTION START -->
-        <section
-          class="tab-pane fade"
-          id="portfolio"
-          role="tabpanel"
-          aria-labelledby="porfolio-tab"
-        >
-          <div class="container">
-            <!-- section headline -->
-            <div class="row pt-5">
-              <div class="col my-auto">
-                <h3 class="containerHeadline">portfolio</h3>
-              </div>
-            </div>
-            <!-- portfolio container -->
-            <div class="row mt-5 portfolio-container">
-              <!-- filter buttons -->
-              <div class="col-2">
-                <p class="containerHeadline">Filter By Tags</p>
-              </div>
-              <div class="col-10">
-                <span data-filter>All</span>
-                <span data-filter="scss">SASS</span>
-                <span data-filter="design">PSD</span>
-                <span data-filter="jquery">jQuery</span>
-                <span data-filter="js">Javascript</span>
-                <span data-filter="firebase">Firebase</span>
-                <span data-filter="restapi">Rest API</span>
-                <span data-filter="react">React</span>
-                <span data-filter="bootstrap">Bootstrap</span>
-              </div>
-            </div>
-            <!--  -->
-            <!-- project grid -->
-            <div class="d-flex justify-content-around flex-wrap mt-4">
-              <!-- battle rockets -->
-              <div
-                class="card mb-4"
-                data-tags="react,firebase,restapi,design"
-                style="width: 18rem"
-              >
-                <img
-                  src="./assets/demoBattleRockets.png"
-                  class="card-img-top border-dark border-bottom"
-                  alt="screen shot of battle rockets game"
-                />
-                <div class="card-body d-flex justify-content-around flex-wrap">
-                  <h5 class="card-title containerHeadline">battle rockets</h5>
-                  <p class="card-text">
-                    A two player game based on the classic board game
-                    BattleShip. Playable across devices (or a second incognito
-                    window), you can select your rocket game pieces created
-                    using the SpaceX API before the game begins.
-                  </p>
-                  <a
-                    href="https://github.com/holjas/Battle-Rockets"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Github</a
-                  >
-                  <a
-                    href="https://boring-bartik-0dfc23.netlify.app/"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-
-              <!-- Chat App  -->
-              <div
-                class="card mb-4"
-                data-tags="jquery,sass,javascript,design"
-                style="width: 18rem"
-              >
-                <img
-                  src="./assets/demoChatApp.png"
-                  class="card-img-top border-dark border-bottom"
-                  alt="screen shot of landing page with cell phone text animation"
-                />
-                <div class="card-body d-flex justify-content-around flex-wrap">
-                  <h5 class="card-title containerHeadline">Chat App Landing</h5>
-                  <p class="card-text">
-                    Created from a client PSD with design guide, site is fully
-                    responsive. The chat interface animates on the initial load.
-                  </p>
-                  <a
-                    href="https://github.com/holjas/ChatApp"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Github</a
-                  >
-                  <a
-                    href="https://holjas.github.io/ChatApp/"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-              <!-- project bort -->
-              <div
-                class="card mb-4"
-                data-tags="javascript,scss,restapi"
-                style="width: 18rem"
-              >
-                <img
-                  src="./assets/demoProjectBort.png"
-                  class="card-img-top border-dark border-bottom"
-                  alt="screen shot of project bort app"
-                />
-                <div class="card-body d-flex justify-content-around flex-wrap">
-                  <h5 class="card-title containerHeadline">Project Bort</h5>
-                  <p class="card-text">
-                    Using the Board Game Atlas API, Bort was built to navigate
-                    and explore games by returning a list based on your search
-                    preferences. Users can sort the results by price, average
-                    rating or alphabetical.
-                  </p>
-
-                  <a
-                    href="https://github.com/holjas/Project-Bort"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Github</a
-                  >
-                  <a
-                    href="https://goofy-spence-507a45.netlify.app"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-              <!-- js calculator -->
-              <div
-                class="card mb-4"
-                data-tags="js,react,bootstrap"
-                style="width: 18rem"
-              >
-                <img
-                  src="./assets/demoJSCalculator.png"
-                  class="card-img-top border-dark border-bottom"
-                  alt="screen shot of javascript calculator app"
-                />
-                <div class="card-body d-flex justify-content-around flex-wrap">
-                  <h5 class="card-title containerHeadline">JS Calculator</h5>
-                  <p class="card-text">
-                    A basic non-scientific calculator using react. The
-                    calculator can perform standard mathematical operations as
-                    well as the ability to clear the buffer.
-                  </p>
-                  <a
-                    href="https://github.com/holjas/Javascript-Calculator"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Github</a
-                  >
-                  <a
-                    href="https://codepen.io/holjas/pen/rNLLPEy"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-              <!-- harper's blog -->
-              <div
-                class="card mb-4"
-                data-tags="js,design,scss"
-                style="width: 18rem"
-              >
-                <img
-                  src="./assets/demoHarper.png"
-                  class="card-img-top border-dark border-bottom"
-                  alt="screen shot of blog page created from client design specs"
-                />
-                <div class="card-body d-flex justify-content-around flex-wrap">
-                  <h5 class="card-title containerHeadline">Harper's Blog</h5>
-                  <p class="card-text">
-                    A stylish, classic mulit-page blog with a comment section
-                    and photo gallery. Created from a client PSD with design
-                    guide, site is fully responsive.
-                  </p>
-                  <a
-                    href="https://github.com/holjas/HarperBlog"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Github</a
-                  >
-                  <a
-                    href="https://priceless-lalande-77e829.netlify.app"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-              <!-- geolanding page -->
-              <div
-                class="card mb-4"
-                data-tags="scss,design"
-                style="width: 18rem"
-              >
-                <img
-                  src="./assets/demoGeoLanding.png"
-                  class="card-img-top border-dark border-bottom"
-                  alt="screen shot of geo landing page created from client specs"
-                />
-                <div class="card-body d-flex justify-content-around flex-wrap">
-                  <h5 class="card-title containerHeadline">GeoLanding Page</h5>
-                  <p class="card-text">
-                    Created from a client PSD with design guide, site is fully
-                    responsive.
-                  </p>
-                  <a
-                    href="https://github.com/holjas/GeoPatternLandingPage"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Github</a
-                  >
-                  <a
-                    href="https://holjas.github.io/GeoPatternLandingPage/"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-              <!-- VS code computer typing  -->
-              <div class="card mb-4" data-tags="jquery" style="width: 18rem">
-                <img
-                  src="./assets/demoComputer.png"
-                  class="card-img-top border border-dark border-bottom"
-                  alt="screen shot of landing page with text animation"
-                />
-                <div class="card-body d-flex justify-content-around flex-wrap">
-                  <h5 class="card-title containerHeadline">VS Code Design</h5>
-                  <p class="card-text">
-                    Reimagined VS Code with jquery text effect.
-                  </p>
-                  <a
-                    href="https://github.com/holjas/WhosAComputer"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Github</a
-                  >
-                  <a
-                    href="https://holjas.github.io/WhosAComputer/"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-              <!-- humble pondering -->
-              <div
-                class="card mb-4"
-                data-tags="react,firebase"
-                style="width: 18rem"
-              >
-                <img
-                  src="./assets/demoHumblePonderings.png"
-                  class="card-img-top border-dark border-bottom"
-                  alt="screen shot of humble ponderings app"
-                />
-                <div class="card-body d-flex justify-content-around flex-wrap">
-                  <h5 class="card-title containerHeadline">
-                    humble ponderings
-                  </h5>
-                  <p class="card-text">
-                    Ponderings provides a random writing prompt from a custom
-                    database and the user can enter a short little musing. This
-                    input will be displayed and stored, and then can be edited,
-                    deleted or pinned at any time.
-                  </p>
-
-                  <a
-                    href="https://github.com/holjas/Humble-Ponderings"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Github</a
-                  >
-                  <a
-                    href="https://trusting-torvalds-be28b8.netlify.app"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-              <!-- word hover -->
-              <div class="card mb-4" data-tags="jquery" style="width: 18rem">
-                <img
-                  src="./assets/demoPartyHover.png"
-                  class="card-img-top border-dark border-bottom"
-                  alt="screen shot of landing page with quote about creativity"
-                />
-                <div class="card-body d-flex justify-content-around flex-wrap">
-                  <h5 class="card-title containerHeadline">Party Hover</h5>
-                  <p class="card-text">
-                    Designed eye catching landing page with a jQuery plugin
-                    providing a text effect.
-                  </p>
-                  <a
-                    href="https://github.com/holjas/WordHover"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Github</a
-                  >
-                  <a
-                    href="https://holjas.github.io/WordHover/"
-                    class="btn btn-outline-secondary mt-auto"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- PROJECTS SECTION END -->
-
-        <!-- CONTACT SECTION START -->
-        <section
-          class="tab-pane fade"
-          id="contact"
-          role="tabpanel"
-          aria-labelledby="contact-tab"
-        >
-          <div class="container h-100">
-            <!-- headline title -->
-            <div class="row pt-5">
-              <div class="col my-auto">
-                <h3 class="containerHeadline">contact</h3>
-              </div>
-            </div>
-
-            <div class="row mt-5">
-              <!-- my info, left side -->
-              <div class="col-lg-6 my-auto">
-                <div class="row d-flex justify-content-center mb-4">
-                  <p>Thanks for Visiting!</p>
-                </div>
-                <div
-                  class="row d-flex justify-content-around mb-5 contactSocials"
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="nav mb-3 navbar-nav" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="home-tab"
+                  data-toggle="pill"
+                  href="#home"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                  >Home</a
                 >
-                  <a
-                    href="https://www.linkedin.com/in/hollyjasiura"
-                    target="_blank"
-                  >
-                    <span class="sr-only">visit holly's linkedin page</span>
-                    <i
-                      class="fab fa-linkedin fa-icon"
-                      aria-hidden="true"
-                      title="visit holly's linkedin page"
-                    ></i
-                  ></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="profile-tab"
+                  data-toggle="pill"
+                  href="#profile"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                  >Profile</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="porfolio-tab"
+                  data-toggle="pill"
+                  href="#portfolio"
+                  role="tab"
+                  aria-controls="portfolio"
+                  aria-selected="false"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="contact-tab"
+                  data-toggle="pill"
+                  href="#contact"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- navbar end -->
 
-                  <a href="https://www.github.com/holjas" target="_blank">
-                    <span class="sr-only">visit holly's github page</span>
-                    <i
-                      class="fab fa-github-square fa-icon"
-                      aria-hidden="true"
-                      title="visit holly's github page"
-                    ></i
-                  ></a>
-
-                  <a href="https://www.codepen.io/holjas" target="_blank">
-                    <span class="sr-only">visit holly's code page</span>
-                    <i
-                      class="fab fa-codepen fa-icon"
-                      aria-hidden="true"
-                      title="visit holly's codepen page"
-                    ></i>
-                  </a>
-
-                  <a
-                    href="https://www.twitter.com/thisishollyj"
-                    target="_blank"
-                  >
-                    <span class="sr-only">visit holly's twitter page</span>
-                    <i
-                      class="fab fa-twitter-square fa-icon"
-                      aria-hidden="true"
-                      title="visit holly's twitter page"
-                    ></i>
-                  </a>
+        <!-- content start -->
+        <div class="tab-content" id="pills-tabContent">
+          <!-- HOME SECTION START -->
+          <section
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <div class="container">
+              <div class="row home-section-row">
+                <div class="col align-self-end">
+                  <h1 class="pb-lg-3">Holly Jasiura</h1>
                 </div>
               </div>
-              <!-- contact form , right side -->
-              <div class="col-lg-6">
-                <form name="contactForm" method="POST" data-netlify="true">
-                  <div class="form-group">
-                    <label for="firstName">Name</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="firstName"
-                      placeholder="Name"
+              <div class="row home-section-row">
+                <div class="col align-self-start">
+                  <h2>
+                    <span class="rotate-demo"
+                      >Front-End Developer., Human-Centered Interpreter., Tea
+                      Fundamentalist.</span
+                    >
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- HOME SECTION END -->
+
+          <!-- ABOUT ME SECTION START -->
+          <section
+            class="tab-pane fade"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <div class="container h-100">
+              <div class="row pt-5">
+                <div class="col my-auto">
+                  <h3 class="containerHeadline">profile</h3>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-lg-5 my-auto">
+                  <div class="imageContainer mb-5">
+                    <img
+                      src="./assets/profileImage.png"
+                      alt="profile picture of holly jasiura"
                     />
                   </div>
-                  <div class="form-group">
-                    <label for="inputEmail">Email Address</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="inputEmail"
-                      aria-describedby="emailHelp"
-                      placeholder="Enter email"
-                    />
-                    <small id="emailHelp" class="form-text text-muted"
-                      >We'll never share your email with anyone else.</small
+
+                  <p>
+                    <span class="containerHeadline">location:</span> Toronto,
+                    Canada
+                  </p>
+                  <p>
+                    <span class="containerHeadline">beverage of choice:</span>
+                    Black tea
+                  </p>
+                  <p>
+                    <span class="containerHeadline">role model:</span> Leslie
+                    Knope
+                  </p>
+                </div>
+
+                <div class="col-lg-7 my-auto">
+                  <h4 class="containerHeadline">HELLO</h4>
+                  <p>
+                    My name is Holly and I’m a front-end developer who is doing
+                    her part to make creative and intuitive applications for
+                    this world that can be enjoyed by everyone!
+                  </p>
+                  <p>
+                    My time spent working in hospitality was crucial in molding
+                    me into an awesome team player with a real knack for
+                    communicating with folks. I always bring a positive attitude
+                    in times of uncertainty and stress - and on regular days
+                    too! You will forever find me with a cup of tea in hand to
+                    ponder over any dilemmas that come my way because I love to
+                    problem solve and to help people out.
+                  </p>
+                  <p>
+                    When I'm not getting my learn on, you can usually find me
+                    wondering the streets of Toronto for the latest snack trends
+                    or knitting a sweater while grooving to some 80's pop tunes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- ABOUT ME SECTION END -->
+
+          <!-- PROJECTS SECTION START -->
+          <section
+            class="tab-pane fade"
+            id="portfolio"
+            role="tabpanel"
+            aria-labelledby="porfolio-tab"
+          >
+            <div class="container">
+              <!-- section headline -->
+              <div class="row pt-5">
+                <div class="col my-auto">
+                  <h3 class="containerHeadline">portfolio</h3>
+                </div>
+              </div>
+              <!-- portfolio container -->
+              <div class="row mt-5 portfolio-container">
+                <!-- filter buttons -->
+                <div class="col-lg-2">
+                  <p class="containerHeadline">Filter By Tags</p>
+                </div>
+                <div class="col-lg-10">
+                  <span data-filter>All</span>
+                  <span data-filter="scss">SASS</span>
+                  <span data-filter="design">PSD</span>
+                  <span data-filter="jquery">jQuery</span>
+                  <span data-filter="js">Javascript</span>
+                  <span data-filter="firebase">Firebase</span>
+                  <span data-filter="restapi">Rest API</span>
+                  <span data-filter="react">React</span>
+                  <span data-filter="bootstrap">Bootstrap</span>
+                </div>
+              </div>
+              <!--  -->
+              <!-- project grid -->
+              <div class="d-flex justify-content-around flex-wrap mt-4">
+                <!-- battle rockets -->
+                <div
+                  class="card mb-4"
+                  data-tags="react,firebase,restapi,design"
+                  style="width: 18rem"
+                >
+                  <img
+                    src="./assets/demoBattleRockets.png"
+                    class="card-img-top border-dark border-bottom"
+                    alt="screen shot of battle rockets game"
+                  />
+                  <div
+                    class="card-body d-flex justify-content-around flex-wrap"
+                  >
+                    <h5 class="card-title containerHeadline">battle rockets</h5>
+                    <p class="card-text">
+                      A two player game based on the classic board game
+                      BattleShip. Playable across devices (or a second incognito
+                      window), you can select your rocket game pieces created
+                      using the SpaceX API before the game begins.
+                    </p>
+                    <a
+                      href="https://github.com/holjas/Battle-Rockets"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Github</a
+                    >
+                    <a
+                      href="https://boring-bartik-0dfc23.netlify.app/"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Live Demo</a
                     >
                   </div>
+                </div>
 
-                  <div class="form-group">
-                    <label for="formTextArea">What's on your mind?</label>
-                    <textarea
-                      class="form-control"
-                      id="formTextArea"
-                      rows="3"
-                    ></textarea>
-                  </div>
-                  <!-- netlify captcha -->
-                  <div data-netlify-recaptcha="true" class="captcha"></div>
-                  <button
-                    type="submit"
-                    class="btn btn-block containerHeadline mt-4"
+                <!-- Chat App  -->
+                <div
+                  class="card mb-4"
+                  data-tags="jquery,sass,javascript,design"
+                  style="width: 18rem"
+                >
+                  <img
+                    src="./assets/demoChatApp.png"
+                    class="card-img-top border-dark border-bottom"
+                    alt="screen shot of landing page with cell phone text animation"
+                  />
+                  <div
+                    class="card-body d-flex justify-content-around flex-wrap"
                   >
-                    Submit
-                  </button>
-                </form>
+                    <h5 class="card-title containerHeadline">
+                      Chat App Landing
+                    </h5>
+                    <p class="card-text">
+                      Created from a client PSD with design guide, site is fully
+                      responsive. The chat interface animates on the initial
+                      load.
+                    </p>
+                    <a
+                      href="https://github.com/holjas/ChatApp"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Github</a
+                    >
+                    <a
+                      href="https://holjas.github.io/ChatApp/"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                </div>
+                <!-- project bort -->
+                <div
+                  class="card mb-4"
+                  data-tags="javascript,scss,restapi"
+                  style="width: 18rem"
+                >
+                  <img
+                    src="./assets/demoProjectBort.png"
+                    class="card-img-top border-dark border-bottom"
+                    alt="screen shot of project bort app"
+                  />
+                  <div
+                    class="card-body d-flex justify-content-around flex-wrap"
+                  >
+                    <h5 class="card-title containerHeadline">Project Bort</h5>
+                    <p class="card-text">
+                      Using the Board Game Atlas API, Bort was built to navigate
+                      and explore games by returning a list based on your search
+                      preferences. Users can sort the results by price, average
+                      rating or alphabetical.
+                    </p>
+
+                    <a
+                      href="https://github.com/holjas/Project-Bort"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Github</a
+                    >
+                    <a
+                      href="https://goofy-spence-507a45.netlify.app"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                </div>
+                <!-- js calculator -->
+                <div
+                  class="card mb-4"
+                  data-tags="js,react,bootstrap"
+                  style="width: 18rem"
+                >
+                  <img
+                    src="./assets/demoJSCalculator.png"
+                    class="card-img-top border-dark border-bottom"
+                    alt="screen shot of javascript calculator app"
+                  />
+                  <div
+                    class="card-body d-flex justify-content-around flex-wrap"
+                  >
+                    <h5 class="card-title containerHeadline">JS Calculator</h5>
+                    <p class="card-text">
+                      A basic non-scientific calculator using react. The
+                      calculator can perform standard mathematical operations as
+                      well as the ability to clear the buffer.
+                    </p>
+                    <a
+                      href="https://github.com/holjas/Javascript-Calculator"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Github</a
+                    >
+                    <a
+                      href="https://codepen.io/holjas/pen/rNLLPEy"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                </div>
+                <!-- harper's blog -->
+                <div
+                  class="card mb-4"
+                  data-tags="js,design,scss"
+                  style="width: 18rem"
+                >
+                  <img
+                    src="./assets/demoHarper.png"
+                    class="card-img-top border-dark border-bottom"
+                    alt="screen shot of blog page created from client design specs"
+                  />
+                  <div
+                    class="card-body d-flex justify-content-around flex-wrap"
+                  >
+                    <h5 class="card-title containerHeadline">Harper's Blog</h5>
+                    <p class="card-text">
+                      A stylish, classic mulit-page blog with a comment section
+                      and photo gallery. Created from a client PSD with design
+                      guide, site is fully responsive.
+                    </p>
+                    <a
+                      href="https://github.com/holjas/HarperBlog"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Github</a
+                    >
+                    <a
+                      href="https://priceless-lalande-77e829.netlify.app"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                </div>
+                <!-- geolanding page -->
+                <div
+                  class="card mb-4"
+                  data-tags="scss,design"
+                  style="width: 18rem"
+                >
+                  <img
+                    src="./assets/demoGeoLanding.png"
+                    class="card-img-top border-dark border-bottom"
+                    alt="screen shot of geo landing page created from client specs"
+                  />
+                  <div
+                    class="card-body d-flex justify-content-around flex-wrap"
+                  >
+                    <h5 class="card-title containerHeadline">
+                      GeoLanding Page
+                    </h5>
+                    <p class="card-text">
+                      Created from a client PSD with design guide, site is fully
+                      responsive.
+                    </p>
+                    <a
+                      href="https://github.com/holjas/GeoPatternLandingPage"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Github</a
+                    >
+                    <a
+                      href="https://holjas.github.io/GeoPatternLandingPage/"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                </div>
+                <!-- VS code computer typing  -->
+                <div class="card mb-4" data-tags="jquery" style="width: 18rem">
+                  <img
+                    src="./assets/demoComputer.png"
+                    class="card-img-top border border-dark border-bottom"
+                    alt="screen shot of landing page with text animation"
+                  />
+                  <div
+                    class="card-body d-flex justify-content-around flex-wrap"
+                  >
+                    <h5 class="card-title containerHeadline">VS Code Design</h5>
+                    <p class="card-text">
+                      Reimagined VS Code with jquery text effect.
+                    </p>
+                    <a
+                      href="https://github.com/holjas/WhosAComputer"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Github</a
+                    >
+                    <a
+                      href="https://holjas.github.io/WhosAComputer/"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                </div>
+                <!-- humble pondering -->
+                <div
+                  class="card mb-4"
+                  data-tags="react,firebase"
+                  style="width: 18rem"
+                >
+                  <img
+                    src="./assets/demoHumblePonderings.png"
+                    class="card-img-top border-dark border-bottom"
+                    alt="screen shot of humble ponderings app"
+                  />
+                  <div
+                    class="card-body d-flex justify-content-around flex-wrap"
+                  >
+                    <h5 class="card-title containerHeadline">
+                      humble ponderings
+                    </h5>
+                    <p class="card-text">
+                      Ponderings provides a random writing prompt from a custom
+                      database and the user can enter a short little musing.
+                      This input will be displayed and stored, and then can be
+                      edited, deleted or pinned at any time.
+                    </p>
+
+                    <a
+                      href="https://github.com/holjas/Humble-Ponderings"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Github</a
+                    >
+                    <a
+                      href="https://trusting-torvalds-be28b8.netlify.app"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                </div>
+                <!-- word hover -->
+                <div class="card mb-4" data-tags="jquery" style="width: 18rem">
+                  <img
+                    src="./assets/demoPartyHover.png"
+                    class="card-img-top border-dark border-bottom"
+                    alt="screen shot of landing page with quote about creativity"
+                  />
+                  <div
+                    class="card-body d-flex justify-content-around flex-wrap"
+                  >
+                    <h5 class="card-title containerHeadline">Party Hover</h5>
+                    <p class="card-text">
+                      Designed eye catching landing page with a jQuery plugin
+                      providing a text effect.
+                    </p>
+                    <a
+                      href="https://github.com/holjas/WordHover"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Github</a
+                    >
+                    <a
+                      href="https://holjas.github.io/WordHover/"
+                      class="btn btn-outline-secondary mt-auto"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <!-- CONTACT SECTION END -->
+          </section>
+          <!-- PROJECTS SECTION END -->
+
+          <!-- CONTACT SECTION START -->
+          <section
+            class="tab-pane fade"
+            id="contact"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          >
+            <div class="container h-100">
+              <!-- headline title -->
+              <div class="row pt-5">
+                <div class="col my-auto">
+                  <h3 class="containerHeadline">contact</h3>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <!-- my info, left side -->
+                <div class="col-lg-6 my-auto">
+                  <div class="row d-flex justify-content-center mb-4">
+                    <p>Thanks for Visiting!</p>
+                  </div>
+                  <div
+                    class="
+                      row
+                      d-flex
+                      justify-content-around
+                      mb-5
+                      contactSocials
+                    "
+                  >
+                    <a
+                      href="https://www.linkedin.com/in/hollyjasiura"
+                      target="_blank"
+                    >
+                      <span class="sr-only">visit holly's linkedin page</span>
+                      <i
+                        class="fab fa-linkedin fa-icon"
+                        aria-hidden="true"
+                        title="visit holly's linkedin page"
+                      ></i
+                    ></a>
+
+                    <a href="https://www.github.com/holjas" target="_blank">
+                      <span class="sr-only">visit holly's github page</span>
+                      <i
+                        class="fab fa-github-square fa-icon"
+                        aria-hidden="true"
+                        title="visit holly's github page"
+                      ></i
+                    ></a>
+
+                    <a href="https://www.codepen.io/holjas" target="_blank">
+                      <span class="sr-only">visit holly's code page</span>
+                      <i
+                        class="fab fa-codepen fa-icon"
+                        aria-hidden="true"
+                        title="visit holly's codepen page"
+                      ></i>
+                    </a>
+
+                    <a
+                      href="https://www.twitter.com/thisishollyj"
+                      target="_blank"
+                    >
+                      <span class="sr-only">visit holly's twitter page</span>
+                      <i
+                        class="fab fa-twitter-square fa-icon"
+                        aria-hidden="true"
+                        title="visit holly's twitter page"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- contact form , right side -->
+                <div class="col-lg-6">
+                  <form name="contactForm" method="POST" data-netlify="true">
+                    <div class="form-group">
+                      <label for="firstName">Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstName"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="inputEmail">Email Address</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputEmail"
+                        aria-describedby="emailHelp"
+                        placeholder="Enter email"
+                      />
+                      <small id="emailHelp" class="form-text text-muted"
+                        >We'll never share your email with anyone else.</small
+                      >
+                    </div>
+
+                    <div class="form-group">
+                      <label for="formTextArea">What's on your mind?</label>
+                      <textarea
+                        class="form-control"
+                        id="formTextArea"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                    <!-- netlify captcha -->
+                    <div data-netlify-recaptcha="true" class="captcha"></div>
+                    <button
+                      type="submit"
+                      class="btn btn-block containerHeadline mt-4"
+                    >
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- CONTACT SECTION END -->
+        </div>
+
+        <!-- end of wrapper -->
       </div>
-
-      <!-- end of wrapper -->
     </div>
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -5,6 +5,25 @@
 .home-section-row {
   height: calc(90vh / 2);
 }
+.colourChangerBox {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: $backgroundColor;
+}
+
+.down-enter-active {
+  animation: 1s down-enter;
+}
+
+@keyframes down-enter {
+  0% {
+    clip-path: inset(0 0 100% 0);
+  }
+  100% {
+    clip-path: inset(0);
+  }
+}
 
 // media queries
 @include media-breakpoint-down(xxl) {
@@ -30,11 +49,17 @@
 }
 @include media-breakpoint-down(sm) {
   //lightblue
+  body {
+    font-size: 16px;
+  }
   h1 {
     font-size: 3.6rem;
   }
   h2 {
     font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 2.7rem;
   }
   .home-section-row {
     height: calc(80vh / 2);

@@ -89,6 +89,40 @@ nav a:hover:after {
   height: calc(90vh / 2);
 }
 
+.colourChangerBox {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #28292b;
+}
+
+.down-enter-active {
+  -webkit-animation: 1s down-enter;
+          animation: 1s down-enter;
+}
+
+@-webkit-keyframes down-enter {
+  0% {
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+  }
+  100% {
+    -webkit-clip-path: inset(0);
+            clip-path: inset(0);
+  }
+}
+
+@keyframes down-enter {
+  0% {
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+  }
+  100% {
+    -webkit-clip-path: inset(0);
+            clip-path: inset(0);
+  }
+}
+
 @media (max-width: 991.98px) {
   h1 {
     font-size: 6rem;
@@ -105,11 +139,17 @@ nav a:hover:after {
 }
 
 @media (max-width: 575.98px) {
+  body {
+    font-size: 16px;
+  }
   h1 {
     font-size: 3.6rem;
   }
   h2 {
     font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 2.7rem;
   }
   .home-section-row {
     height: calc(80vh / 2);
@@ -218,6 +258,12 @@ form .btn:hover {
   font-size: 2rem;
 }
 
+.colourChangerBox {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
 .down-enter-active {
   -webkit-animation: 1s down-enter;
           animation: 1s down-enter;
@@ -226,17 +272,6 @@ form .btn:hover {
 .down-leave-active {
   -webkit-animation: 1s down-leave;
           animation: 1s down-leave;
-}
-
-@-webkit-keyframes down-enter {
-  0% {
-    -webkit-clip-path: inset(0 0 100% 0);
-            clip-path: inset(0 0 100% 0);
-  }
-  100% {
-    -webkit-clip-path: inset(0);
-            clip-path: inset(0);
-  }
 }
 
 @keyframes down-enter {
