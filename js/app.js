@@ -32,9 +32,18 @@ myWebsite.colourChanges = () => {
     // main text color change
     $("p, [data-filter], label").css("color", mainTextColour);
     $("form .btn").css("color", "white");
+    //
+    //
+
+    //
+    //
   });
 };
+//
+//
 
+//
+//
 // portfolio, remove greyscale on hover
 myWebsite.portfolioHover = () => {
   $(".card").hover(

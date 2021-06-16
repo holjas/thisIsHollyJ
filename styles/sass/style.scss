@@ -44,6 +44,33 @@ p {
 @import "portfolio";
 @import "contact";
 
+.down-enter-active {
+  animation: 1s down-enter;
+  // background-color: hotpink;
+}
+.down-leave-active {
+  animation: 1s down-leave;
+  // background-color: lightblue;
+}
+
+@keyframes down-enter {
+  0% {
+    clip-path: inset(0 0 100% 0);
+  }
+  100% {
+    clip-path: inset(0);
+  }
+}
+
+@keyframes down-leave {
+  0% {
+    clip-path: inset(0 0 100% 0);
+  }
+  100% {
+    clip-path: inset(0);
+  }
+}
+
 // media queries
 
 // @include media-breakpoint-down(xxl) {

@@ -213,3 +213,61 @@ form .btn:hover {
 .contactSocials .fa-icon {
   font-size: 3rem;
 }
+
+[aria-labelledby="contact-tab"] p {
+  font-size: 2rem;
+}
+
+.down-enter-active {
+  -webkit-animation: 1s down-enter;
+          animation: 1s down-enter;
+}
+
+.down-leave-active {
+  -webkit-animation: 1s down-leave;
+          animation: 1s down-leave;
+}
+
+@-webkit-keyframes down-enter {
+  0% {
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+  }
+  100% {
+    -webkit-clip-path: inset(0);
+            clip-path: inset(0);
+  }
+}
+
+@keyframes down-enter {
+  0% {
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+  }
+  100% {
+    -webkit-clip-path: inset(0);
+            clip-path: inset(0);
+  }
+}
+
+@-webkit-keyframes down-leave {
+  0% {
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+  }
+  100% {
+    -webkit-clip-path: inset(0);
+            clip-path: inset(0);
+  }
+}
+
+@keyframes down-leave {
+  0% {
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+  }
+  100% {
+    -webkit-clip-path: inset(0);
+            clip-path: inset(0);
+  }
+}
