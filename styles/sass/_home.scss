@@ -1,67 +1,34 @@
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
-
 .home-section-row {
   height: calc(90vh / 2);
 }
+
 .colourChangerBox {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background-color: $backgroundColor;
 }
 
 .down-enter-active {
-  animation: 1s down-enter;
+  animation: 1.75s down-enter;
+}
+.down-leave-active {
+  animation: 1.75s down-leave;
 }
 
 @keyframes down-enter {
   0% {
-    clip-path: inset(0 0 100% 0);
+    clip-path: circle(0%);
   }
   100% {
-    clip-path: inset(0);
+    clip-path: circle(100%);
   }
 }
 
-// media queries
-@include media-breakpoint-down(xxl) {
-  //green
-}
-@include media-breakpoint-down(xl) {
-  //pink
-}
-@include media-breakpoint-down(lg) {
-  //orange
-  h1 {
-    font-size: 6rem;
+@keyframes down-leave {
+  0% {
+    clip-path: circle(0%);
   }
-  h2 {
-    font-size: 2.5rem;
-  }
-}
-@include media-breakpoint-down(md) {
-  //yellow
-  h2 {
-    font-size: 2rem;
-  }
-}
-@include media-breakpoint-down(sm) {
-  //lightblue
-  body {
-    font-size: 16px;
-  }
-  h1 {
-    font-size: 3.6rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  h3 {
-    font-size: 2.7rem;
-  }
-  .home-section-row {
-    height: calc(80vh / 2);
+  100% {
+    clip-path: circle(100%);
   }
 }

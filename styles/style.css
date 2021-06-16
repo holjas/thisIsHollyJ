@@ -35,6 +35,39 @@ p {
   color: #f6f6f6;
 }
 
+@media (max-width: 991.98px) {
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 2.7rem;
+  }
+  .home-section-row {
+    height: calc(80vh / 2);
+  }
+}
+
 .navbar-toggler {
   background-color: transparent;
 }
@@ -93,66 +126,59 @@ nav a:hover:after {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background-color: #28292b;
 }
 
 .down-enter-active {
-  -webkit-animation: 1s down-enter;
-          animation: 1s down-enter;
+  -webkit-animation: 1.75s down-enter;
+          animation: 1.75s down-enter;
+}
+
+.down-leave-active {
+  -webkit-animation: 1.75s down-leave;
+          animation: 1.75s down-leave;
 }
 
 @-webkit-keyframes down-enter {
   0% {
-    -webkit-clip-path: inset(0 0 100% 0);
-            clip-path: inset(0 0 100% 0);
+    -webkit-clip-path: circle(0%);
+            clip-path: circle(0%);
   }
   100% {
-    -webkit-clip-path: inset(0);
-            clip-path: inset(0);
+    -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
   }
 }
 
 @keyframes down-enter {
   0% {
-    -webkit-clip-path: inset(0 0 100% 0);
-            clip-path: inset(0 0 100% 0);
+    -webkit-clip-path: circle(0%);
+            clip-path: circle(0%);
   }
   100% {
-    -webkit-clip-path: inset(0);
-            clip-path: inset(0);
+    -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
   }
 }
 
-@media (max-width: 991.98px) {
-  h1 {
-    font-size: 6rem;
+@-webkit-keyframes down-leave {
+  0% {
+    -webkit-clip-path: circle(0%);
+            clip-path: circle(0%);
   }
-  h2 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 767.98px) {
-  h2 {
-    font-size: 2rem;
+  100% {
+    -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
   }
 }
 
-@media (max-width: 575.98px) {
-  body {
-    font-size: 16px;
+@keyframes down-leave {
+  0% {
+    -webkit-clip-path: circle(0%);
+            clip-path: circle(0%);
   }
-  h1 {
-    font-size: 3.6rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  h3 {
-    font-size: 2.7rem;
-  }
-  .home-section-row {
-    height: calc(80vh / 2);
+  100% {
+    -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
   }
 }
 
@@ -256,53 +282,4 @@ form .btn:hover {
 
 [aria-labelledby="contact-tab"] p {
   font-size: 2rem;
-}
-
-.colourChangerBox {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-}
-
-.down-enter-active {
-  -webkit-animation: 1.75s down-enter;
-          animation: 1.75s down-enter;
-}
-
-.down-leave-active {
-  -webkit-animation: 1.75s down-leave;
-          animation: 1.75s down-leave;
-}
-
-@keyframes down-enter {
-  0% {
-    -webkit-clip-path: circle(0%);
-            clip-path: circle(0%);
-  }
-  100% {
-    -webkit-clip-path: circle(100%);
-            clip-path: circle(100%);
-  }
-}
-
-@-webkit-keyframes down-leave {
-  0% {
-    -webkit-clip-path: circle(0%);
-            clip-path: circle(0%);
-  }
-  100% {
-    -webkit-clip-path: circle(100%);
-            clip-path: circle(100%);
-  }
-}
-
-@keyframes down-leave {
-  0% {
-    -webkit-clip-path: circle(0%);
-            clip-path: circle(0%);
-  }
-  100% {
-    -webkit-clip-path: circle(100%);
-            clip-path: circle(100%);
-  }
 }

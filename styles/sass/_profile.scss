@@ -1,7 +1,3 @@
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
-
 section {
   height: 90vh;
 }
@@ -31,19 +27,3 @@ h3.containerHeadline:after {
   width: 100%;
   border-radius: 100px 40px;
 }
-// media queries
-// @include media-breakpoint-down(xxl) {
-//   //green
-// }
-// @include media-breakpoint-down(xl) {
-//  //pink
-// }
-// @include media-breakpoint-down(lg) {
-//  //orange
-// }
-// @include media-breakpoint-down(md) {
-//  //yellow
-// }
-// @include media-breakpoint-down(sm) {
-//  //lightblue
-// }

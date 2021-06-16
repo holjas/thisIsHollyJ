@@ -4,7 +4,8 @@
  * @author Gianluca Chiarani
  * @license The MIT License (MIT)
  */
-
+// ----------
+// plug in for portfolio to filter results
 (function ($) {
   $.autofilter = function (options) {
     var settings = $.extend(
