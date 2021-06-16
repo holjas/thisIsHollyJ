@@ -68,7 +68,16 @@ myWebsite.portfolioHover = () => {
 
 // generate random number
 myWebsite.generateRandomNumber = () => {
-  return Math.floor(Math.random() * colourThemes.length);
+  let currentRandom = 0;
+  let newRandom = Math.floor(Math.random() * colourThemes.length);
+  currentRandom = newRandom;
+
+  // so that the colors don't repeat back-to-back
+  if (currentRandom === newRandom) {
+    newRandom = Math.floor(Math.random() * colourThemes.length);
+    currentRandom = newRandom;
+  }
+  return newRandom;
 };
 
 myWebsite.init = () => {
