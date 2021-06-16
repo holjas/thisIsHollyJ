@@ -26,6 +26,25 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+
     <title>This is Holly J</title>
   </head>
   <body>
@@ -34,7 +53,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark">
         <span class="navbar-brand mb-0">
           <i
-            class="fas fa-paint-brush colour-change"
+            class="fas fa-paint-brush fa-icon"
             id="colourChanger"
             transition-style="in:wipe:up"
           ></i>
@@ -225,149 +244,298 @@
               </div>
               <div class="col-10">
                 <span data-filter>All</span>
-                <span data-filter="html">html5</span>
-                <span data-filter="scss">sass</span>
-                <span data-filter="js">javascript</span>
-                <span data-filter="react">react</span>
-                <span data-filter="firebase">firebase</span>
-                <span data-filter="restapi">rest api</span>
-                <span data-filter="bootstrap">bootstrap</span>
+                <span data-filter="scss">SASS</span>
+                <span data-filter="design">PSD</span>
+                <span data-filter="jquery">jQuery</span>
+                <span data-filter="js">Javascript</span>
+                <span data-filter="firebase">Firebase</span>
+                <span data-filter="restapi">Rest API</span>
+                <span data-filter="react">React</span>
+                <span data-filter="bootstrap">Bootstrap</span>
               </div>
             </div>
+            <!--  -->
             <!-- project grid -->
             <div class="d-flex justify-content-around flex-wrap mt-4">
-              <div class="card mb-4" data-tags="js,scss" style="width: 18rem">
-                <img
-                  src="http://placekitten.com/g/100/100"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body d-flex justify-content-around flex-wrap">
-                  <h5 class="card-title containerHeadline">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="#" class="btn btn btn-outline-secondary">Github</a>
-                  <a href="#" class="btn btn btn-outline-secondary"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-
-              <div class="card mb-4" data-tags="js" style="width: 18rem">
-                <img
-                  src="http://placekitten.com/g/100/100"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body d-flex justify-content-around flex-wrap">
-                  <h5 class="card-title containerHeadline">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="#" class="btn btn btn-outline-secondary">Github</a>
-                  <a href="#" class="btn btn btn-outline-secondary"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-
+              <!-- battle rockets -->
               <div
                 class="card mb-4"
-                data-tags="html, scss"
+                data-tags="react,firebase,restapi,design"
                 style="width: 18rem"
               >
                 <img
-                  src="http://placekitten.com/g/100/100"
-                  class="card-img-top"
-                  alt="..."
+                  src="./assets/demoBattleRockets.png"
+                  class="card-img-top border-dark border-bottom"
+                  alt="screen shot of battle rockets game"
                 />
                 <div class="card-body d-flex justify-content-around flex-wrap">
-                  <h5 class="card-title containerHeadline">Card title</h5>
+                  <h5 class="card-title containerHeadline">battle rockets</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    A two player game based on the classic board game
+                    BattleShip. Playable across devices (or a second incognito
+                    window), you can select your rocket game pieces created
+                    using the SpaceX API before the game begins.
                   </p>
-                  <a href="#" class="btn btn btn-outline-secondary">Github</a>
-                  <a href="#" class="btn btn btn-outline-secondary"
+                  <a
+                    href="https://github.com/holjas/Battle-Rockets"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
+                    >Github</a
+                  >
+                  <a
+                    href="https://boring-bartik-0dfc23.netlify.app/"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
                     >Live Demo</a
                   >
                 </div>
               </div>
 
-              <div class="card mb-4" data-tags="js" style="width: 18rem">
+              <!-- Chat App  -->
+              <div
+                class="card mb-4"
+                data-tags="jquery,sass,javascript,design"
+                style="width: 18rem"
+              >
                 <img
-                  src="http://placekitten.com/g/100/100"
-                  class="card-img-top"
-                  alt="..."
+                  src="./assets/demoChatApp.png"
+                  class="card-img-top border border-dark border-bottom"
+                  alt="screen shot of landing page with cell phone text animation"
                 />
                 <div class="card-body d-flex justify-content-around flex-wrap">
-                  <h5 class="card-title containerHeadline">Card title</h5>
+                  <h5 class="card-title containerHeadline">Chat App Landing</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    Created from a client PSD with design guide, site is fully
+                    responsive. The chat interface animates on the initial load.
                   </p>
-                  <a href="#" class="btn btn btn-outline-secondary">Github</a>
-                  <a href="#" class="btn btn btn-outline-secondary"
+                  <a
+                    href="https://github.com/holjas/ChatApp"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
+                    >Github</a
+                  >
+                  <a
+                    href="https://holjas.github.io/ChatApp/"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
                     >Live Demo</a
                   >
                 </div>
               </div>
-
-              <div class="card mb-4" data-tags="react" style="width: 18rem">
+              <!-- project bort -->
+              <div
+                class="card mb-4"
+                data-tags="javascript,scss,restapi"
+                style="width: 18rem"
+              >
                 <img
-                  src="http://placekitten.com/g/100/100"
-                  class="card-img-top"
-                  alt="..."
+                  src="./assets/demoProjectBort.png"
+                  class="card-img-top border-dark border-bottom"
+                  alt="screen shot of project bort app"
                 />
                 <div class="card-body d-flex justify-content-around flex-wrap">
-                  <h5 class="card-title containerHeadline">Card title</h5>
+                  <h5 class="card-title containerHeadline">Project Bort</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    Using the Board Game Atlas API, Bort was built to navigate
+                    and explore games by returning a list based on your search
+                    preferences. Users can sort the results by price, average
+                    rating or alphabetical.
                   </p>
-                  <a href="#" class="btn btn btn-outline-secondary">Github</a>
-                  <a href="#" class="btn btn btn-outline-secondary"
+
+                  <a
+                    href="https://github.com/holjas/Project-Bort"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
+                    >Github</a
+                  >
+                  <a
+                    href="https://goofy-spence-507a45.netlify.app"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
                     >Live Demo</a
                   >
                 </div>
               </div>
-
-              <div class="card mb-4" data-tags="scss" style="width: 18rem">
+              <!-- js calculator -->
+              <div
+                class="card mb-4"
+                data-tags="js,react,bootstrap"
+                style="width: 18rem"
+              >
                 <img
-                  src="http://placekitten.com/g/100/100"
-                  class="card-img-top"
-                  alt="..."
+                  src="./assets/demoJSCalculator.png"
+                  class="card-img-top border-dark border-bottom"
+                  alt="screen shot of javascript calculator app"
                 />
                 <div class="card-body d-flex justify-content-around flex-wrap">
-                  <h5 class="card-title containerHeadline">Card title</h5>
+                  <h5 class="card-title containerHeadline">JS Calculator</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    A basic non-scientific calculator using react. The
+                    calculator can perform standard mathematical operations as
+                    well as the ability to clear the buffer.
                   </p>
-                  <a href="#" class="btn btn btn-outline-secondary">Github</a>
-                  <a href="#" class="btn btn btn-outline-secondary"
+                  <a
+                    href="https://github.com/holjas/Javascript-Calculator"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
+                    >Github</a
+                  >
+                  <a
+                    href="https://codepen.io/holjas/pen/rNLLPEy"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
                     >Live Demo</a
                   >
                 </div>
               </div>
-
-              <div class="card mb-4" data-tags="scss" style="width: 18rem">
+              <!-- harper's blog -->
+              <div
+                class="card mb-4"
+                data-tags="js,design,scss"
+                style="width: 18rem"
+              >
                 <img
-                  src="http://placekitten.com/g/100/100"
-                  class="card-img-top"
-                  alt="..."
+                  src="./assets/demoHarper.png"
+                  class="card-img-top border-dark border-bottom"
+                  alt="screen shot of blog page created from client design specs"
                 />
                 <div class="card-body d-flex justify-content-around flex-wrap">
-                  <h5 class="card-title containerHeadline">Card title</h5>
+                  <h5 class="card-title containerHeadline">Harper's Blog</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    A stylish, classic mulit-page blog with a comment section
+                    and photo gallery. Created from a client PSD with design
+                    guide, site is fully responsive.
                   </p>
-                  <a href="#" class="btn btn btn-outline-secondary">Github</a>
-                  <a href="#" class="btn btn btn-outline-secondary"
+                  <a
+                    href="https://github.com/holjas/HarperBlog"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
+                    >Github</a
+                  >
+                  <a
+                    href="https://priceless-lalande-77e829.netlify.app"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+              <!-- geolanding page -->
+              <div
+                class="card mb-4"
+                data-tags="scss,design"
+                style="width: 18rem"
+              >
+                <img
+                  src="./assets/demoGeoLanding.png"
+                  class="card-img-top border-dark border-bottom"
+                  alt="screen shot of geo landing page created from client specs"
+                />
+                <div class="card-body d-flex justify-content-around flex-wrap">
+                  <h5 class="card-title containerHeadline">GeoLanding Page</h5>
+                  <p class="card-text">
+                    Created from a client PSD with design guide, site is fully
+                    responsive.
+                  </p>
+                  <a
+                    href="https://github.com/holjas/GeoPatternLandingPage"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
+                    >Github</a
+                  >
+                  <a
+                    href="https://holjas.github.io/GeoPatternLandingPage/"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+              <!-- VS code computer typing  -->
+              <div class="card mb-4" data-tags="jquery" style="width: 18rem">
+                <img
+                  src="./assets/demoComputer.png"
+                  class="card-img-top border border-dark border-bottom"
+                  alt="screen shot of landing page with text animation"
+                />
+                <div class="card-body d-flex justify-content-around flex-wrap">
+                  <h5 class="card-title containerHeadline">VS Code Design</h5>
+                  <p class="card-text">
+                    Reimagined VS Code with jquery text effect.
+                  </p>
+                  <a
+                    href="https://github.com/holjas/WhosAComputer"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
+                    >Github</a
+                  >
+                  <a
+                    href="https://holjas.github.io/WhosAComputer/"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+              <!-- humble pondering -->
+              <div
+                class="card mb-4"
+                data-tags="react,firebase"
+                style="width: 18rem"
+              >
+                <img
+                  src="./assets/demoHumblePonderings.png"
+                  class="card-img-top border-dark border-bottom"
+                  alt="screen shot of humble ponderings app"
+                />
+                <div class="card-body d-flex justify-content-around flex-wrap">
+                  <h5 class="card-title containerHeadline">
+                    humble ponderings
+                  </h5>
+                  <p class="card-text">
+                    Ponderings provides a random writing prompt from a custom
+                    database and the user can enter a short little musing. This
+                    input will be displayed and stored, and then can be edited,
+                    deleted or pinned at any time.
+                  </p>
+
+                  <a
+                    href="https://github.com/holjas/Humble-Ponderings"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
+                    >Github</a
+                  >
+                  <a
+                    href="https://trusting-torvalds-be28b8.netlify.app"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+              <!-- word hover -->
+              <div class="card mb-4" data-tags="jquery" style="width: 18rem">
+                <img
+                  src="./assets/demoPartyHover.png"
+                  class="card-img-top border border-dark border-bottom"
+                  alt="screen shot of landing page with quote about creativity"
+                />
+                <div class="card-body d-flex justify-content-around flex-wrap">
+                  <h5 class="card-title containerHeadline">Party Hover</h5>
+                  <p class="card-text">
+                    Designed eye catching landing page with a jQuery plugin
+                    providing a text effect.
+                  </p>
+                  <a
+                    href="https://github.com/holjas/WordHover"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
+                    >Github</a
+                  >
+                  <a
+                    href="https://holjas.github.io/WordHover/"
+                    class="btn btn-outline-secondary mt-auto"
+                    target="_blank"
                     >Live Demo</a
                   >
                 </div>
@@ -385,9 +553,108 @@
           aria-labelledby="contact-tab"
         >
           <div class="container h-100">
+            <!-- headline title -->
             <div class="row pt-5">
               <div class="col my-auto">
                 <h3 class="containerHeadline">contact</h3>
+              </div>
+            </div>
+
+            <div class="row mt-5">
+              <!-- my info, left side -->
+              <div class="col-lg-6">
+                <div class="row d-flex justify-content-center mb-4">
+                  <h2>Thanks for Visiting!</h2>
+                </div>
+                <div
+                  class="row d-flex justify-content-around mb-5 contactSocials"
+                >
+                  <a
+                    href="https://www.linkedin.com/in/hollyjasiura"
+                    target="_blank"
+                  >
+                    <span class="sr-only">visit holly's linkedin page</span>
+                    <i
+                      class="fab fa-linkedin fa-icon"
+                      aria-hidden="true"
+                      title="visit holly's linkedin page"
+                    ></i
+                  ></a>
+
+                  <a href="https://www.github.com/holjas" target="_blank">
+                    <span class="sr-only">visit holly's github page</span>
+                    <i
+                      class="fab fa-github-square fa-icon"
+                      aria-hidden="true"
+                      title="visit holly's github page"
+                    ></i
+                  ></a>
+
+                  <a href="https://www.codepen.io/holjas" target="_blank">
+                    <span class="sr-only">visit holly's code page</span>
+                    <i
+                      class="fab fa-codepen fa-icon"
+                      aria-hidden="true"
+                      title="visit holly's codepen page"
+                    ></i>
+                  </a>
+
+                  <a
+                    href="https://www.twitter.com/thisishollyj"
+                    target="_blank"
+                  >
+                    <span class="sr-only">visit holly's twitter page</span>
+                    <i
+                      class="fab fa-twitter-square fa-icon"
+                      aria-hidden="true"
+                      title="visit holly's twitter page"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+              <!-- contact form , right side -->
+              <div class="col-lg-6">
+                <form name="contactForm" method="POST" data-netlify="true">
+                  <div class="form-group">
+                    <label for="firstName">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail">Email Address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inputEmail"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                    />
+                    <small id="emailHelp" class="form-text text-muted"
+                      >We'll never share your email with anyone else.</small
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="formTextArea">What's on your mind?</label>
+                    <textarea
+                      class="form-control"
+                      id="formTextArea"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <!-- netlify captcha -->
+                  <div data-netlify-recaptcha="true" class="captcha"></div>
+                  <button
+                    type="submit"
+                    class="btn btn-block containerHeadline mt-4"
+                  >
+                    Submit
+                  </button>
+                </form>
               </div>
             </div>
           </div>

@@ -1,13 +1,13 @@
 .navbar-toggler {
   background-color: transparent;
 }
-.colour-change {
+.fa-icon {
   color: $primaryColor;
   font-size: 2rem;
   cursor: pointer;
   transition: all 0.3s;
 }
-.colour-change:hover {
+.fa-icon:hover {
   transform: scale(1.2);
 }
 .navbar-dark .navbar-nav .show > .nav-link,

@@ -39,7 +39,7 @@ p {
   background-color: transparent;
 }
 
-.colour-change {
+.fa-icon {
   color: #ff0046;
   font-size: 2rem;
   cursor: pointer;
@@ -47,7 +47,7 @@ p {
   transition: all 0.3s;
 }
 
-.colour-change:hover {
+.fa-icon:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -179,4 +179,37 @@ h3.containerHeadline:after {
 
 .card-body {
   background-color: #f6f6f6;
+}
+
+.card-img-top {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.card-img-top-hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+label {
+  color: #f6f6f6;
+}
+
+form .btn {
+  font-size: 1.3rem;
+  background-color: #ff0046;
+  color: #28292b;
+  opacity: 0.85;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+form .btn:hover {
+  opacity: 1;
+}
+
+.contactSocials .fa-icon {
+  font-size: 3rem;
 }

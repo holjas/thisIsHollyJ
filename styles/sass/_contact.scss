@@ -1,0 +1,16 @@
+label {
+  color: $white;
+}
+form .btn {
+  font-size: 1.3rem;
+  background-color: $primaryColor;
+  color: $backgroundColor;
+  opacity: 0.85;
+  transition: all 0.3s;
+}
+form .btn:hover {
+  opacity: 1;
+}
+.contactSocials .fa-icon {
+  font-size: 3rem;
+}

@@ -21,17 +21,30 @@ myWebsite.colourChanges = () => {
 
     const randomNumber = myWebsite.generateRandomNumber();
     const backgroundColour = "rgb(" + colourThemes[randomNumber].colorOne + ")";
-    const fontColour = "rgb(" + colourThemes[randomNumber].colorTwo + ")";
+    const primaryColor = "rgb(" + colourThemes[randomNumber].colorTwo + ")";
     const mainTextColour = "rgb(" + colourThemes[randomNumber].fontColour + ")";
 
+    // background color change
     $("body").css("background-color", backgroundColour);
-    $("body").css("color", fontColour);
-    $("li a").css("color", fontColour);
-    $(".colour-change").css("color", fontColour);
-    $("p").css("color", mainTextColour);
-    $(".containerHeadline").css("color", fontColour);
-    $("[data-filter]").css("color", mainTextColour);
+    // primary color change
+    $("body, li a, .fa-icon, .containerHeadline").css("color", primaryColor);
+    $("form .btn").css("background-color", primaryColor);
+    // main text color change
+    $("p, [data-filter], label").css("color", mainTextColour);
+    $("form .btn").css("color", "white");
   });
+};
+
+// portfolio, remove greyscale on hover
+myWebsite.portfolioHover = () => {
+  $(".card").hover(
+    function () {
+      $(this).children("img").addClass("card-img-top-hover");
+    },
+    function () {
+      $(this).children("img").removeClass("card-img-top-hover");
+    }
+  );
 };
 
 // generate random number
@@ -39,16 +52,10 @@ myWebsite.generateRandomNumber = () => {
   return Math.floor(Math.random() * colourThemes.length);
 };
 
-// myWebsite.portfolioGrid = () => {
-//   $(function ($) {
-//     $.autofilter();
-//   });
-// };
-
 myWebsite.init = () => {
   myWebsite.homepageAnimation();
   myWebsite.colourChanges();
-  // myWebsite.portfolioGrid();
+  myWebsite.portfolioHover();
 };
 
 myWebsite.init();
