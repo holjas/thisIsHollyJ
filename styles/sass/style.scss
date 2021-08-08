@@ -9,14 +9,31 @@ $white: rgb(246, 246, 246);
 
 @font-face {
   font-family: "Neuville-Bold";
-  src: url("../assets/fonts/Neuville-Bold.woff"),
-    url("../assets/fonts/Neuville-Bold.woff2");
+  // src: url("../assets/fonts/Neuville-Bold.woff"),
+  // url("../assets/fonts/Neuville-Bold.woff2");
+  unicode-range: U+000-5FF;
+  src: local("Custom Font"),
+    url("../assets/fonts/Neuville-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Neuville-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Neuville-Light";
-  src: url("../assets/fonts/Neuville-Light.woff"),
-    url("../assets/fonts/Neuville-Light.woff2");
+  // src: url("../assets/fonts/Neuville-Light.woff"),
+  // url("../assets/fonts/Neuville-Light.woff2");
+  unicode-range: U+000-5FF;
+  src: local("Custom Font"),
+    url("../assets/fonts/Neuville-Light.woff2") format("woff2"),
+    url("../assets/fonts/Neuville-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Custom Font";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  src: local("Custom Font"), url("/fonts/custom-font.woff2") format("woff2"),
+    url("/fonts/custom-font.woff") format("woff");
 }
 
 body {
