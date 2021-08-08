@@ -2,6 +2,21 @@ import { colourThemes } from "./colours.js";
 
 const myWebsite = {};
 
+myWebsite.loadingSpinner = () => {
+  $("body").append(
+    '<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>'
+  );
+  $(window).on("load", function () {
+    setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+  });
+  function removeLoader() {
+    $("#loadingDiv").fadeOut(500, function () {
+      // fadeOut complete. Remove the loading div
+      $("#loadingDiv").remove(); //makes page more lightweight
+    });
+  }
+};
+
 // home page animation of 'titles'
 myWebsite.homepageAnimation = () => {
   // credit to https://www.jqueryscript.net/animation/Simple-jQuery-Text-Rotator-with-CSS3-Animations.html
@@ -81,11 +96,10 @@ myWebsite.generateRandomNumber = () => {
 };
 
 myWebsite.init = () => {
-  $(document).ready(function () {
-    myWebsite.homepageAnimation();
-    myWebsite.colourChanges();
-    myWebsite.portfolioHover();
-  });
+  myWebsite.loadingSpinner();
+  myWebsite.homepageAnimation();
+  myWebsite.colourChanges();
+  myWebsite.portfolioHover();
 };
 
 myWebsite.init();
